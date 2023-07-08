@@ -3,7 +3,6 @@ title: "Getting started with Vue.js"
 datePublished: Sat Jul 08 2023 22:58:18 GMT+0000 (Coordinated Universal Time)
 cuid: cljulwt32000009mkaq8ag51f
 slug: getting-started-with-vuejs
-canonical: https://jebitok.com/posts/getting-started-with-vuejs
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1688857018417/aab16402-74be-4491-ab12-6cad7cc0843f.png
 tags: vuejs, beginners, getting-started
 
@@ -40,7 +39,7 @@ You will be expected to enter the project name and select whether you want to ad
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688850984006/23527690-e315-4775-ace8-48b053e5cec2.png align="center")
 
-What is important depends on your project but as a beginner in Vue, the biggest priority is having Router and JSX. If you're comfortable with Typescript and Eslint it can work well too the challenge comes when you're still figuring out the Vue.js folder arrangement and how to handle errors you'll encounter for example missing components, wrong imports etc before you come to syntax errors and cleaner code
+What is important depends on your project but as a beginner in Vue, the biggest priority is having Router and JSX. If you're comfortable with Typescript and Eslint it can work well too the challenge comes when you're still figuring out the Vue.js folder arrangement and how to handle errors you'll encounter for example missing components, wrong imports, etc before you come to syntax errors and cleaner code
 
 Once you've installed it, you can run the sample template and start making changes to the project either JSX or the Template. With time you'll get a way around it.
 
@@ -88,7 +87,7 @@ This is how a basic Vue.js file is structured it has the:
     
 * import other npm packages that you might have installed
     
-* allows you to specify a file name, pass data and the components
+* allows you to specify a file name, pass data, and the components
     
 * write some functionality that will be used within the template section e.g the handleClick function for a button
     
@@ -111,9 +110,9 @@ Generally out of my recent situation of starting to work with Vue.js on two sepa
 
 * Vue.js is a nice framework and I should have started exploring it earlier
     
-* Project requirements might always affect the framework or library that you will use React, Vue.js, Angular or Next.js among others have grown in JS frontend development.
+* Project requirements might always affect the framework or library that you will use React, Vue.js, Angular, or Next.js among others have grown in JS frontend development.
     
-* Always consider exploring another framework/library linked to your program language as it's helpful for you to gain familiarity with basic project installation, folder structure, and basic functionalities or features e.g. routing, components, passing data, styling etc. You won't have to take a lot of time to pick up a project as you already know the basics of that framework or library
+* Always consider exploring another framework/library linked to your program language as it's helpful for you to gain familiarity with basic project installation, folder structure, and basic functionalities or features e.g. routing, components, passing data, styling, etc. You won't have to take a lot of time to pick up a project as you already know the basics of that framework or library
     
 
-Thank you for reading through the article. It might lack full comprehension this is just to help you get started. You can leave a comment, like or suggestion, especially on resources or future article topics. We can connect more on [Linkedin](https://www.linkedin.com/in/sharon-jebitok/) or [Twitter](https://twitter.com/SharonJebitok). Thank you!
+Thank you for reading through the article. It might lack full comprehension this is just to help you get started. You can leave a comment, like, or suggestion, especially on resources or future article topics. We can connect more on [Linkedin](https://www.linkedin.com/in/sharon-jebitok/) or [Twitter](https://twitter.com/SharonJebitok). Thank you!
