@@ -3,6 +3,7 @@ title: "Getting started with Vue.js"
 datePublished: Sat Jul 08 2023 22:58:18 GMT+0000 (Coordinated Universal Time)
 cuid: cljulwt32000009mkaq8ag51f
 slug: getting-started-with-vuejs
+canonical: https://jebitok.com/posts/getting-started-with-vuejs
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1688857018417/aab16402-74be-4491-ab12-6cad7cc0843f.png
 tags: vuejs, beginners, getting-started
 
