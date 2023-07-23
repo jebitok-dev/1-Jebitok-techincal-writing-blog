@@ -3,6 +3,7 @@ title: "Technical Interview Preparation, Upskilling, and Job Search Platforms & 
 datePublished: Sun Jun 11 2023 22:43:03 GMT+0000 (Coordinated Universal Time)
 cuid: clis0h77c000009mibp411ebv
 slug: technical-interview-preparation-upskilling-and-job-search-platforms-resources-for-tech-talent
+canonical: https://jebitok.com/posts/technical-interview-preparation-upskilling
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1686523287252/201c2d7a-1121-4bf7-be83-0ccd9a660e8f.png
 tags: interview, technical-interview, job-search, interview-preparations
 
