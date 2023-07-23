@@ -4,6 +4,7 @@ seoTitle: "How to Remove Vite from a React.js Project"
 datePublished: Tue Mar 14 2023 20:01:15 GMT+0000 (Coordinated Universal Time)
 cuid: clf8oiawd000608l796i66xfy
 slug: removing-vite-from-a-reactjs-project
+canonical: https://jebitok.com/posts/removing-vite-from-a-reactjs-project
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1678823996524/77b4f18b-f048-4c56-b855-2a6a1cacc32d.png
 tags: reactjs, vite
 
