@@ -3,6 +3,7 @@ title: "Preparation for Job Applications & Tech Interviews"
 datePublished: Sun Jan 16 2022 19:08:12 GMT+0000 (Coordinated Universal Time)
 cuid: ckyhmslnq0apt35s14d7i6ebw
 slug: preparation-for-job-applications-and-tech-interviews
+canonical: https://jebitok.com/posts/preparation-for-job-applications-tech-interviews
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1642347334989/u4P15m9_-I.png
 tags: interview, questions, jobs, technical-interview, job-search
 
