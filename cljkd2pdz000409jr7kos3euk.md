@@ -3,6 +3,7 @@ title: "Empowering Community Engagement: Leveraging Technology & Effective Commu
 datePublished: Sat Jul 01 2023 18:53:15 GMT+0000 (Coordinated Universal Time)
 cuid: cljkd2pdz000409jr7kos3euk
 slug: empowering-community-engagement-leveraging-technology-effective-communication-strategies
+canonical: https://jebitok.com/posts/empowering-community-engagement-leveraging-technology-effective-communication-strategies
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1688240340317/20b0b96c-2f7e-48e9-ac37-8fa2e65a5d11.png
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1688237206786/53448ad7-ee8d-4e60-94ef-bfb669327392.png
 tags: tech-communities, community, communitylead
