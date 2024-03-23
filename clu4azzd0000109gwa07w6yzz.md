@@ -1,8 +1,8 @@
 ---
-title: "File Permissions Challenge: Permission Master"
+title: "File Permissions Challenge: Linux Essentials: Permission Master"
 datePublished: Sat Mar 23 2024 16:27:35 GMT+0000 (Coordinated Universal Time)
 cuid: clu4azzd0000109gwa07w6yzz
-slug: file-permissions-challenge-permission-master
+slug: file-permissions-challenge-linux-essentials-permission-master
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1711211140368/4b087c10-efe1-4027-8ae7-f78462d8e093.png
 tags: linux-for-beginners, linux-basics, file-permission
 
