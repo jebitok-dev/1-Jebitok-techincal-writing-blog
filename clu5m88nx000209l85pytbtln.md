@@ -1,8 +1,8 @@
 ---
-title: "Cybersecurity Challenges - Write Up"
+title: "Cybersecurity Challenges: General Information - Write Up"
 datePublished: Sun Mar 24 2024 14:29:43 GMT+0000 (Coordinated Universal Time)
 cuid: clu5m88nx000209l85pytbtln
-slug: cybersecurity-challenges-write-up
+slug: cybersecurity-challenges-general-information-write-up
 tags: cybersecurity-basics
 
 ---
@@ -38,3 +38,28 @@ Acknowledgment: [CyberTalents](https://cybertalents.com/)
 6. The art of hiding messages or information inside other images/text or data
     
     * [Steganography](https://www.freecodecamp.org/news/what-is-steganography-hide-data-inside-data/)
+        
+7. A group or network of machines that are controlled by an attacker to do a certain task
+    
+    * Bot
+        
+    * A botnet Attack is a cyberattack orchestrated by a malicious actor who controls a network of compromised computers or devices, known as bots, to carry out various harmful activities. These activities can include:
+        
+8. Linux distribution with a version for web penetration testing and another for attacking smart grids
+    
+    * [SamuraiSTFU](https://archiveos.org/samuraistfu/)
+        
+9. I am a Linux distribution that has many tricks to do packet and traffic analysis. Who am I?
+    
+    * [Packetrix](https://sourceforge.net/projects/packetrix/)
+        
+10. I will lock your machine screen or files till you pay me. Who am I?
+    
+    * [Ransomware](https://www.techtarget.com/searchsecurity/definition/ransomware)
+        
+11. Periodic Conference in many cities hosted by Trend Micro
+    
+    * [CloudSec](https://www.youtube.com/playlist?list=PLCxuJi3Ceg8RPAfo3aNLO0lF9OEY5R0LP)
+        
+
+Going through this challenge was interesting since it inserts basic knowledge about some things/facts/tools related to security across the world. Thank you for reading through, we can connect more on [X](https://twitter.com/SharonJebitok), and [LinkedIn](https://www.linkedin.com/in/sharon-jebitok/), or can [Book a Session with Sharon via Mentorlst](https://mentorlst.com/mentor/12db03d0-8a75-4a32-9b05-b290f5381598).
