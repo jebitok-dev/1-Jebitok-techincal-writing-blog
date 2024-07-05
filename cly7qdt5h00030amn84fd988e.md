@@ -3,6 +3,7 @@ title: "Writing a BashScript using Linux Commands and Privileges to Read Employe
 datePublished: Thu Jul 04 2024 20:40:22 GMT+0000 (Coordinated Universal Time)
 cuid: cly7qdt5h00030amn84fd988e
 slug: writing-a-bashscript-using-linux-commands-and-privileges-to-read-employee-users-group
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1720161621095/408881aa-66a8-4e51-bfbe-fca9ccc8f41c.png
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1720125595610/5b290ee0-adc5-4273-b925-7bfcf698d496.png
 tags: linux, devops, bash-script
 
