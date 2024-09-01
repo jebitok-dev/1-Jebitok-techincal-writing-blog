@@ -3,6 +3,7 @@ title: "How The Web Works (TryHackMe)"
 datePublished: Sun Sep 01 2024 20:05:55 GMT+0000 (Coordinated Universal Time)
 cuid: cm0k04rhn00020alcgpmja6za
 slug: how-the-web-works-tryhackme
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1725221422478/6f32213d-1b5b-4782-b5b7-57b3893fca97.png
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1725221146442/d67481be-1f85-477f-895b-ea710bcb7a2d.png
 
 ---
