@@ -3,6 +3,7 @@ title: "Python Basics  (TryHackMe)"
 datePublished: Sun Sep 01 2024 19:40:03 GMT+0000 (Coordinated Universal Time)
 cuid: cm0jz7hm5000s09l8hozgdu40
 slug: python-basics-tryhackme
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1725221550966/c7cecd19-3b2d-4cc1-a2a4-778f80dc9b93.png
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1725219465987/52246631-6db6-4b4d-b176-33810baae075.png
 tags: scripting
 
