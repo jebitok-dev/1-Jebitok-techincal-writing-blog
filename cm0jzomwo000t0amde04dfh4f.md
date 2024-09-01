@@ -3,6 +3,7 @@ title: "Security Principles (TryHackMe)"
 datePublished: Sun Sep 01 2024 19:53:23 GMT+0000 (Coordinated Universal Time)
 cuid: cm0jzomwo000t0amde04dfh4f
 slug: security-principles-tryhackme
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1725221488478/87dacbc1-f7dd-4e2e-84de-8db3e8c40951.png
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1725220367336/f6ca04e9-04a7-4f88-8fa2-be1084dbcadd.png
 
 ---
