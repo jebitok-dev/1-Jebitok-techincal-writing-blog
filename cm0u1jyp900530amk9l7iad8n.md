@@ -95,6 +95,7 @@ I have been learning Networking Theory like the OSI Model and TCP/IP model as we
     
 40. **\[OSINT\]** What is the name of the golf course that is near the registrant address for [microsoft.com](http://microsoft.com/)? `Bellevue Golf Course`  
       
+    
     with Microsoft address from the whois [Microsoft.com](http://microsoft.com/) search golf courses followed by the address (`One Microsoft Way, Redmond, 98052`) You’ll check golf course as a keyword and the closest miles
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1725827482610/707c916e-35d4-4dc9-a73b-d958a9f20254.png align="center")
