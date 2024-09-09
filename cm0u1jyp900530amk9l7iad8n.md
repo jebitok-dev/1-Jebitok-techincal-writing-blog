@@ -79,7 +79,7 @@ I have been learning Networking Theory like the OSI Model and TCP/IP model as we
     
 34. **\[Lateral Thinking\]** Which layer of the ***TCP/IP*** model will the traceroute run on by default (Windows)? `Internet`
     
-35. **Perform a whois search on** `facebook.com` `whois Facebook.com`  
+35. **Perform a whois search on** `facebook.com` `whois Facebook.com`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1725827410950/feb73fd6-9c7c-4c03-bdce-9f15329cb474.png align="center")
     
@@ -87,13 +87,15 @@ I have been learning Networking Theory like the OSI Model and TCP/IP model as we
     
 37. When was the [facebook.com](http://facebook.com/) domain first registered (Format: DD/MM/YYYY)? `29/03/1997`
     
-38. **Perform a whois search on** `microsoft.com` `whois Microsoft.com`  
+38. **Perform a whois search on** `microsoft.com` `whois Microsoft.com`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1725827397445/cef40a36-3a79-425d-8b2a-1a6108b0c3f3.png align="center")
     
 39. Which city is the registrant based in? `Redmond`
     
-40. **\[OSINT\]** What is the name of the golf course that is near the registrant address for [microsoft.com](http://microsoft.com/)? `Bellevue Golf Course` with Microsoft address from the whois [Microsoft.com](http://microsoft.com/) search golf courses followed by the address (`One Microsoft Way, Redmond, 98052`) You’ll check golf course as a keyword and the closest miles  
+40. **\[OSINT\]** What is the name of the golf course that is near the registrant address for [microsoft.com](http://microsoft.com/)? `Bellevue Golf Course`  
+      
+    with Microsoft address from the whois [Microsoft.com](http://microsoft.com/) search golf courses followed by the address (`One Microsoft Way, Redmond, 98052`) You’ll check golf course as a keyword and the closest miles
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1725827482610/707c916e-35d4-4dc9-a73b-d958a9f20254.png align="center")
     
