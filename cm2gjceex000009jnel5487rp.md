@@ -36,14 +36,14 @@ Required qualifications (most common):
 
 Desired certification:
 
-* [CompTIA Security+](https://www.comptia.org/certifications/security) 
+* [CompTIA Security+](https://www.comptia.org/certifications/security)
     
 
 ## Responsibilities of SOC
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1729364942116/97c7212d-5c3c-4f42-a537-ed9d5f87d224.png align="center")
 
-1. What will be your role as a Junior Security Analyst? Triage Specialist
+1. What will be your role as a Junior Security Analyst? `Triage Specialist`
     
 2. What was the malicious IP address in the alerts? `221.181.185.159`
     
