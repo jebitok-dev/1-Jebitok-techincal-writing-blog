@@ -1,8 +1,9 @@
 ---
-title: "Extending Your Network"
+title: "Networking Fundamentals: Extending Your Network (TryHackMe)"
 datePublished: Sun Oct 20 2024 08:59:54 GMT+0000 (Coordinated Universal Time)
 cuid: cm2hcwzft000209kz3mge3ai1
-slug: extending-your-network
+slug: networking-fundamentals-extending-your-network-tryhackme
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1729414853446/4a630551-9909-4dfa-b47e-0530529e1219.png
 tags: networking, vpn, ports
 
 ---
