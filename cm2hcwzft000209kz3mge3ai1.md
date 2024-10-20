@@ -33,7 +33,9 @@ A **Virtual Private Network** (or **VPN** for short) is a technology that a
     
 4. What category of firewall inspects individual packets? `stateless`
     
-5. What is the flag? `THM{FIREWALLS_RULE}`
+5. What is the flag? `THM{FIREWALLS_RULE}`  
+    
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1729451344027/2e2546fa-334f-46ac-9c76-66ab43f1d2d2.png align="center")
     
 6. What VPN technology **only** encrypts & provides the authentication of data? `PPP`
     
@@ -43,7 +45,9 @@ A **Virtual Private Network** (or **VPN** for short) is a technology that a
     
 9. What are the two different layers of switches? Separate these by a comma I.e.: LayerX,LayerY `Layer2,Layer3`
     
-10. What is the flag from the network simulator? `THM{YOU’VE_GOT_DATA}`
+10. What is the flag from the network simulator? `THM{YOU’VE_GOT_DATA}`  
+    
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1729451401800/18ecb46d-2285-43b0-8c1d-2029cac97d1b.png align="center")
     
 11. How many HANDSHAKE entries are there in the Network Log? `5`
     
