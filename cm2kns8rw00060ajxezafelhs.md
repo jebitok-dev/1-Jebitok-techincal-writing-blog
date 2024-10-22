@@ -8,7 +8,7 @@ tags: search, security, tryhackme
 
 ---
 
-TryHackMe has released a new Learning Path challenge i.e. Cybersecurity 101 with over $28,000 worth of prizes for grabs in the form of multiple tickets which can be redeemed as TryHackMe vouchers, DEFCON 2025 tickets, Amazon gifts, and TryHackMe t-shirts, among others.
+TryHackMe has released a new Learning Path challenge i.e. Cybersecurity 101 with over $28,000 worth of prizes for grabs in the form of multiple tickets which can be redeemed as TryHackMe vouchers, DEFCON 2025 tickets, Amazon gifts, and TryHackMe t-shirts, among others. To participate you can [Launch Learning Path](https://tryhackme.com/paths) and get more details on [**TryWinMe: Think Cyber Monopoly**](https://tryhackme.com/r/room/trywinme)
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1729614396404/c69fdde1-49b1-4f1c-8c8f-aa6f89c892e5.png align="center")
 
@@ -29,7 +29,7 @@ According to THM, a quick Google search for “learn cyber security” returned 
 6. What does BitDefenderFalx detect the file with the hash `2de70ca737c1f4602517c555ddd54165432cf231ffc0e21fb2e23b9dd14e7fb4` as? `Android.Riskware.Agent.LHH`
     
 
-Visit [VirusTotal](https://www.virustotal.com/gui/home/search) to search for the file with this given hash, and then you’ll see the detection for BitDefenderFalx  
+Visit [VirusTotal](https://www.virustotal.com/gui/home/search) to search for the file with this given hash, and then you’ll see the detection for BitDefenderFalx
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1729614015146/b53b8da1-953a-4a7a-be9e-fb3ec30a8eac.png align="center")
 
