@@ -1,8 +1,8 @@
 ---
-title: "Metasploit: Meterpreter (TryHackMe)"
+title: "Exploitation Basics: Metasploit: Meterpreter (TryHackMe)"
 datePublished: Wed Oct 30 2024 20:18:08 GMT+0000 (Coordinated Universal Time)
 cuid: cm2wbjqaf000109jw7e35di97
-slug: metasploit-meterpreter-tryhackme
+slug: exploitation-basics-metasploit-meterpreter-tryhackme
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1730319437305/59a19bce-3bee-49bd-8482-3c495c86a75a.png
 tags: tryhackme, metasploit, write-up, exploitation, meterpreter
 
