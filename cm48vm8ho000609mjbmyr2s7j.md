@@ -3,6 +3,7 @@ title: "Advent Of Cyber: Day 1 - OPSEC (TryHackMe)"
 datePublished: Tue Dec 03 2024 19:52:54 GMT+0000 (Coordinated Universal Time)
 cuid: cm48vm8ho000609mjbmyr2s7j
 slug: advent-of-cyber-day-1-opsec-tryhackme
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1733363056440/5890d415-6026-4751-bba3-9deb705d4aa8.png
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1733255556311/65747865-9c98-40c5-9359-fcfa42cc6175.png
 tags: tryhackme, write-up, opsec, adventofcyber2024
 
