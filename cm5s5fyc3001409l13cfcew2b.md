@@ -8,9 +8,9 @@ tags: tryhackme, write-up, xxe, portswigger, adventofcyber2024
 
 ---
 
-In this article, we’ll cover the Log Analysis. Even if I wanted to go, their vulnerabilities wouldn't allow me to write up the log analysis as the Day 3 challenge of the Advent of Cyber event challenge. It was interesting to navigate Web Security for an e-commerce gifting site using [PortSwigger’s XML external entity (XXE) injection](https://portswigger.net/web-security/xxe). We’re still at Wareville for SOC-mas!
+In this article, we’ll cover the Log Analysis. Even if I wanted to go, their vulnerabilities wouldn't allow me to write up the log analysis as the Day 5 challenge of the Advent of Cyber event challenge. It was interesting to navigate Web Security for an e-commerce gifting site using [PortSwigger’s XML external entity (XXE) injection](https://portswigger.net/web-security/xxe). We’re still at Wareville for SOC-mas!
 
-1. What is the flag discovered after navigating through the wishes? `THM{Brut3f0rc1n6_mY_w4y}`  
+1. What is the flag discovered after navigating through the wishes? `THM{Brut3f0rc1n6_mY_w4y}`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736596726807/52403c94-e427-4602-8bf6-91a4db282a9d.png align="center")
     
@@ -30,11 +30,11 @@ In this article, we’ll cover the Log Analysis. Even if I wanted to go, their v
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736597412726/dad5432f-d6f1-4ee2-b2d1-1fcdf5b97c21.png align="center")
     
-2. What is the flag seen on the possible proof of sabotage? `THM{m4y0r_m4lw4r3_b4ckd00rs}`  
+2. What is the flag seen on the possible proof of sabotage? `THM{m4y0r_m4lw4r3_b4ckd00rs}`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736597129714/22bb39c6-99a3-4ae1-8b5b-9cb241deac68.png align="center")
     
-3. If you want to learn more about the XXE injection attack, check out [the](https://tryhackme.com/r/room/xxeinjection) [XXE](https://tryhackme.com/r/room/xxeinjection) room! 
+3. If you want to learn more about the XXE injection attack, check out [the](https://tryhackme.com/r/room/xxeinjection) [XXE](https://tryhackme.com/r/room/xxeinjection) room!
     
 4. Following McSkidy's advice, Software recently hardened the server. It used to have many unneeded open ports, but not anymore. Not that this matters in any way.
     
