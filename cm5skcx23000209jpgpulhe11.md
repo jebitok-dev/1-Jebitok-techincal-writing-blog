@@ -8,7 +8,7 @@ tags: splunk, tryhackme, write-up, loganalysis, adventofcyber2024
 
 ---
 
-In this article, we’ll cover Log analysis - He analyzed and analyzed till his analyzer was sore! write-up as the Day 15 challenge of the Advent of Cyber event challenge. It involved navigating the [Splunk](https://www.splunk.com/en_us/products/splunk-enterprise.html) Enterprise and filtering the different events to search and report. We’re still at Wareville for SOC-mas!
+In this article, we’ll cover Log analysis - He analyzed and analyzed till his analyzer was sore! write-up as the Day 17 challenge of the Advent of Cyber event challenge. It involved navigating the [Splunk](https://www.splunk.com/en_us/products/splunk-enterprise.html) Enterprise and filtering the different events to search and report. We’re still at Wareville for SOC-mas!
 
 ## **Investigation Time**
 
@@ -82,7 +82,9 @@ Now, to select the fields in the logs that we want to extract, we simply need to
 
 We'll assign an appropriate name to each of the extracted fields based on the table below:
 
-<table><tbody><tr><td colspan="1" rowspan="1"><p><strong>Timestamp</strong></p></td><td colspan="1" rowspan="1"><p><strong>Event</strong></p></td><td colspan="1" rowspan="1"><p><strong>User_id</strong></p></td><td colspan="1" rowspan="1"><p><strong>UserName</strong></p></td><td colspan="1" rowspan="1"><p><strong>Session_id</strong></p></td></tr><tr><td colspan="1" rowspan="1"><p>2024-12-16 17:20:01</p></td><td colspan="1" rowspan="1"><p>Logout</p></td><td colspan="1" rowspan="1"><p>5</p></td><td colspan="1" rowspan="1"><p>byte</p></td><td colspan="1" rowspan="1"><p>kla95sklml7nd14dbosc8q6vop</p></td></tr></tbody></table>
+| **Timestamp** | **Event** | **User\_id** | **UserName** | **Session\_id** |
+| --- | --- | --- | --- | --- |
+| 2024-12-16 17:20:01 | Logout | 5 | byte | kla95sklml7nd14dbosc8q6vop |
 
 As evident from the preview section, by selecting the fields, Splunk creates a regular expression to extract that field from all the events.
 
@@ -122,12 +124,15 @@ It also appears that some fields have not been parsed exactly as we expected:
 
 As previously mentioned, some of the logs are a bit different from the ones we used as a baseline for the field extraction. Some of the log formats that our parser could not pick are mentioned below:
 
-<table><tbody><tr><td colspan="1" rowspan="1"><p><strong>Sample Log</strong></p></td><td colspan="1" rowspan="1"><p>2024-12-16 23:45:56&nbsp;<strong>Login successful</strong>&nbsp;3&nbsp;marta tktfav3m1mggj0pfjb7onm4qcv</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>Sample Log</strong></p></td><td colspan="1" rowspan="1"><p>2024-12-16 22:47:12 Login failed glitch pass=ImtheB3st! rij5uu4gt204q0d3eb7jj86okt</p></td></tr></tbody></table>
+| **Sample Log** | 2024-12-16 23:45:56 **Login successful** 3 marta tktfav3m1mggj0pfjb7onm4qcv |
+| --- | --- |
+| **Sample Log** | 2024-12-16 22:47:12 Login failed glitch pass=ImtheB3st! rij5uu4gt204q0d3eb7jj86okt |
 
 It is important to note that, there can be various ways to achieving our goal of fixing the parser. We will try of of the methods, as covered in steps below:
 
-## **Removing the Fields Extraction  
-**
+## \*\*Removing the Fields Extraction
+
+\*\*
 
 Let's go to `Settings` -&gt; `Fields`, as shown below:
 
@@ -139,15 +144,15 @@ Click on the `Field extractions` tab; it will display all the fields extracted
 
 ![Select Field Extractions Option](https://tryhackme-images.s3.amazonaws.com/user-uploads/5e8dd9a4a45e18443162feab/room-content/5e8dd9a4a45e18443162feab-1733105980601.png align="left")
 
-**Delete the Regex Pattern  
-**
+\*\*Delete the Regex Pattern  
+\*\*
 
 This tab will display all the patterns/fields extracted so far in Splunk. We can look for the `cctv` related pattern in the list, or simply search `cctv` in the search bar, and it will display our recently created pattern. Once the right pattern is selected, click on the `Delete` button, as shown below.
 
 ![Select the pattern and delete.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5e8dd9a4a45e18443162feab/room-content/5e8dd9a4a45e18443162feab-1733106086822.png align="left")
 
 Why we are deleting this previously created pattern? Well, this regex picks fields from some logs and leave behind other logs, which may be vital for our investigation.  
-Our goal is to create one generic regular expression, that works on almost all events.  
+Our goal is to create one generic regular expression, that works on almost all events.
 
 **Open Filed Extractor**
 
@@ -297,15 +302,15 @@ From the output, it seems the following was the timeline of the attack:
 * We correlated back to the cctv\_feed logs to find the traces of any evidence revolving around those session IDs, and found the name of the attacker.
     
 
-1. Extract all the events from the cctv\_feed logs. How many logs were captured associated with the successful login? `642`  
+1. Extract all the events from the cctv\_feed logs. How many logs were captured associated with the successful login? `642`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736622094716/96ad42a9-2d27-4e58-b06b-5b4ea32125d6.png align="center")
     
-2. What is the Session\_id associated with the attacker who deleted the recording? `rij5uu4gt204q0d3eb7jj86okt`  
+2. What is the Session\_id associated with the attacker who deleted the recording? `rij5uu4gt204q0d3eb7jj86okt`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736622253802/91f18759-639b-47d7-8115-96abab356e20.png align="center")
     
-3. What is the name of the attacker found in the logs, who deleted the CCTV footage? `mmalware`  
+3. What is the name of the attacker found in the logs, who deleted the CCTV footage? `mmalware`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736622329029/e36a768e-d9de-4f3e-adcc-6f018fb57595.png align="center")
     
