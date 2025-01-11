@@ -8,7 +8,7 @@ tags: tryhackme, write-up, xxe, portswigger, adventofcyber2024
 
 ---
 
-In this article, we’ll cover the Log Analysis. Even if I wanted to go, their vulnerabilities wouldn't allow me to write up the log analysis as the Day 5 challenge of the Advent of Cyber event challenge. It was interesting to navigate Web Security for an e-commerce gifting site using [PortSwigger’s XML external entity (XXE) injection](https://portswigger.net/web-security/xxe). We’re still at Wareville for SOC-mas!
+In this article, we’ll cover the XXE - SOC-mas XX-what-ee? write-up as the Day 5 challenge of the Advent of Cyber event challenge. It was interesting to navigate Web Security for an e-commerce gifting site using [PortSwigger’s XML external entity (XXE) injection](https://portswigger.net/web-security/xxe). We’re still at Wareville for SOC-mas!
 
 1. What is the flag discovered after navigating through the wishes? `THM{Brut3f0rc1n6_mY_w4y}`
     
