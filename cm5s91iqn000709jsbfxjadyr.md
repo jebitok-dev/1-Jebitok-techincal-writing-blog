@@ -3,6 +3,7 @@ title: "The Advent of Cyber: Day 9: GRC - Nine o'clock, make GRC fun, tell no on
 datePublished: Sat Jan 11 2025 13:56:02 GMT+0000 (Coordinated Universal Time)
 cuid: cm5s91iqn000709jsbfxjadyr
 slug: the-advent-of-cyber-day-9-grc-nine-oclock-make-grc-fun-tell-no-one-tryhackme
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1736603934254/1bd08014-a375-4d8e-bc32-e78f4fc9c996.png
 tags: tryhackme, write-up, grc, adventofcyber2024
 
 ---
