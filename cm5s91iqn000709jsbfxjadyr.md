@@ -16,10 +16,6 @@ Governance, Risk, and Compliance (GRC) plays a crucial role in any organization 
 
 ![a picture of an organisation with three rings expanding, showing the acronym GRC with a padlock](https://assets.tryhackme.com/additional/aoc2024/gifs/da9-1.gif align="left")
 
-  
-
-  
-
 Let's take a look at some examples in the financial sector:
 
 * **Reserve Bank Regulations:** In most countries, banks have to adhere to the security regulations set forth by the country's reserve bank. This ensures that each bank adheres to a minimum security level to protect the funds and information of their customers.
@@ -39,16 +35,14 @@ Governance is the function that creates the framework that an organization uses 
 
 ![Inspection glass of risk](https://tryhackme-images.s3.amazonaws.com/user-uploads/6093e17fa004d20049b6933e/room-content/6093e17fa004d20049b6933e-1730218854403.png align="left")
 
-**Risk  
-**
+\*\*Risk  
+\*\*
 
 Risk is the function that helps to identify, assess, quantify, and mitigate risk to the organization's IT assets. Risk helps the organization understand potential threats and vulnerabilities and the impact that they could have if a threat actor were to execute or exploit them. By simply turning on a computer, an organization has some level of risk of a cyber attack. The risk function is important to help reduce the overall risk to an acceptable level and develop contingency plans in the event of a cyber-attack where risk is realized.
 
 **Compliance**
 
 ![Clipboard of compliance](https://tryhackme-images.s3.amazonaws.com/user-uploads/6093e17fa004d20049b6933e/room-content/6093e17fa004d20049b6933e-1730218854574.png align="left")
-
- 
 
 Compliance is the function that ensures that the organization adheres to all external legal, regulatory, and industry standards. For example, adhering to the [GDPR law](https://gdpr-info.eu/) or aligning the organization's security to an industry standard such as NIST or ISO 27001.
 
@@ -66,11 +60,9 @@ For McSkidy and Glitch, assessing the risks of each eDiscovery company helps the
 
 ## **Performing a Risk Assessment**
 
-﻿Every business's main goal is to generate revenues and profits. For most businesses, cyber security does not directly contribute to revenue generation or profit maximisation. Businesses decide to spend part of their hard-earned revenue on cyber security to avoid the risk of revenue or reputation loss resulting from a cyber threat. Businesses often take these steps to achieve this goal. We will now work through the process of completing a risk register. A risk register tracks the progress of risk mitigation and all open risks. An example of such a risk register is shown in the animation below. Let's take a look at the steps required to add risks to the risk register.
+Every business's main goal is to generate revenues and profits. For most businesses, cyber security does not directly contribute to revenue generation or profit maximisation. Businesses decide to spend part of their hard-earned revenue on cyber security to avoid the risk of revenue or reputation loss resulting from a cyber threat. Businesses often take these steps to achieve this goal. We will now work through the process of completing a risk register. A risk register tracks the progress of risk mitigation and all open risks. An example of such a risk register is shown in the animation below. Let's take a look at the steps required to add risks to the risk register.
 
 ![an animation of filling out a risk assessment form](https://assets.tryhackme.com/additional/aoc2024/gifs/day9-2.gif align="left")
-
-  
 
 **Identification of Risks**
 
@@ -85,15 +77,15 @@ To assess risk, we must first identify the factors that can cause revenue or rep
 * A system for which support has ended by the vendor and it is still in production.
     
 
-An organization might identify several other risks in addition to these examples. However, in addition to just identifying risks, these risks also need to be quantified. After all, the likelihood of materializing a risk on a cordoned-off and isolated server differs greatly from that of a public-facing server hosting a web frontend. Similarly, the impact of a risk materializing on a crown jewel, such as a main database server containing confidential information, differs greatly from that of a development server with dummy data. 
+An organization might identify several other risks in addition to these examples. However, in addition to just identifying risks, these risks also need to be quantified. After all, the likelihood of materializing a risk on a cordoned-off and isolated server differs greatly from that of a public-facing server hosting a web frontend. Similarly, the impact of a risk materializing on a crown jewel, such as a main database server containing confidential information, differs greatly from that of a development server with dummy data.
 
-﻿**Assigning Likelihood to Each Risk**
+**Assigning Likelihood to Each Risk**
 
-﻿To quantify risk, we need to identify how likely or probable it is that the risk will materialize.
+To quantify risk, we need to identify how likely or probable it is that the risk will materialize.
 
 ![Choosing likelihood for each risk](https://tryhackme-images.s3.amazonaws.com/user-uploads/6093e17fa004d20049b6933e/room-content/6093e17fa004d20049b6933e-1730225302945.png align="left")
 
- We can then assign a number to quantify this likelihood. This number is often on a scale of 1 to 5. The exact scale differs from organization to organization and from framework to framework. Likelihood can also be called the probability of materialization of a risk. An example scale for likelihood can be:
+We can then assign a number to quantify this likelihood. This number is often on a scale of 1 to 5. The exact scale differs from organization to organization and from framework to framework. Likelihood can also be called the probability of materialization of a risk. An example scale for likelihood can be:
 
 1. **Improbable:** So unlikely that it might never happen.
     
@@ -114,7 +106,7 @@ Once we have identified the risks and the likelihood of a risk, the next step is
 
 ![Assigning a impact rating to risks](https://tryhackme-images.s3.amazonaws.com/user-uploads/6093e17fa004d20049b6933e/room-content/6093e17fa004d20049b6933e-1732025443659.png align="left")
 
- Different organizations calculate impact in different ways. Some organizations might use the CVSS scoring to calculate the impact of risk; others might use their own rating derived from the Confidentiality, Integrity, and Availability of a certain asset, and others might base it on the severity categorization of the incidents. Similar to likelihood, we also quantify impact, often on a scale of 1 to 5. An example scale of impact can be based on the following definitions.
+Different organizations calculate impact in different ways. Some organizations might use the CVSS scoring to calculate the impact of risk; others might use their own rating derived from the Confidentiality, Integrity, and Availability of a certain asset, and others might base it on the severity categorization of the incidents. Similar to likelihood, we also quantify impact, often on a scale of 1 to 5. An example scale of impact can be based on the following definitions.
 
 1. **Informational:** Very low impact, almost non-existent.
     
@@ -127,14 +119,14 @@ Once we have identified the risks and the likelihood of a risk, the next step is
 5. **Critical:** Posing an existential threat to the organization.
     
 
-**Risk Ownership  
-**
+\*\*Risk Ownership  
+\*\*
 
 The last step to performing a risk assessment is to decide what to do with the risks that were found. We can start by performing some calculations on the risk itself. The simplest calculation takes the likelihood of the risk and multiplies it with the impact of the risk to get a score.
 
 ![Tagging an owner for the risk](https://tryhackme-images.s3.amazonaws.com/user-uploads/6093e17fa004d20049b6933e/room-content/6093e17fa004d20049b6933e-1730225302939.png align="left")
 
- Some risk registers make use of more advanced rating systems such as DREAD. Assigning scores to the risks helps organizations prioritize which risks should be remediated first.  
+Some risk registers make use of more advanced rating systems such as DREAD. Assigning scores to the risks helps organizations prioritize which risks should be remediated first.
 
 While you may think the simplest answer is to secure the system so there is no risk, in real life, it isn't that simple. Implementing more security costs more money, and it doesn't help if we spend more money on security than what we risk losing if we leave open the risk.
 
@@ -154,7 +146,7 @@ For example, if a company finds that its software is outdated, it can prioritize
     
 * Direct resources to the most important areas.
     
-* Stay compliant with security rules and regulations.  
+* Stay compliant with security rules and regulations.
     
 
 **Why Do Companies Do Risk Assessments of Third Parties?**
@@ -167,7 +159,7 @@ Let's make it simple: McSkidy and Glitch want to make sure that whichever eDisco
     
 * Follow data protection rules.
     
-* Align with the security standards that McSkidy and Glitch have in place.  
+* Align with the security standards that McSkidy and Glitch have in place.
     
 
 By doing a third-party risk assessment, McSkidy and Glitch are reducing potential supply chain risks - making sure the investigation doesn't run into trouble because of a weak security link in the chain. In order to do this, McSkidy has to create a risk assessment that can be sent to potential third parties. Based on the answers provided by the third parties, McSkidy can then make an informed decision on which third party would be best!
@@ -176,7 +168,7 @@ By doing a third-party risk assessment, McSkidy and Glitch are reducing potentia
 
 1. What does GRC stand for? `Governance, Risk, and Compliance`
     
-2. What is the flag you receive after performing the risk assessment? `THM{R15K_M4N4G3D}`  
+2. What is the flag you receive after performing the risk assessment? `THM{R15K_M4N4G3D}`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736602708053/42f014ba-d300-4b70-9d89-c965e22f2e41.png align="center")
     
@@ -188,7 +180,7 @@ By doing a third-party risk assessment, McSkidy and Glitch are reducing potentia
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736602893468/c98a9bcd-714d-4cdf-8758-0a273c2553b5.png align="center")
     
-3. If you enjoyed this task, feel free to check out the [Risk Ma](https://tryhackme.com/r/room/seriskmanagement)[nagement room.](https://tryhackme.com/r/room/seriskmanagement)
+3. If you enjoyed this task, feel free to check out the [Risk Management room.](https://tryhackme.com/r/room/seriskmanagement)
     
 
-Thank [you for reading](https://tryhackme.com/r/room/seriskmanagement) [this article. P](https://tryhackme.com/r/room/seriskmanagement)lease leave a comment with your thoughts, areas for i[mprovement, oth](https://tryhackme.com/r/room/seriskmanagement)e[r suggestions,](https://tryhackme.com/r/room/seriskmanagement) and questions. Stay secure until the next one!
+Thank you for reading this article. Please leave a comment with your thoughts, areas for improvement, other suggestions, and questions. Stay secure until the next one!
