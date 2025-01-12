@@ -8,7 +8,7 @@ tags: kubernetes, tryhackme, write-up, dfir, adventofcyber2024
 
 ---
 
-In this article, we’ll cover Kubernetes DFIR - It's because I'm kubed, isn't it? write-up as the Day 21 challenge of the Advent of Cyber event challenge. It involved learning about Kubernetes in relation to Digital Forensics and Incident Response (DFIR). We’re still at Wareville for SOC-mas!
+In this article, we’ll cover Kubernetes DFIR - It's because I'm kubed, isn't it? write-up as the Day 22 challenge of the Advent of Cyber event challenge. It involved learning about Kubernetes in relation to Digital Forensics and Incident Response (DFIR). We’re still at Wareville for SOC-mas!
 
 ## **Kubernetes Explained**
 
@@ -218,7 +218,7 @@ ubuntu@tryhackme:~/dfir_artefacts$ cat docker-registry-logs.log | grep "10.10.13
 
 This is not good! It means that Mayor Malware could push a new version of our image! This would explain how the webshell made its way into the image, since Mayor Malware pulled the image, made malicious updates, and then pushed this compromised image back to the registry! Use the information to answer questions 4 through 6 at the bottom of the task. Now that we know Mayor Malware had access to the credentials of the docker registry, we need to learn how he could have gained access to them. We use these credentials in our Kubernetes cluster to read the image from the registry, so let's see what could have happened to disclose them!
 
-Okay, so it looks like the attack happened via an authenticated docker registry push. Now, it's time to return to our Kubernetes environment and determine how this was possible. 
+Okay, so it looks like the attack happened via an authenticated docker registry push. Now, it's time to return to our Kubernetes environment and determine how this was possible.
 
 McSkidy was made aware that Mayor Malware was given user access to the naughty or nice Kubernetes environment but was assured by the DevSecOps team that he wouldn't have sufficient permissions to view secrets, etc. The first thing we should do is make sure this is the case. To do this, McSkidy decides to check what role was assigned to the mayor. She first checks the role bindings (binds a role to a user):
 
@@ -249,7 +249,7 @@ Subjects:
   User  mayor-malware
 ```
 
-From the output, she could see that there is a role "mayor-user" that is bound to the user "mayor-malware". McSkidy then checked this role to see what permissions it has (and therefore Mayor Malware had): 
+From the output, she could see that there is a role "mayor-user" that is bound to the user "mayor-malware". McSkidy then checked this role to see what permissions it has (and therefore Mayor Malware had):
 
 Describe Role
 
@@ -267,7 +267,7 @@ PolicyRule:
   pods                                    []                 []              [get list watch]
 ```
 
-The output here tells McSkidy something very important. A lot of the permissions listed here are as you would expect for a non-admin user in a Kubernetes environment, all of those except for the permissions associated with "pods/exec". Exec allows the user to shell into the containers running within a pod. This gives McSkidy an idea of what Mayor Malware might have done. To confirm her suspicious, she checks the audit logs for Mayor Malware's activity: 
+The output here tells McSkidy something very important. A lot of the permissions listed here are as you would expect for a non-admin user in a Kubernetes environment, all of those except for the permissions associated with "pods/exec". Exec allows the user to shell into the containers running within a pod. This gives McSkidy an idea of what Mayor Malware might have done. To confirm her suspicious, she checks the audit logs for Mayor Malware's activity:
 
 `cat audit.log | grep --color=always '"user":{"username":"mayor-malware"' | grep --color=always '"resource"' | grep --color=always '"verb"'`
 
@@ -318,7 +318,7 @@ ubuntu@tryhackme:~/dfir_artefacts$ cat audit.log | grep --color=always '"user":{
 --- removed for brevity ---
 ```
 
-Whilst running the previous "get roles" command, Mayor Malware will have found a role named "job-runner". These logs tell us that Mayor Malware then described this role, which would have given him key pieces of information regarding the role. Most importantly for our investigation, it would have told him this role has secret read access. 
+Whilst running the previous "get roles" command, Mayor Malware will have found a role named "job-runner". These logs tell us that Mayor Malware then described this role, which would have given him key pieces of information regarding the role. Most importantly for our investigation, it would have told him this role has secret read access.
 
 **Get Rolebindings**
 
@@ -336,8 +336,6 @@ ubuntu@tryhackme:~/dfir_artefacts$ cat audit.log | grep --color=always '"user":{
 
 Now, knowing this role can view secrets, Mayor Malware tried to find its role binding to see what was using this role.
 
-  
-
 **Describe Rolebinding**
 
 Terminal
@@ -353,8 +351,6 @@ ubuntu@tryhackme:~/dfir_artefacts$ cat audit.log | grep --color=always '"user":{
 ```
 
 After seeing a role binding named "job-runner-binding", Mayor Malware described it and found out this role is bound to a service account named "job-runner-sa" (aka this service account has permission to view secrets)
-
-  
 
 **Get Pods**
 
@@ -372,8 +368,6 @@ ubuntu@tryhackme:~/dfir_artefacts$ cat audit.log | grep --color=always '"user":{
 
 Here, we can see that Mayor Malware, now armed with the knowledge that a service account has the permissions he needs, lists all of the pods running in the Wareville namespace with a kubectl get pods command.
 
-  
-
 **Describe Pod**
 
 Terminal
@@ -389,8 +383,6 @@ ubuntu@tryhackme:~/dfir_artefacts$ cat audit.log | grep --color=always '"user":{
 ```
 
 Mayor Malware describes the pod as a "morality-checker" he then would have found out that this pod runs with the job-runner-sa service account attached. Meaning that if he were able to gain access to this pod, he would be able to gain secret read access.
-
-  
 
 **Exec**
 
@@ -450,7 +442,7 @@ Shaking her head, McSkidy then confirms that the docker registry pull password i
     
 6. At what time is the updated malicious image pushed to the registry? `29/Oct/2024:12:34:28 +0000`
     
-7. What is the value stored in the "pull-creds" secret? `{"auths":{"http://docker-registry.nicetown.loc:5000":{"username":"mr.nice","password":"Mr.N4ughty","auth":"bXIubmljZTpNci5ONHVnaHR5"}}}`  
+7. What is the value stored in the "pull-creds" secret? `{"auths":{"http://docker-registry.nicetown.loc:5000":{"username":"mr.nice","password":"Mr.N4ughty","auth":"bXIubmljZTpNci5ONHVnaHR5"}}}`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736686838539/115b520b-197c-4ad2-8e82-de8762654b9d.png align="center")
     
