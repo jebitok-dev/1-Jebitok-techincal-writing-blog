@@ -178,7 +178,7 @@ Now, you have gained all the necessary knowledge to tackle the questions below a
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736689597601/fa7c54a7-cf01-4e0d-8b51-d9222a2c382f.png align="center")
     
-3. To learn more about cryptography, we recommend the [Cryptography mod](https://tryhackme.com/module/cryptography-101)ule. If you want to practice more hash cracking, pleas[e consider t](https://tryhackme.com/module/cryptography-101)he [John](https://tryhackme.com/r/room/johntheripperbasics) [the Ripper:](https://tryhackme.com/module/cryptography-101) [The Basics room.](https://tryhackme.com/r/room/johntheripperbasics)
+3. To learn more about cryptography, we recommend the Cryptography module. If you want to practice more hash cracking, please consider the John the Ripper: The Basics room.
     
 
-[Thank y](https://tryhackme.com/r/room/johntheripperbasics)ou for readin[g this artic](https://tryhackme.com/module/cryptography-101)le. Plea[se leave a c](https://tryhackme.com/module/cryptography-101)[omment with your thoughts, areas for impr](https://tryhackme.com/r/room/johntheripperbasics)ovement, other suggestions, [and questions. Stay secure until the next one!](https://tryhackme.com/r/room/johntheripperbasics)
+Thank you for reading this article. Please leave a comment with your thoughts, areas for improvement, other suggestions, and questions. Stay secure until the next one!
