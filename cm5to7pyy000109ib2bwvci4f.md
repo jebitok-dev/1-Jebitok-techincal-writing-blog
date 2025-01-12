@@ -8,7 +8,7 @@ tags: hashing, tryhackme, write-up, john-the-ripper, adventofcyber2024
 
 ---
 
-In this article, we’ll cover Kubernetes DFIR - It's because I'm kubed, isn't it? write-up as the Day 22 challenge of the Advent of Cyber event challenge. It involved hash functions and hash values, saving hashed passwords, cracking hashes, and finding the password of a password-protected document using tools like [JohnRipper](https://www.openwall.com/john/). We’re still at Wareville for SOC-mas!
+In this article, we’ll cover Hash cracking - You wanna know what happens to your hashes? write-up as the Day 23 challenge of the Advent of Cyber event challenge. It involved hash functions and hash values, saving hashed passwords, cracking hashes, and finding the password of a password-protected document using tools like [JohnRipper](https://www.openwall.com/john/). We’re still at Wareville for SOC-mas!
 
 **Data Breach and Hash Values**
 
@@ -170,7 +170,7 @@ And save it as `wordlist.txt`. We have saved the above words in the `/home/use
 
 Now, you have gained all the necessary knowledge to tackle the questions below and uncover what Mayor Malware has been hiding in his password-protected document.
 
-1. Crack the hash value stored in `hash1.txt`. What was the password? `fluffycat12`  
+1. Crack the hash value stored in `hash1.txt`. What was the password? `fluffycat12`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736689576165/a9a6fcad-32ca-47fd-bcaf-bcc425545090.png align="center")
     
@@ -178,7 +178,7 @@ Now, you have gained all the necessary knowledge to tackle the questions below a
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736689597601/fa7c54a7-cf01-4e0d-8b51-d9222a2c382f.png align="center")
     
-3. To learn more about cryptography, we recommend the [Cryp](https://tryhackme.com/module/cryptography-101)[tography mod](https://tryhackme.com/module/cryptography-101)ule. If you want to practice more hash cracking, pleas[e consider t](https://tryhackme.com/module/cryptography-101)he [John](https://tryhackme.com/r/room/johntheripperbasics) [the Ripper:](https://tryhackme.com/module/cryptography-101) [Th](https://tryhackme.com/r/room/johntheripperbasics)[e Basics room.](https://tryhackme.com/r/room/johntheripperbasics)
+3. To learn more about cryptography, we recommend the [Cryptography mod](https://tryhackme.com/module/cryptography-101)ule. If you want to practice more hash cracking, pleas[e consider t](https://tryhackme.com/module/cryptography-101)he [John](https://tryhackme.com/r/room/johntheripperbasics) [the Ripper:](https://tryhackme.com/module/cryptography-101) [The Basics room.](https://tryhackme.com/r/room/johntheripperbasics)
     
 
 [Thank y](https://tryhackme.com/r/room/johntheripperbasics)ou for readin[g this artic](https://tryhackme.com/module/cryptography-101)le. Plea[se leave a c](https://tryhackme.com/module/cryptography-101)[omment with your thoughts, areas for impr](https://tryhackme.com/r/room/johntheripperbasics)ovement, other suggestions, [and questions. Stay secure until the next one!](https://tryhackme.com/r/room/johntheripperbasics)
