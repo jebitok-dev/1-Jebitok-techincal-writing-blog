@@ -10,10 +10,10 @@ tags: osint, tryhackme, write-up, ffuf, subdomain-enumeration, sublist3r
 
 This article will cover the [Subdomain Enumeration](https://tryhackme.com/room/subdomainenumeration) write-up under the Web Fundamentals on THM.
 
-Subdomain enumeration is the process of finding valid subdomains for a domain, but why do we do this? We do this to expand our attack surface to try and discover more potential points of vulnerability.  
-  
-We will explore three different subdomain enumeration methods: Brute Force, OSINT (Open-Source Intelligence), and Virtual Host.  
-  
+Subdomain enumeration is the process of finding valid subdomains for a domain, but why do we do this? We do this to expand our attack surface to try and discover more potential points of vulnerability.
+
+We will explore three different subdomain enumeration methods: Brute Force, OSINT (Open-Source Intelligence), and Virtual Host.
+
 Start the machine and then move on to the next task.
 
 **Answer the questions below**
@@ -35,8 +35,8 @@ Go to [crt.sh](https://crt.sh/) and search for the domain name **tryhackme.com**
 
 **Answer the questions below**
 
-1. What domain was logged on crt.sh on 2020-12-26? `store.tryhackme.com`  
-      
+1. What domain was logged on crt.sh on 2020-12-26? `store.tryhackme.com`
+    
     visit the provided date and check the given date, and you’ll find the domain
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1738721638963/42bbe16c-e508-42ef-94c4-2eb8b6a4ed3b.png align="center")
@@ -46,7 +46,7 @@ Go to [crt.sh](https://crt.sh/) and search for the domain name **tryhackme.com**
 
 **Search Engines**
 
-Search engines contain trillions of links to more than a billion websites, which can be an excellent resource for finding new subdomains. Using advanced search methods on websites like Google, such as the site: filter, can narrow the search results. For example, `site:*.domain.com -site:www.domain.com` would only contain results leading to the domain name domain.com but exclude any links to www.domain.com; therefore, it shows us only subdomain names belonging to domain.com.  
+Search engines contain trillions of links to more than a billion websites, which can be an excellent resource for finding new subdomains. Using advanced search methods on websites like Google, such as the site: filter, can narrow the search results. For example, `site:*.domain.com -site:www.domain.com` would only contain results leading to the domain name domain.com but exclude any links to www.domain.com; therefore, it shows us only subdomain names belonging to domain.com.
 
 Go to [Google](https://www.google.com/) and use the search term `site:*.tryhackme.com -site:www.tryhackme.com`, which should reveal a subdomain for tryhackme.com; use that subdomain to answer the question below.
 
@@ -61,8 +61,8 @@ Bruteforce DNS (Domain Name System) enumeration is the method of trying tens, hu
 
 **Answer the questions below**
 
-1. What is the first subdomain found with the dnsrecon tool? `api.acmeitsupport.thm`  
-      
+1. What is the first subdomain found with the dnsrecon tool? `api.acmeitsupport.thm`
+    
     using the `dnsrecon` command we’ll find the subdomains and we’ll pick the first as expected
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1738721780932/98301de1-dfcf-4f61-90bb-7d7b01e81999.png align="center")
@@ -76,8 +76,8 @@ To speed up the process of OSINT subdomain discovery, we can automate the above 
 
 **Answer the questions below**
 
-1. What is the first subdomain discovered by sublist3r? `web55.acmeitsupport.thm`  
-      
+1. What is the first subdomain discovered by sublist3r? `web55.acmeitsupport.thm`
+    
     using the sublist3r we’ll identify the subdomain as shown on the images below:
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1738721900568/6b249d18-afda-4afe-9e41-d717cc4c24f6.png align="center")
@@ -85,17 +85,15 @@ To speed up the process of OSINT subdomain discovery, we can automate the above 
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1738721927562/cee62f4c-e689-4525-87bf-d46d12a9ac39.png align="center")
 
-##   
-  
 Virtual Hosts
 
-Some subdomains aren't always hosted in publically accessible DNS results, such as development versions of a web application or administration portals. Instead, the DNS record could be kept on a private DNS server or recorded on the developer's machines in their /etc/hosts file (or c:\\windows\\system32\\drivers\\etc\\hosts file for Windows users) which maps domain names to IP addresses. 
+Some subdomains aren't always hosted in publically accessible DNS results, such as development versions of a web application or administration portals. Instead, the DNS record could be kept on a private DNS server or recorded on the developer's machines in their /etc/hosts file (or c:\\windows\\system32\\drivers\\etc\\hosts file for Windows users) which maps domain names to IP addresses.
 
 Because web servers can host multiple websites from one server when a website is requested from a client, the server knows which website the client wants from the **Host** header. We can utilise this host header by making changes to it and monitoring the response to see if we've discovered a new website.
 
 Like with DNS Bruteforce, we can automate this process by using a wordlist of commonly used subdomains.
 
-Start an AttackBox and then try the following command against the Acme IT Support machine to try and discover a new subdomain.  
+Start an AttackBox and then try the following command against the Acme IT Support machine to try and discover a new subdomain.
 
 `ffuf`
 
@@ -119,15 +117,13 @@ The above command should have revealed two positive results that we haven't come
 
 **Answer the questions below**
 
-1. What is the first subdomain discovered? `delta`  
-      
+1. What is the first subdomain discovered? `delta`
+    
     using `ffuf` command we’re able to identify the answers to question 1 & 2
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1738722035307/79df6cc7-75c5-4617-8e3d-8906b2a2262f.png align="center")
     
 2. What is the second subdomain discovered? `yellow`
     
-
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1738722153633/cae6bec1-5fc2-4b1e-8bde-e98d906c3438.png align="center")
 
 Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the Lab THM challenges.
