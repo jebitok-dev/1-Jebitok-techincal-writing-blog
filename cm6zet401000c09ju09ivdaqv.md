@@ -4,6 +4,7 @@ title: "Introduction to Web Hacking: File Inclusion
 datePublished: Mon Feb 10 2025 18:51:33 GMT+0000 (Coordinated Universal Time)
 cuid: cm6zet401000c09ju09ivdaqv
 slug: introduction-to-web-hacking-file-inclusion-tryhackme
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1739213528039/9c08c402-a0e3-48ee-8ccd-e76a6fd746f2.png
 tags: tryhackme, write-up, file-inclusion
 
 ---
