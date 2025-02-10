@@ -10,8 +10,8 @@ tags: tryhackme, write-up, authentication-bypass, webhacking
 
 This article will cover the [Authentication Bypass](https://tryhackme.com/room/authenticationbypass) write-up under the Web Fundamentals on THM.
 
-In this room, we will learn about different wa[ys website authenticat](https://tryhackme.com/room/walkinganapplication)ion methods can be bypassed, defeated, or broken. These vulnerabilities can be some of the most critical as they often end in leaks of customers’ personal data.  
-  
+In this room, we will learn about different wa[ys website authenticat](https://tryhackme.com/room/walkinganapplication)ion methods can be bypassed, defeated, or broken. These vulnerabilities can be some of the most critical as they often end in leaks of customers’ personal data.
+
 Start the machine and then proceed to the next task.
 
 ## Username Enumeration
@@ -20,7 +20,7 @@ A helpful exercise to complete when trying to find authentication vulnerabilitie
 
 Website error messages are great resources for collating this information to build our list of valid usernames. We have a form to create a new user account if we go to the Acme IT Support website ([http://MACHINE\_IP/customers/signup](http://machine_ip/customers/signup)) signup page.
 
-If you try entering the username **admin** and fill in the other form fields with fake information, you'll see we get the error **An account with this username already exists**. We can use the existence of this error message to produce a list of valid usernames already signed up on the system by using the ffuf tool below. The `ffuf` tool uses a list of commonly used usernames to check against for any matches.  
+If you try entering the username **admin** and fill in the other form fields with fake information, you'll see we get the error **An account with this username already exists**. We can use the existence of this error message to produce a list of valid usernames already signed up on the system by using the ffuf tool below. The `ffuf` tool uses a list of commonly used usernames to check against for any matches.
 
 Username enumeration with `ffuf`
 
@@ -36,8 +36,8 @@ Create a file called `valid_usernames.txt` and add the usernames that you found
 
 **Answer the questions below**
 
-1. What is the username starting with si\*\*\* ? `simon`  
-      
+1. What is the username starting with si\*\*\* ? `simon`
+    
     running the `ffuf` command shown on the image below shows the available usernames, this will be able to answer the following questions based on the hinted names. Once you’ve accessed the usernames remember to create a file called `valid_usernames.txt` which will be relevant in the next challenge.
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1738723016653/7c7791ac-e537-44a9-a40b-38bc1559fc51.png align="center")
@@ -55,7 +55,7 @@ Using the valid\_usernames.txt file we generated in the previous task, we can no
 
 [A brute force attack](http://machine_ip/customers/login) is an automated process that tries a list of commonly used passwords against either a single username or, like in our case, a list of usernames.
 
-Whe[n running this command, make sure t](http://machine_ip/customers/login)he terminal is in the same directory as the valid\_usernames.txt file.  
+Whe[n running this command, make sure t](http://machine_ip/customers/login)he terminal is in the same directory as the valid\_usernames.txt file.
 
 Bruteforcing with ffuf
 
@@ -69,8 +69,8 @@ Running the above command will find a single working username and password combi
 
 **Answer the questions below**
 
-1. What is the valid username and password (format: username/password)? `steve/thunder`  
-      
+1. What is the valid username and password (format: username/password)? `steve/thunder`
+    
     In the previous challenge, we were able to access some usernames and we were supposed to save them into a file called `valid_usernames.txt`. In this step, we’ll be using the file in the `ffuf` command is shown in the image below which enables us to get the username and password of the given username `steve`. (remember the path of the `valid_usernames.txt` based on where you created it and where you’re running this command)
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1738723164347/681154aa-294e-4f42-8aab-e1e0e02fa765.png align="center")
@@ -84,10 +84,10 @@ Sometimes authentication processes contain logic flaws. A logic flaw is when the
 
 ![](https://tryhackme-images.s3.amazonaws.com/user-uploads/5efe36fb68daf465530ca761/room-content/58e63d7810ac4b23051e1dd4a24ef792.png align="left")
 
-**Logic Flaw Example  
-**
+\*\*Logic Flaw Example  
+\*\*
 
-The below mock code example checks to see whether the start of the path the client is visiting begins with /admin and if so, then further checks are made to see whether the client is, in fact, an admin. If the page doesn't begin with /admin, the page is shown to the client.  
+The below mock code example checks to see whether the start of the path the client is visiting begins with /admin and if so, then further checks are made to see whether the client is, in fact, an admin. If the page doesn't begin with /admin, the page is shown to the client.
 
 ```php
 if( url.substr(0,6) === '/admin') {
@@ -135,7 +135,7 @@ user@tryhackme$ curl 'http://MACHINE_IP/customers/reset?email=robert%40acmeitsup
 
 ![](https://tryhackme-images.s3.amazonaws.com/user-uploads/5efe36fb68daf465530ca761/room-content/3d97e3e37bf9e4db4f95f4f945a7e290.png align="center")
 
-For the next step, you'll need to create an account on the Acme IT support customer section, doing so gives you a unique email address that can be used to create support tickets. The email address is in the format of `{username}`**@customer.acmeitsupport.thm**  
+For the next step, you'll need to create an account on the Acme IT support customer section, doing so gives you a unique email address that can be used to create support tickets. The email address is in the format of `{username}`**@customer.acmeitsupport.thm**
 
 Now rerunning **Curl Request 2** but with your @acmeitsupport.thm in the email field you'll have a ticket created on your account which contains a link to log you in as Robert. Using Robert's account, you can view their support tickets and reveal a flag.
 
@@ -147,7 +147,7 @@ user@tryhackme:~$ curl 'http://MACHINE_IP/customers/reset?email=robert@acmeitsup
 
 **Answer the questions below**
 
-1. What is the flag from Robert's support ticket? `THM{AUTH_BYPASS_COMPLETE}`  
+1. What is the flag from Robert's support ticket? `THM{AUTH_BYPASS_COMPLETE}`
     
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1738723553159/840910ae-6980-42e0-a807-e81dff78310d.png align="center")
@@ -169,7 +169,7 @@ The contents of some cookies can be in plain text, and it is obvious what they d
 
 We see one cookie (logged\_in), which appears to control whether the user is currently logged in or not, and another (admin), which controls whether the visitor has admin privileges. Using this logic, if we were to change the contents of the cookies and make a request we'll be able to change our privileges.
 
-First, we'll start just by requesting the target page:  
+First, we'll start just by requesting the target page:
 
 Curl Request 1
 
@@ -179,7 +179,7 @@ user@tryhackme$ curl http://MACHINE_IP/cookie-test
 
 We can see we are returned a message of: **Not Logged In**
 
-Now we'll send another request with the logged\_in cookie set to true and the admin cookie set to false:  
+Now we'll send another request with the logged\_in cookie set to true and the admin cookie set to false:
 
 Curl Request 2
 
@@ -197,37 +197,41 @@ Curl Request 3
 user@tryhackme$ curl -H "Cookie: logged_in=true; admin=true" http://MACHINE_IP/cookie-test
 ```
 
-This returns the result: **Logged In As An Admin** as well as a flag which you can use to answer question one.  
+This returns the result: **Logged In As An Admin** as well as a flag which you can use to answer question one.
 
 **Hashing**
 
 Sometimes cookie values can look like a long string of random characters; these are called hashes which are an irreversible representation of the original text. Here are some examples that you may come across:
 
-<table><tbody><tr><td colspan="1" rowspan="1"><p><strong>Original String</strong></p></td><td colspan="1" rowspan="1"><p><strong>Hash Method</strong></p></td><td colspan="1" rowspan="1"><p><strong>Output</strong></p></td></tr><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>md5</p></td><td colspan="1" rowspan="1"><p>c4ca4238a0b923820dcc509a6f75849b</p></td></tr><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>sha-256</p></td><td colspan="1" rowspan="1"><p>6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b</p></td></tr><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>sha-512</p></td><td colspan="1" rowspan="1"><p>4dff4ea340f0a823f15d3f4f01ab62eae0e5da579ccb851f8db9dfe84c58b2b37b89903a740e1ee172da793a6e79d560e5f7f9bd058a12a280433ed6fa46510a</p></td></tr><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>sha1</p></td><td colspan="1" rowspan="1"><p>356a192b7913b04c54574d18c28d46e6395428ab</p></td></tr></tbody></table>
+| **Original String** | **Hash Method** | **Output** |
+| --- | --- | --- |
+| 1 | md5 | c4ca4238a0b923820dcc509a6f75849b |
+| 1 | sha-256 | 6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b |
+| 1 | sha-512 | 4dff4ea340f0a823f15d3f4f01ab62eae0e5da579ccb851f8db9dfe84c58b2b37b89903a740e1ee172da793a6e79d560e5f7f9bd058a12a280433ed6fa46510a |
+| 1 | sha1 | 356a192b7913b04c54574d18c28d46e6395428ab |
 
-You can see from the above table that the hash output from the same input string can significantly differ depending on the hash method in use. Even though the hash is irreversible, the same output is produced every time, which is helpful for us as services such as [https://crackstation.net/](https://crackstation.net/) keep databases of billions of hashes and their original strings.  
+You can see from the above table that the hash output from the same input string can significantly differ depending on the hash method in use. Even though the hash is irreversible, the same output is produced every time, which is helpful for us as services such as [https://crackstation.net/](https://crackstation.net/) keep databases of billions of hashes and their original strings.
 
 **Encoding**
 
-Encoding is similar to hashing in that it creates what would seem to be a random string of text, but in fact, the encoding is reversible. So it begs the question, what is the point in encoding? Encoding allows us to convert binary data into human-readable text that can be easily and safely transmitted over mediums that only support plain text ASCII characters.  
-  
+Encoding is similar to hashing in that it creates what would seem to be a random string of text, but in fact, the encoding is reversible. So it begs the question, what is the point in encoding? Encoding allows us to convert binary data into human-readable text that can be easily and safely transmitted over mediums that only support plain text ASCII characters.
+
 Common encoding types are base32 which converts binary data to the characters A-Z and 2-7, and base64 which converts using the characters a-z, A-Z, 0-9,+, / and the equals sign for padding.
 
-  
 Take the below data as an example which is set by the web server upon logging in:
 
-**Set-Cookie: session=eyJpZCI6MSwiYWRtaW4iOmZhbHNlfQ==; Max-Age=3600; Path=/  
-**
+\*\*Set-Cookie: session=eyJpZCI6MSwiYWRtaW4iOmZhbHNlfQ==; Max-Age=3600; Path=/  
+\*\*
 
 This string base64 decoded has the value of **{"id":1,"admin": false}** we can then encode this back to base64 encoded again but instead setting the admin value to true, which now gives us admin access.
 
 **Answer the questions below**
 
-1. What is the flag from changing the plain text cookie values? `THM{COOKIE_TAMPERING}`  
+1. What is the flag from changing the plain text cookie values? `THM{COOKIE_TAMPERING}`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1738723732062/1197b5a8-37e9-4504-8f74-8e8721daa8db.png align="center")
     
-2. What is the value of the md5 hash 3b2a1053e3270077456a79192070aa78? `463729`  
+2. What is the value of the md5 hash 3b2a1053e3270077456a79192070aa78? `463729`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1738723750112/e864e1c1-0b25-4a89-92bc-2e1dead01651.png align="center")
     
@@ -235,9 +239,9 @@ This string base64 decoded has the value of **{"id":1,"admin": false}** we can
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1738723774708/0bc34c23-eb1b-4118-a35d-1fda2afa574d.png align="center")
     
-4. Encode the following value using base64 {"id":1,"admin":true} `eyJpZCI6MSwiYWRtaW4iOnRydWV9`  
+4. Encode the following value using base64 {"id":1,"admin":true} `eyJpZCI6MSwiYWRtaW4iOnRydWV9`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1738723798929/da12bc7d-abf4-4682-a71d-8dfcb8a38f48.png align="center")
     
 
-Thank you for reading my article. Please l[eave any questions or comments on improving my learning journ](http://machine_ip/customers/login)ey and the Lab THM challenges.
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the Lab THM challenges.
