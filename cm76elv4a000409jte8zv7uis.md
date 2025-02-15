@@ -1,8 +1,8 @@
 ---
-title: "Web Hacking Fundamentals: Burp Suite - The Basics (TryHackMe)"
+title: "Web Fundamentals: Burp Suite - The Basics (TryHackMe)"
 datePublished: Sat Feb 15 2025 16:20:18 GMT+0000 (Coordinated Universal Time)
 cuid: cm76elv4a000409jte8zv7uis
-slug: web-hacking-fundamentals-burp-suite-the-basics-tryhackme
+slug: web-fundamentals-burp-suite-the-basics-tryhackme
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1739636298027/de5bdd2b-087f-4c95-8a6d-759c1656df94.png
 tags: tryhackme, burpsuite, write-up, webhacking
 
