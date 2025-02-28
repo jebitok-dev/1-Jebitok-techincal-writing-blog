@@ -8,7 +8,7 @@ tags: http, tryhackme, webfundamentals
 
 ---
 
-This article will cover the [**Burp Suite: Extensions**](https://tryhackme.com/room/burpsuiteextensions) [write-up under the We](https://tryhackme.com/room/burpsuiteextensions)b Fundamentals on THM.
+This article will cover the [HTTP in Detail](https://tryhackme.com/room/httpindetail) write-up under the Web Fundamentals on THM.
 
 ## What is HTTP(S)?
 
@@ -59,8 +59,8 @@ It's possible to make a request to a web server with just one line "**GET / HTTP
 
 But for a much richer web experience, you’ll need to send other data as well. This other data is sent in what is called headers, where headers contain extra information to give to the web server you’re communicating with, but we’ll go more into this in the Header task.
 
-**Example Request:  
-**
+\*\*Example Request:  
+\*\*
 
 ```http
 GET / HTTP/1.1
@@ -70,8 +70,6 @@ Host: tryhackme.com
 User-Agent: Mozilla/5.0 Firefox/87.0
 
 Referer: https://tryhackme.com/
-
- 
 ```
 
 To breakdown each line of this request:
@@ -147,7 +145,7 @@ HTTP methods are a way for the client to show their intended action when making 
 
 **GET Request**
 
-This is used for getting information from a web server.  
+This is used for getting information from a web server.
 
 **POST Request**
 
@@ -178,13 +176,29 @@ This is used for deleting information/records from a web server.
 
 In the previous task, you learnt that when a HTTP server responds, the first line always contains a status code informing the client of the outcome of their request and also potentially how to handle it. These status codes can be broken down into 5 different ranges:
 
-<table><tbody><tr><td colspan="1" rowspan="1"><p><strong>100-199 - Information Response</strong></p></td><td colspan="1" rowspan="1"><p>These are sent to tell the client the first part of their request has been accepted and they should continue sending the rest of their request. These codes are no longer very common.</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>200-299 - Success</strong></p></td><td colspan="1" rowspan="1"><p>This range of status codes is used to tell the client their request was successful.</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>300-399 - Redirection</strong></p></td><td colspan="1" rowspan="1"><p>These are used to redirect the client's request to another resource. This can be either to a different webpage or a different website altogether.</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>400-499 - Client Errors</strong></p></td><td colspan="1" rowspan="1"><p>Used to inform the client that there was an error with their request.</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>500-599 - Server Errors</strong></p></td><td colspan="1" rowspan="1"><p>This is reserved for errors happening on the server-side and usually indicate quite a major problem with the server handling the request.</p></td></tr></tbody></table>
+| **100-199 - Information Response** | These are sent to tell the client the first part of their request has been accepted and they should continue sending the rest of their request. These codes are no longer very common. |
+| --- | --- |
+| **200-299 - Success** | This range of status codes is used to tell the client their request was successful. |
+| **300-399 - Redirection** | These are used to redirect the client's request to another resource. This can be either to a different webpage or a different website altogether. |
+| **400-499 - Client Errors** | Used to inform the client that there was an error with their request. |
+| **500-599 - Server Errors** | This is reserved for errors happening on the server-side and usually indicate quite a major problem with the server handling the request. |
 
 **Common HTTP Status Codes:**
 
 There are a lot of different HTTP status codes and that's not including the fact that applications can even define their own, we'll go over the most common HTTP responses you are likely to come across:
 
-<table><tbody><tr><td colspan="1" rowspan="1"><p><strong>200 - OK</strong></p></td><td colspan="1" rowspan="1"><p>The request was completed successfully.</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>201 - Created</strong></p></td><td colspan="1" rowspan="1"><p>A resource has been created (for example a new user or new blog post).</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>301 - Moved Permanently</strong></p></td><td colspan="1" rowspan="1"><p>This redirects the client's browser to a new webpage or tells search engines that the page has moved somewhere else and to look there instead.</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>302 - Found</strong></p></td><td colspan="1" rowspan="1"><p>Similar to the above permanent redirect, but as the name suggests, this is only a temporary change and it may change again in the near future.</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>400 - Bad Request</strong></p></td><td colspan="1" rowspan="1"><p>This tells the browser that something was either wrong or missing in their request. This could sometimes be used if the web server resource that is being requested expected a certain parameter that the client didn't send.</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>401 - Not Authorised</strong></p></td><td colspan="1" rowspan="1"><p>You are not currently allowed to view this resource until you have authorised with the web application, most commonly with a username and password.</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>403 - Forbidden</strong></p></td><td colspan="1" rowspan="1"><p>You do not have permission to view this resource whether you are logged in or not.</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>405 - Method Not Allowed</strong></p></td><td colspan="1" rowspan="1"><p>The resource does not allow this method request, for example, you send a GET request to the resource /create-account when it was expecting a POST request instead.</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>404 - Page Not Found</strong></p></td><td colspan="1" rowspan="1"><p>The page/resource you requested does not exist.</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>500 - Internal Service Error</strong></p></td><td colspan="1" rowspan="1"><p>The server has encountered some kind of error with your request that it doesn't know how to handle properly.</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>503 - Service Unavailable</strong></p></td><td colspan="1" rowspan="1"><p>This server cannot handle your request as it's either overloaded or down for maintenance.</p></td></tr></tbody></table>
+| **200 - OK** | The request was completed successfully. |
+| --- | --- |
+| **201 - Created** | A resource has been created (for example a new user or new blog post). |
+| **301 - Moved Permanently** | This redirects the client's browser to a new webpage or tells search engines that the page has moved somewhere else and to look there instead. |
+| **302 - Found** | Similar to the above permanent redirect, but as the name suggests, this is only a temporary change and it may change again in the near future. |
+| **400 - Bad Request** | This tells the browser that something was either wrong or missing in their request. This could sometimes be used if the web server resource that is being requested expected a certain parameter that the client didn't send. |
+| **401 - Not Authorised** | You are not currently allowed to view this resource until you have authorised with the web application, most commonly with a username and password. |
+| **403 - Forbidden** | You do not have permission to view this resource whether you are logged in or not. |
+| **405 - Method Not Allowed** | The resource does not allow this method request, for example, you send a GET request to the resource /create-account when it was expecting a POST request instead. |
+| **404 - Page Not Found** | The page/resource you requested does not exist. |
+| **500 - Internal Service Error** | The server has encountered some kind of error with your request that it doesn't know how to handle properly. |
+| **503 - Service Unavailable** | This server cannot handle your request as it's either overloaded or down for maintenance. |
 
 Click the "View Site" button on the right to see what some of these HTTP status messages look like in a browser.
 
@@ -207,7 +221,7 @@ Although no headers are strictly required when making a HTTP request, you’ll f
 
 **Common Request Headers**
 
-﻿These are headers that are sent from the client (usually your browser) to the server.
+These are headers that are sent from the client (usually your browser) to the server.
 
 **Host:** Some web servers host multiple websites so by providing the host headers you can tell it which one you require, otherwise you'll just receive the default website for the server.
 
@@ -217,9 +231,7 @@ Although no headers are strictly required when making a HTTP request, you’ll f
 
 **Accept-Encoding:** Tells the web server what types of compression methods the browser supports so the data can be made smaller for transmitting over the internet.
 
-  
-
-**Cookie:** Data sent to the server to help remember your information (see cookies task for more information).  
+**Cookie:** Data sent to the server to help remember your information (see cookies task for more information).
 
 **Common Response Headers**
 
