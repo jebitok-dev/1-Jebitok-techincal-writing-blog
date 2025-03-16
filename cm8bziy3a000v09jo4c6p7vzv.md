@@ -3,6 +3,7 @@ title: "Web Fundamentals: OWASP Juice Shop (TryHackMe)"
 datePublished: Sun Mar 16 2025 18:44:27 GMT+0000 (Coordinated Universal Time)
 cuid: cm8bziy3a000v09jo4c6p7vzv
 slug: web-fundamentals-owasp-juice-shop-tryhackme
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1742151760929/d9ef445e-7f8b-4057-84ab-539ef631130e.png
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1742150617284/0010bf57-06d9-4b99-ba03-e68a96b8f8ee.png
 tags: owasp, xss, tryhackme, burpsuite, owasp-top-10
 
