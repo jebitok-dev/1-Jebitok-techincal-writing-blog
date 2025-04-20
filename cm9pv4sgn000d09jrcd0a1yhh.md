@@ -8,7 +8,7 @@ tags: nmap, network-security, tryhackme, write-up, gobuster
 
 ---
 
-This article will cover the [Net Sec Challenge](https://tryhackme.com/room/netsecchallenge) write-up under the Web Fundamentals on THM.
+This article will cover the [Net Sec Challenge](https://tryhackme.com/room/netsecchallenge) write-up under the **Jr Penetration Tester** on THM.
 
 ## Introduction
 
@@ -26,12 +26,12 @@ Launch the AttackBox and the target VM.
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1745164854191/92da9fc7-0600-44c3-abb6-e180acfb68b6.png align="center")
     
-2. There is an open port outside the common 1000 ports; it is above 10,000. What is it? `10021`  
+2. There is an open port outside the common 1000 ports; it is above 10,000. What is it? `10021`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1745164889414/8f0b9b53-7c25-4507-b707-b6a064948bc1.png align="center")
     
-3. How many TCP ports are open? `6`  
-      
+3. How many TCP ports are open? `6`
+    
     count the TCP ports showing here
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1745164917424/d61ce0fe-3b85-4083-a91d-3caeffd97d05.png align="center")
