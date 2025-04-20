@@ -8,7 +8,7 @@ tags: servers, network-security, tryhackme, protocols, write-up
 
 ---
 
-This article will cover the [Protocols and Servers](https://tryhackme.com/room/protocolsandservers) write-up under the Web Fundamentals on THM.
+This article will cover the [Protocols and Servers](https://tryhackme.com/room/protocolsandservers) write-up under the Jr Penetration Tester on THM.
 
 ## Introduction
 
@@ -400,13 +400,12 @@ Generally speaking, we don’t need to memorize SMTP commands. The console outpu
 
 ### Answer the questions below
 
-1. Using the AttackBox terminal, connect to the SMTP port of the target VM. What is the flag that you can get? `THM{5b31ddfc0c11d81eba776e983c35e9b5}`  
+1. Using the AttackBox terminal, connect to the SMTP port of the target VM. What is the flag that you can get? `THM{5b31ddfc0c11d81eba776e983c35e9b5}`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1745161022860/2f1a306b-f540-4a55-9794-4ca1ea053afc.png align="center")
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1745161435943/38bd75d6-f3c3-4773-ab60-4f77784f66a3.png align="center")
     
-    ##   
     Post Office Protocol 3 (POP3)
     
 
