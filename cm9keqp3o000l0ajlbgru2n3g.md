@@ -8,7 +8,7 @@ tags: nmap, network-security
 
 ---
 
-This article will cover the [Nmap Advanced Port Scans](https://tryhackme.com/room/nmap03) write-up under the Web Fundamentals on THM.
+This article will cover the [Nmap Advanced Port Scans](https://tryhackme.com/room/nmap03) write-up under the Jr Penetration Tester on THM.
 
 ## Introduction
 
@@ -78,8 +78,6 @@ Let’s start with the following three types of scans:
 * Xmas Scan
     
 
-  
-
 ### Null Scan
 
 The null scan does not set any flag; all six flag bits are set to zero. You can choose this scan using the `-sN` option. A TCP packet with no flags set will not trigger any response when it reaches an open port, as shown in the figure below. Therefore, from Nmap’s perspective, a lack of reply in a null scan indicates that either the port is open or a firewall is blocking the packet.
@@ -115,8 +113,6 @@ Nmap done: 1 IP address (1 host up) scanned in 96.50 seconds
 
 Note that many Nmap options require root privileges. Unless you are running Nmap as root, you need to use `sudo` as in the example above using the `-sN` option.
 
-  
-
 ### FIN Scan
 
 The FIN scan sends a TCP packet with the FIN flag set. You can choose this scan type using the `-sF` option. Similarly, no response will be sent if the TCP port is open. Again, Nmap cannot be sure if the port is open or if a firewall is blocking the traffic related to this TCP port.
@@ -149,8 +145,6 @@ MAC Address: 02:45:BF:8A:2D:6B (Unknown)
 
 Nmap done: 1 IP address (1 host up) scanned in 96.52 seconds
 ```
-
-  
 
 ### Xmas Scan
 
@@ -257,7 +251,6 @@ All 1000 scanned ports on MACHINE_IP are unfiltered
 MAC Address: 02:45:BF:8A:2D:6B (Unknown)
 
 Nmap done: 1 IP address (1 host up) scanned in 1.68 seconds
-      
 ```
 
 This kind of scan would be helpful if there is a firewall in front of the target. Consequently, based on which ACK packets resulted in responses, you will learn which ports were not blocked by the firewall. In other words, this type of scan is more suitable to discover firewall rule sets and configuration.
@@ -280,7 +273,6 @@ PORT    STATE      SERVICE
 MAC Address: 02:78:C0:D0:4E:E9 (Unknown)
 
 Nmap done: 1 IP address (1 host up) scanned in 15.45 seconds
-      
 ```
 
 ### **Window Scan**
@@ -303,7 +295,6 @@ All 1000 scanned ports on ip-10-10-252-27.eu-west-1.compute.internal (10.10.252.
 MAC Address: 02:45:BF:8A:2D:6B (Unknown)
 
 Nmap done: 1 IP address (1 host up) scanned in 1.60 seconds
-      
 ```
 
 However, as you would expect, if we repeat our TCP window scan against a server behind a firewall, we expect to get more satisfying results. In the console output shown below, the TCP window scan pointed that three ports are detected as closed. (This is in contrast with the ACK scan that labelled the same three ports as unfiltered.) Although we know that these three ports are not closed, we realize they responded differently, indicating that the firewall does not block them.
@@ -324,7 +315,6 @@ PORT    STATE  SERVICE
 MAC Address: 02:78:C0:D0:4E:E9 (Unknown)
 
 Nmap done: 1 IP address (1 host up) scanned in 14.84 seconds
-      
 ```
 
 ### **Custom Scan**
@@ -388,13 +378,9 @@ You can launch a decoy scan by specifying a specific or random IP address after 
 
 A firewall is a piece of software or hardware that permits packets to pass through or blocks them. It functions based on firewall rules, summarized as blocking all traffic with exceptions or allowing all traffic with exceptions. For instance, you might block all traffic to your server except those coming to your web server. A traditional firewall inspects, at least, the IP header and the transport layer header. A more sophisticated firewall would also try to examine the data carried by the transport layer.
 
-  
-
 ### IDS
 
 An intrusion detection system (IDS) inspects network packets for select behavioural patterns or specific content signatures. It raises an alert whenever a malicious rule is met. In addition to the IP header and transport layer header, an IDS would inspect the data contents in the transport layer and check if it matches any malicious patterns. How can you make it less likely for a traditional firewall/IDS to detect your Nmap activity? It is not easy to answer this; however, depending on the type of firewall/IDS, you might benefit from dividing the packet into smaller packets.
-
-  
 
 ### Fragmented Packets
 
@@ -486,7 +472,6 @@ MAC Address: 02:45:BF:8A:2D:6B (Unknown)
 Nmap done: 1 IP address (1 host up) scanned in 1.60 seconds
 ```
 
-  
 Pentester Terminal
 
 ```python
