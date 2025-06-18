@@ -485,7 +485,7 @@ This will result in a shell spawn with root privileges.
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1745204690623/c0152703-48af-4486-891c-536965df8738.png align="center")
     
-2. What is the content of the flag2.txt file? `THM-402028394`  
+2. What is the content of the flag2.txt file? `THM-402028394`
     
     with the help of [gtfobins](https://gtfobins.github.io/gtfobins/nano/), we’ll open nano on our terminal then `Ctrl+R` then `Ctrl+X`, you’ll this command `reset; sh 1>&0 2>&0`
     
@@ -729,15 +729,15 @@ In the odd event you find an existing script or task attached to a cron job, it 
 
 **You can launch the target machine and access it directly from your browser.**
 
-**Alternatively, you can access it over SSH with the low-privilege user credentials below:  
-**
+\*\*Alternatively, you can access it over SSH with the low-privilege user credentials below:  
+\*\*
 
 **Username: karen**
 
 **Password: Password1**
 
-If a folder for which your user has write permission is located in the path, you could potentially hijack an application to run a script. PATH in Linux is an environmental variable that tells the operating system where to search for executables. For any command that is not built into the shell or that is not defined with an absolute path, Linux will start searching in folders defined under PATH. (PATH is the environmental variable we're talking about here, path is the location of a file).  
-  
+If a folder for which your user has write permission is located in the path, you could potentially hijack an application to run a script. PATH in Linux is an environmental variable that tells the operating system where to search for executables. For any command that is not built into the shell or that is not defined with an absolute path, Linux will start searching in folders defined under PATH. (PATH is the environmental variable we're talking about here, path is the location of a file).
+
 Typically the PATH will look like this:
 
 ![](https://i.imgur.com/ch2Z4zp.png align="left")
@@ -834,28 +834,29 @@ We have given executable rights to our copy of /bin/bash, please note that at th
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1746554608020/80ed1c70-5b31-490e-9bd8-d7e888e40a29.png align="center")
     
 
-## Privilege Escalation: NFS  
+## Privilege Escalation: NFS
+
 **Note: Launch the target machine attached to this task to follow along.**
 
 **You can launch the target machine and access it directly from your browser.**
 
-**Alternatively, you can access it over SSH with the low-privilege user credentials below:  
-**
+\*\*Alternatively, you can access it over SSH with the low-privilege user credentials below:  
+\*\*
 
 **Username: karen**
 
 **Password: Password1**
 
-Privilege escalation vectors are not confined to internal access. Shared folders and remote management interfaces such as SSH and Telnet can also help you gain root access on the target system. Some cases will also require using both vectors, e.g. finding a root SSH private key on the target system and connecting via SSH with root privileges instead of trying to increase your current user’s privilege level.  
-  
-Another vector that is more relevant to CTFs and exams is a misconfigured network shell. This vector can sometimes be seen during penetration testing engagements when a network backup system is present.  
-  
+Privilege escalation vectors are not confined to internal access. Shared folders and remote management interfaces such as SSH and Telnet can also help you gain root access on the target system. Some cases will also require using both vectors, e.g. finding a root SSH private key on the target system and connecting via SSH with root privileges instead of trying to increase your current user’s privilege level.
+
+Another vector that is more relevant to CTFs and exams is a misconfigured network shell. This vector can sometimes be seen during penetration testing engagements when a network backup system is present.
+
 NFS (Network File Sharing) configuration is kept in the /etc/exports file. This file is created during the NFS server installation and can usually be read by users.
 
 ![](https://i.imgur.com/irDQTze.png align="left")
 
-The critical element for this privilege escalation vector is the “no\_root\_squash” option you can see above. By default, NFS will change the root user to nfsnobody and strip any file from operating with root privileges. If the “no\_root\_squash” option is present on a writable share, we can create an executable with SUID bit set and run it on the target system.  
-  
+The critical element for this privilege escalation vector is the “no\_root\_squash” option you can see above. By default, NFS will change the root user to nfsnobody and strip any file from operating with root privileges. If the “no\_root\_squash” option is present on a writable share, we can create an executable with SUID bit set and run it on the target system.
+
 We will start by enumerating mountable shares from our attacking machine.
 
 ![](https://i.imgur.com/CmXPDcv.png align="left")
@@ -893,8 +894,6 @@ Notice the nfs executable has the SUID bit set on the target system and runs wit
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1746555442616/e1d38665-d9b7-45c0-9fdc-49d14c17a54e.png align="center")
     
 
-## Capstone Challenge
-
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
+## Capstone Challenge  
 
 Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
