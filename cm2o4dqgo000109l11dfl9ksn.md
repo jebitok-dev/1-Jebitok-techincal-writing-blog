@@ -35,4 +35,4 @@ In this article, I will write a write-up for Networking Essentials that covers D
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1729823660114/5bb3462b-cb3a-4bfb-aec7-70050acba30c.png align="center")
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
