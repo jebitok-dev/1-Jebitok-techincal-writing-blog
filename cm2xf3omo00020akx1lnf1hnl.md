@@ -71,4 +71,4 @@ In this article, I will write a write-up for Web Hacking: Web Application Basics
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730363782358/0f76e9d4-90cf-4f3f-af4e-8ec1ed90da1c.png align="center")
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
