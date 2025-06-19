@@ -9,24 +9,34 @@ tags: programming-blogs, blockchain, solidity, smart-contracts
 
 ---
 
-This article covers smart contracts and solidity development which is a continuation of my [previous article](https://jebitok.hashnode.dev/blockchain-development-tools-ckyq32oy70atpans10nck4muu).
+This article covers smart contracts and solidity development, which is a continuation of my [previous article](https://jebitok.hashnode.dev/blockchain-development-tools-ckyq32oy70atpans10nck4muu).
 
 ## Solidity
-Solidity is the programming language for writing smart contracts on the Ethereum blockchain. The [solidity documentation](https://docs.soliditylang.org/en/v0.8.11/) helps you write and understand smart contracts. The syntax of solidity is almost like JavaScript. 
-### Difference between Solidity and JavaScript
-Solidity is:
-- hyper language i.e have to declare the type of all variables. 
-- compile language i.e after writing code you have to go through phases of compilation which will transform how it's high-level to low-level instructions that EVM will be able to understand. Unlike Javascript that you write code and run it on a browser or your devices. 
-- it's limited unlike Javascript allows string manipulation which is not possible with solidity.
-- it has a few lines of code 
-- can only run on the blockchain, unlike Javascript which runs on the browser and other environments.
-[Vyper](https://vyper.readthedocs.io/en/stable/) is the other programming language used to write smart contracts on Ethereum blockchain but solidity is common and supported by the [Truffle](https://trufflesuite.com/) framework.
 
-[Remix](https://remix.ethereum.org/) has autocompile feature 
+Solidity is the programming language for writing smart contracts on the Ethereum blockchain. The [solidity documentation](https://docs.soliditylang.org/en/v0.8.11/) helps you write and understand smart contracts. The syntax of Solidity is almost like JavaScript.
+
+### Difference between Solidity and JavaScript
+
+Solidity is:
+
+* Hyper language, i.e, has to declare the type of all variables.
+    
+* compile language, i.e, after writing code, you have to go through phases of compilation which will transform its high-level code to low-level instructions that EVM will be able to understand. Unlike JavaScript that you write code and run it on a browser or your devices.
+    
+* It's limited, unlike JavaScript allows string manipulation, which is not possible with Solidity.
+    
+* It has a few lines of code
+    
+* can only run on the blockchain, unlike JavaScript, which runs on the browser and other environments. [Vyper](https://vyper.readthedocs.io/en/stable/) is the other programming language used to write smart contracts on the Ethereum blockchain, but Solidity is common and supported by the [Truffle](https://trufflesuite.com/) framework.
+    
+
+[Remix](https://remix.ethereum.org/) has an autocompile feature
+
 ## Structure of solidity smart contract structure
+
 ### SPDX license identifiers
 
-Solidity from version 0.6.8 introduced the introduced SPDX license identifiers so developers can specify the [license 1.4k](https://spdx.org/licenses/) the contract uses. (e.g. OpenZeppelin Contracts use MIT license).
+Solidity from version 0.6.8 introduced SPDX license identifiers so developers can specify the [license 1.4k](https://spdx.org/licenses/) the contract uses. (e.g., OpenZeppelin Contracts use the MIT license).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -34,7 +44,7 @@ Solidity from version 0.6.8 introduced the introduced SPDX license identifiers s
 
 ## Pragma Statement
 
-made of pragma keyword, solidity, caret, plus version number, and semicolon. This ensures we use the correct version of solidity. Using caret means we can compile using any version of solidity equal to that version number specified or higher than it.
+made of pragma keyword, solidity, caret, plus version number, and semicolon. This ensures we use the correct version of Solidity. Using caret means we can compile using any version of solidity equal to that version number specified or higher than it.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -48,52 +58,59 @@ contract MyContract {
 
 ## Variable Types
 
-Contrary to Javascript, in solidity, you have to declare variables before you use them.
+Contrary to JavaScript, in Solidity, you have to declare variables before you use them.
 
 ### Fixed-size types:
 
-It occupies fixed size in memory
+It occupies a fixed size in memory
 
 *Examples:*
 
-- Boolean type:
+* Boolean type:
+    
 
 ```solidity
   // isReady: true or false;
 ```
 
-- unit 0: important when sending transaction of Ether or ERC20 token. It’s like number type in Javascript except that in solidity it can only hold positive numbers which are integers and not floating-point numbers
+* uint 0: Important when sending a transaction of Ether or an ERC20 token. It’s like a number type in JavaScript, except that in solidit,y it can only hold positive numbers, which are integers and not floating-point numbers
+    
 
 ```solidity
 uint 0;
 ```
 
-- address: recipient address and address of a smart contract
+* Address: the recipient address and the address of a smart contract
+    
 
 ```solidity
 address recipient;
 ```
 
-- Byte32 data: can hold any arbitrary binary data. It’s used to represent the string as with solidity it's hard to manipulate strings.  Byte32 is used to represent strings whose size doesn’t exceed 32bytes
+* Byte32 data: can hold any arbitrary binary data. It’s used to represent the string, as with Solidity, it's hard to manipulate strings. Byte32 is used to represent strings whose size doesn’t exceed 32 bytes
+    
 
 ### Variable size types:
 
 bit complex and can hold variable size in terms of length
 
-- *string*: a string of any length and unlike Javascript we don’t have any convenience function to manipulate strings. In many cases, people prefer to represent their string as byte32 and in other cases represented using bytes which is a generalization of bytes32 and used to represent binary data of no predefined length
+* *string*: a string of any length, and unlike JavaScript, we don’t have any convenience functions to manipulate strings. In many cases, people prefer to represent their string as byte32, and in other cases, represent using bytes, which is a generalization of bytes32 and used to represent binary data of no predefined length
+    
 
 ```solidity
 string name;
 bytes _data; //bytes
 ```
 
-- *arrays:* used to represent a collection of data. Contrary to Javascript in solidity arrays have to be arrays of the same type e.g array of integers, an array of byte32
+* *arrays:* used to represent a collection of data. Contrary to, JavaScript in solidity, arrays have to be arrays of the same type, e.g array of integers, an array of byte32
+    
 
 ```solidity
 uint[] amounts;
 ```
 
-- *mappings:* associative array they have keys that map into value. define the type of key and type of value mapped by each key and define the type of mappings. It's similar to Javascript objects and how they work.
+* *mappings:* associative array, they have keys that map to values. Define the type of key and type of value mapped by each key, and define the type of mappings. It's similar to JavaScript objects and how they work.
+    
 
 ```solidity
 mapping(uint => string) users;
@@ -101,9 +118,10 @@ mapping(uint => string) users;
 
 ### user-defined data:
 
-custom representation of data as commonly used in C language.
+custom representation of data as commonly used in the C language.
 
-- *struct:* you use struct keyword then name it in uppercase and you’ll define different fields. It’s similar to a Javascript object but here you can’t instantiate a container. Struct types are used a lot in solidity
+* *struct:* You use the struct keyword, then name it in uppercase, and you’ll define different fields. It’s similar to a JavaScript object, but here you can’t instantiate a container. Struct types are used a lot in Solidity
+    
 
 ```solidity
 struct User {
@@ -113,7 +131,8 @@ struct User {
 }
 ```
 
-- *Enum:* defined using enum keyword and after you name your struct. define different options. Used as sort of labels
+* *Enum:* defined using the enum keyword after you name your struct. Define different options. Used as a sort of label
+    
 
 ```solidity
 enum Color {
@@ -129,26 +148,26 @@ Built-in Variables
 msg.sender;
 ```
 
-this is the address of the sender of the transaction. It’s impossible to fake that due to the cryptography of Ethereum you’re sure that ```msg.sender``` is populated into the address of the sender.
+This is the address of the sender of the transaction. It’s impossible to fake that, due to the cryptography of Ethereum, you’re sure that `msg.sender` is populated into the address of the sender.
 
 ```solidity
 msg.value
 ```
 
-Value of Ether that was sent in a transaction. 
+The value of Ether that was sent in a transaction.
 
 ```solidity
 // Unix
 now block.timestamp
 ```
 
-[Timestamp](https://www.unixtimestamp.com/) in seconds i.e time elapsed since January 1st, 1970. Unix could reference the timestamp of a block from the time it was mined and it can be manipulated by miners.  
+[Timestamp](https://www.unixtimestamp.com/) in seconds, i.e, time elapsed since January 1st, 1970. Unix could reference the timestamp of a block from the time it was mined, and it can be manipulated by miners.
 
-You can check out [other built variables here](https://docs.soliditylang.org/en/v0.5.3/units-and-global-variables.html#block-and-transaction-properties) on solidity docs
+You can check out [other built-in variables here](https://docs.soliditylang.org/en/v0.5.3/units-and-global-variables.html#block-and-transaction-properties) on the solidity docs
 
 ### Constructor
 
-function, where you can run some initialization code inside a contract the code, is only run once when a smart contract is deployed. Some constructors can be defined with function keyword this was valid in lower versions of solidity.
+function, where you can run some initialization code inside a contract, the code is only run once when a smart contract is deployed. Some constructors can be defined with the function keyword; this was valid in earlier versions of Solidity.
 
 ```solidity
 constructor(uint _a) public {
@@ -158,7 +177,7 @@ constructor(uint _a) public {
 
 ### Declaring Functions
 
-Functions are helpful in manipulating data. 
+Functions help manipulate data.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -183,17 +202,22 @@ constructor MyContract {
 
 Function visibility keywords: they define who can have access to your function
 
-- Restrictive visibility keyword:
-    - *private:* function can only be called within the smart contract. The function is prefixed with private (just good practice not a must)
-    - *internal*: function is limited to be called within a smart contract and from a smart contract that inherits from the smart contract. Solidity allows inheritance mechanisms like in the C language.
-    - *External:* function is only called from the outside smart contract. Isn’t prefixed with _private.
-    - Public: can be called within and outside the smart contract. It is the most permissive function visibility keyword.
+* Restrictive visibility keyword:
     
-    The good rule of thumb for smart contracts is to give the least privilege to any entity first try private then internal, external, or lastly public. The greatest beginner mistake is using Public for all contracts.
+    * *Private:* A function can only be called within the smart contract. The function is prefixed with private (just good practice, not a must)
+        
+    * *internal*: function is limited to being called within a smart contract and from a smart contract that inherits from the smart contract. Solidity allows inheritance mechanisms like those in the C language.
+        
+    * *External:* The function is only called from the outside smart contract. Isn’t prefixed with \_private.
+        
+    * Public: can be called within and outside the smart contract. It is the most permissive function visibility keyword.
+        
+    
+    The good rule of thumb for smart contracts is to give the least privilege to any entity first, try private, then internal, external, or lastly public. The greatest beginner mistake is using Public for all contracts.
     
     ### Variable Visibility
     
-    declares integer variable with private and name i.e can be read within the same smart contract. 
+    declares an integer variable with private and name, i.e, can be read within the same smart contract.
     
     ```solidity
     // SPDX-License-Identifier: MIT
@@ -209,11 +233,14 @@ Function visibility keywords: they define who can have access to your function
     }
     ```
     
-    - a *private* variable is readable within the foo function. The level of restriction of private keywords is only valid with the EVM which is within Ethereum Blockchain which is a public blockchain that doesn’t store anything private as people will be able to access it on other platforms.
-    - *Internal*: can be read within smart contract and smart contract that inherits it but can’t be read in another smart contract.
-    - *public*: can be read from within and outside the smart contract. It’s not a must to declare a public keyword as solidity does it on default.
+    * A *private* variable is readable within the foo function. The level of restriction of private keywords is only valid with the EVM, which is within the Ethereum Blockchain, which is a public blockchain that doesn’t store anything private, as people will be able to access it on other platforms.
+        
+    * *Internal*: can be read within a smart contract and a smart contract that inherits it, but can’t be read in another smart contract.
+        
+    * *public*: can be read from within and outside the smart contract. It’s not a must to declare a public keyword, as Solidity does it by default.
+        
     
-    Use least possible privilege, try private then internal if doesn’t work go for the public keyword.
+    Use the least possible privilege, try private, then internal if it doesn’t work, go for the public keyword.
     
     ```solidity
     // SPDX-License-Identifier: MIT
@@ -235,11 +262,12 @@ Function visibility keywords: they define who can have access to your function
     
     ### Deploying & interacting with a smart contract in Remix
     
-    write a contract with on [remix](https://remix.ethereum.org/) editor, with pragma statement and the License from Open-Zeplin. Then compile using Remix’s auto compile feature and then deploy on Remix.
+    write a contract with on [Remix](https://remix.ethereum.org/) editor, with a pragma statement and the License from Open-Zeplin. Then compile using Remix’s auto-compile feature and then deploy on Remix.
     
-    ### write a contract with on remix editor, with pragma statement and the License from Open-Zeplin. Then compile using Remix’s auto compile feature and then deploy on Remix.
+    ### Write a contract with Remix Editor, with a pragma statement and the License from Open-Zeplin. Then compile using Remix’s auto-compile feature and then deploy on Remix.
     
-    - *if/ if else:* function is only executed if conditions are met
+    * `if/ if-else`*:* The function is only executed if conditions are met
+        
     
     ```solidity
     // SPDX license identifiers
@@ -262,7 +290,8 @@ Function visibility keywords: they define who can have access to your function
     }
     ```
     
-- for loop
+* `for loop`
+    
 
 ```solidity
  // SPDX license identifiers
@@ -279,7 +308,8 @@ contract MyContract {
 }
 ```
 
-- while loop: same as for loop, it allows you to go through a set of data or compilation at a certain amount of time. Can’t know how long you’ll need to run the code i.e infinite loop. Can use the *break* and *continue* conditions.
+* `while loop`: same as for loop, it allows you to go through a set of data or compilation at a certain amount of time. Can’t know how long you’ll need to run the code, i.e, infinite loop. Can use the *break* and *continue* conditions.
+    
 
 ```solidity
 // SPDX license identifiers
@@ -304,21 +334,26 @@ contract MyContract {
 
 ### Arrays
 
-declare and manipulate the array. Arrays allow us to represent the compilation of data. It must contain an array of the same type i.e integer 
+Declare and manipulate the array. Arrays allow us to represent the compilation of data. It must contain an array of the same type, i.e, integer
 
 *Storage Arrays*
 
-- Fixed-size array: specify the size of the array and lose control of the push method
-- Dynamic size Array(don’t specify the size of the array just add using push method)
+* Fixed-size array: specify the size of the array and lose control of the push method
+    
+* Dynamic size Array(don’t specify the size of the array, just add using the push method)
+    
 
 *Memory Arrays*
 
-- has to be declared. They are not safe in a contract since you can’t save data on them
+* has to be declared. They are not safe in a contract since you can’t save data on them
+    
 
-* Accept array arguments and return arrays from data*
+* Accept array arguments and return arrays from data\*
+    
 
 external takes call data, public & internal takes memory
-```
+
+```python
 // SPDX license identifiers
 
 pragma solidity ^0.8.0;
@@ -359,10 +394,12 @@ contract MyContract {
 	}
 }
 ```
+
 ### Mappings
 
-Declare, manipulate, CRUD elements, default, nesting mappings. Has keys & values like objects in Javascript. It’s possible to iterate through all entries of mappings so in solidity you combine arrays and mappings to represent collections of data.
-```
+Declare, manipulate, CRUD elements, default, nesting mappings. Has keys & values like objects in JavaScript. It’s possible to iterate through all entries of mappings, so in Solidity, you combine arrays and mappings to represent collections of data.
+
+```python
 // SPDX license identifiers
 
 pragma solidity ^0.8.0;
@@ -401,8 +438,10 @@ contract MyContract {
 
 ### Structs
 
-- structs are good to represent structured data in the smart contract. Define a template with different fields that represent your data then create several clones of the templates with the same field but different values. It’s the same with classes in Javascript except that in solidity struct can only define a field, not methods.
-- If you find yourself defining a lot of variables on your smart contract it is a sign that you should be using a struct.
+* structs are good to represent structured data in the smart contract. Define a template with different fields that represent your data, then create several clones of the template with the same fields but different values. It’s the same with classes in JavaScript, except that in Solidity struct can only define a field, not methods.
+    
+* If you find yourself defining a lot of variables on your smart contract, it is a sign that you should be using a struct.
+    
 
 ```solidity
 // SPDX license identifiers
@@ -438,9 +477,12 @@ contract MyContract {
 
 ### Events
 
-- With solidity events, you can push data from smart contracts to the web frontend or mobile application. For example, if it's a Defi project you can create events on the smart contract so that whenever traders make transactions on the front-end the contract emits events that can inform traders of ongoing trades. There could be a lot of events in a contract and you need to use index keywords to filter specific events. You can use a maximum of 3 indexes on a contract.
-- An event can’t be read within the contract once consumed it’s consumed by entities outside the contract. Instead of a storage variable, you can use an event
-- Two steps: declare event on the contract level and on the front-end side of a dApp.
+* With solidity events, you can push data from smart contracts to the web frontend or mobile application. For example, if it's a Defi project, you can create events on the smart contract so that whenever traders make transactions on the front-end, the contract emits events that can inform traders of ongoing trades. There could be a lot of events in a contract, and you need to use index keywords to filter specific events. You can use a maximum of 3 indices on a contract.
+    
+* An event can’t be read within the contract once consumed it’s consumed by entities outside the contract. Instead of a storage variable, you can use an event
+    
+* Two steps: declare the event on the contract level and on the front-end side of a dApp.
+    
 
 ```solidity
 // SPDX license identifiers
@@ -460,9 +502,10 @@ contract MyContract {
 }
 ```
 
-### Interacting between smart contracts
+### Interacting with smart contracts
 
-- calling function of another contract. Syntax, import keyword, contract interfaces(minimum information required for the contract to interact with another), how propagation works. (Deploy on Remix to see how the two contracts interact) e.g ERC20 token with IERC20
+* Calling a function of another contract. Syntax, import keyword, contract interfaces(minimum information required for the contract to interact with another), and how propagation works. (Deploy on Remix to see how the two contracts interact) e.g ERC20 token with IERC20
+    
 
 ```solidity
 // SPDX license identifiers
@@ -516,7 +559,7 @@ Transferring Ether
 
 [Ether units in solidity](https://docs.soliditylang.org/en/v0.6.4/units-and-global-variables.html#ether-units)
 
-manipulating Ether on solidity smart contract is something powerful that can be done. Address controlled by private key
+manipulating Ether on Solidity smart contract is something powerful that can be done. Address controlled by private key
 
 ```solidity
 // SPDX-License-Identifier: MIT;
@@ -547,9 +590,12 @@ contract MyContract {
 
 Dealing with Errors(require, throw)
 
-- errors in solidity smart contract: what happens when there’s an error in solidity function,
-- keywords used to create an error like throw, require, assert
-- what happens when there are errors in other smart contracts
+* errors in solidity smart contract: what happens when there’s an error in a solidity function,
+    
+* Keywords used to create an error, like throw, require,and assert
+    
+* What happens when there are errors in other smart contracts
+    
 
 ```solidity
 // SPDX-License-Identifier: MIT;
@@ -609,8 +655,10 @@ contract B {
 
 Custom Function Modifiers
 
-- function modifiers allow you to run some code before you execute some functions. It is good for access control and validating some agreements.
-- basic syntax, pass arguments, and change them
+* Function modifiers allow you to run some code before you execute some functions. It is good for access control and validating some agreements.
+    
+* basic syntax, pass arguments, and change them
+    
 
 ```solidity
 // SPDX-License-Identifier: MIT;
@@ -649,10 +697,13 @@ contract FunctionModifers {
 Inheritance
 
 Inheritance: offers you an opportunity to reuse some code
-- [Inheritance trees](https://medium.com/upstate-interactive/inheritance-trees-are-amazingly-helpful-for-solidity-developers-e365e362196f)
+
+* [Inheritance trees](https://medium.com/upstate-interactive/inheritance-trees-are-amazingly-helpful-for-solidity-developers-e365e362196f)
+    
 
 courtesy of SolidityByExample
-```
+
+```python
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
@@ -716,6 +767,6 @@ contract F is A, B {
 }
 ```
 
-Thank you for reading through my article despite its length wanted to put together the basics of solidity and smart contracts. Disclaimer most code snippets are more relevant to lower versions of solidity check [Solidty Docs](https://docs.soliditylang.org/en/v0.8.12/), [Solidity by Example](https://solidity-by-example.org/) for more relevant ones for higher versions of solidity.
+Thank you for reading through my article, despite its length wanted to put together the basics of solidity and smart contracts. Disclaimer: Most code snippets are more relevant to lower versions of Solidity. Check [Solidity Docs](https://docs.soliditylang.org/en/v0.8.12/), [Solidity by Example](https://solidity-by-example.org/), for more relevant ones for higher versions of Solidity.
 
-We connect more on [Twitter](https://twitter.com/SharonJebitok) or [LinkedIn](https://www.linkedin.com/in/sharon-jebitok/). You can leave a comment, suggestion, or point of correction all are welcomed. 
+You can leave a comment, suggestion, or point of correction; all are welcome.
