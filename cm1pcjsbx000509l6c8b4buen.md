@@ -39,4 +39,4 @@ I put the number of developers to be 3 and 10 sprints. Then I distributed one sp
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1727721089550/fcdaab7d-49c9-4144-a810-27c9db9aef4d.png align="center")
 
-Thank you for reading through my article. You can leave any questions or comments on how I can improve my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)
+Thank you for reading through my article. You can leave any questions or comments on how I can improve my learning journey and the THM challenges.
