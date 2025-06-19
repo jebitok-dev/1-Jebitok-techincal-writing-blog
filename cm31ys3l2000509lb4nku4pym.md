@@ -49,4 +49,4 @@ In this article, I will write a write-up for Vulnerability Scanner Overview that
 13. What is the solution suggested by OpenVAS for this vulnerability? `Change the password of the mentioned account(s).`
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the Lab THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the Lab THM challenges.
