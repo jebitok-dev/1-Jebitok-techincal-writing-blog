@@ -35,4 +35,4 @@ tags: beginner, cybersecurity-1
 9. Netcat is a basic tool used to manually send and receive network requests. *What* ***command*** *would you use to start netcat in listen mode, using port 12345?* `nc -l -p 12345` [How to use netcat commands - resource](https://www.varonis.com/blog/netcat-commands#:~:text=Netcat%20Command%20Syntax&text=By%20default%2C%20the%20Netcat%20tool,turn%20on%20full%20debugging%20mode)
     
 
-Thank you for reading through my article. You can leave any questions or comments on how I can improve my learning journey and the THM challenges. We can also connect more on [LinkedIn](https://www.linkedin.com/in/sharon-jebitok) or [X](https://x.com/SharonJebitok)
+Thank you for reading through my article. You can leave any questions or comments on how I can improve my learning journey and the THM challenges.
