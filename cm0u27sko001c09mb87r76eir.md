@@ -26,4 +26,4 @@ tags: attacks, cybersecurity-1
 
 Hexadecimal is used extensively as a shorthand for binary. Because it is **base 16** with 16 being a power of 2, conversion from binary to hex is clean. 5. If a password hash starts with $6$, what format is it (Unix variant)? `sha512crypt` (more on [`GitHub about SHA-512`](https://github.com/frizb/Hashcat-Cheatsheet)) The format `$6$` specifically indicates **SHA-512 crypt** (SHA512Crypt), which is used for hashing passwords in Unix-like systems. This format combines the SHA-512 hashing algorithm with a salt to produce a secure password hash. 6. What is the CVE for the 2020 Cross-Site Scripting (XSS) vulnerability found in WPForms? `CVE-2020-10385`
 
-Thank you for reading through my article. You can leave any questions or comments on how I can improve my learning journey and the THM challenges. We can also connect more on [LinkedIn](https://www.linkedin.com/in/sharon-jebitok) or [X](https://x.com/SharonJebitok)
+Thank you for reading through my article. You can leave any questions or comments on how I can improve my learning journey and the THM challenges.
