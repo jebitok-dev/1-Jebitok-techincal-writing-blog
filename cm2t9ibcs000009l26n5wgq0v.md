@@ -21,4 +21,4 @@ In this article, I will write a write-up for Moniker Link (CVE-2024-21413) that 
 5. What type of hash is captured once the hyperlink in the email has been clicked? `netNTLMv2`
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
