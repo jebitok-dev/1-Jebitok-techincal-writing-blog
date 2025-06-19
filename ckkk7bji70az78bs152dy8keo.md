@@ -8,15 +8,15 @@ tags: bitcoin, cryptocurrency
 
 ---
 
-On Friday world's Richest man [Elon Musk](https://twitter.com/elonmusk) added ```#Bitcoin``` on his Twitter bio and tweeted 
+On Friday world's Richest man, [Elon Musk,](https://twitter.com/elonmusk) added `#Bitcoin` on his bio and posted
 
-``` In retrospect, it was inevitable```. 
+`In retrospect, it was inevitable`.
 
-This comes a month after Bitcoin hit its ATH(All-Time-High) of $ 41, 999 on BTC/USDT rate and the current price has been ranging from $29k to $38k over the past weeks and it's expected to rise.  
+This comes a month after Bitcoin hit its ATH(All-Time-High) of $ 41,999 on the BTC/USDT rate, and the current price has been ranging from $29k to $38k over the past week, and it's expected to rise.
 
-During this time(late December to January), we saw crypto influencers and investors together with key market actors especially those linked to Bitcoin like [Michael Saylor](https://twitter.com/michael_saylor)  whose company, [MicroStrategy](https://www.microstrategy.com/en) owns over 70,784 BItcoins and claims to #hodl over 17,732 BTC:
+During this time(late December to January), we saw crypto influencers and investors together with key market actors, especially those linked to Bitcoin like [Michael Saylor](https://twitter.com/michael_saylor), whose company, [MicroStrategy](https://www.microstrategy.com/en), owns over 70,784 Bitcoins and claims to #hodl over 17,732 BTC:
 
-``````````````````````````````````````````````````````````````````````
+``````````````````````````````````````````````````````````````````````markdown
 Some have asked how much #BTC I own. I personally #hodl 
 17732 BTC which I bought at $9,882 each on average. 
 I informed MicroStrategy of these holdings before 
@@ -42,3 +42,4 @@ work on something so meaningful. Folded hands
 
 ``````````````````````````````````
 A lot is coming up in the crypto world that will foresee the realization of financial freedom! Don't be left out! See where you can join to be part of this Financial Revolution. Be it as a Blockchain Developer/Designer, open-source contributor(since most cryptos are open-source starting from BTC/ETH, etc), Trader or owner of cryptocurrency, or an educator.
+``````````````````````````````````````````````````````````````````````
