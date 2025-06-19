@@ -29,11 +29,11 @@ the 445/tcp…Microsoft windows 7 reflects the MS17-010, you can read more detai
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730408557762/facbe250-65fc-4d08-b421-720475a302d6.png align="center")
     
-6. Show options and set the one required value. What is the name of this value? (All caps for submission) `RHOSTS`  
+6. Show options and set the one required value. What is the name of this value? (All caps for submission) `RHOSTS`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730408532330/a692e09a-c9c0-496a-9dc5-7326b16a911d.png align="center")
     
-7. Usually it would be fine to run this exploit as is; however, for the sake of learning, you should do one more thing before exploiting the target. Enter the following command and press enter:`set payload windows/x64/shell/reverse_tcp`  
+7. Usually it would be fine to run this exploit as is; however, for the sake of learning, you should do one more thing before exploiting the target. Enter the following command and press enter:`set payload windows/x64/shell/reverse_tcp`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730408493765/4026da13-0f1e-4244-b14c-ea6f7ca1dde8.png align="center")
     
@@ -50,7 +50,7 @@ Dump the non-default user's password and crack it! Answer the questions below 10
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730408411013/1ef16dce-0571-4005-9a60-6f96fa2da811.png align="center")
     
-12. Flag1? *This flag can be found at the system root.* `flag{access_the_machine}`  
+12. Flag1? *This flag can be found at the system root.* `flag{access_the_machine}`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730408436628/aafd18c9-f6a3-4344-8379-62d8987bd80b.png align="center")
     
@@ -60,9 +60,9 @@ Dump the non-default user's password and crack it! Answer the questions below 10
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730408354034/775c189e-c490-4008-8c66-0a5644570050.png align="center")
     
-14. flag3? *This flag can be found in an excellent location to loot. After all, Administrators usually have pretty interesting things saved.* `flag{admin_documents_can_be_valuable}`  
+14. flag3? *This flag can be found in an excellent location to loot. After all, Administrators usually have pretty interesting things saved.* `flag{admin_documents_can_be_valuable}`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730408328183/00d0e567-ebce-4bb0-a487-4b7da0a89431.png align="center")
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
