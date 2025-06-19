@@ -84,4 +84,4 @@ Briefly, an IP address (or **I**nternet **P**rotocol) address can be used as a
 7. Deploy the interactive lab using the "View Site" button and spoof your MAC address to access the site.  What is the flag? `THM{YOU_GOT_ON_TRYHACKME}`
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
