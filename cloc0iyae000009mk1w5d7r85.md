@@ -55,9 +55,9 @@ Was more interested in GNOME
 How to install the Spectacle Screenshot tool on Linux
 
 ```plaintext
-$ sudo snap install spectacle 
+$ sudo snap install spectacle
 ```
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1698616533457/81f57239-56d1-47f5-8600-3b3d13d27f47.png align="center")
 
-This was a most random article, it’s been a long since I wrote the previous article and thought I could document this journey. Thank you for reading this article I hope I will be able to write more and engage the technical writing community more. We can connect more on [X formerly Twitter](https://twitter.com/SharonJebitok) or [Linkedin](https://www.linkedin.com/in/sharon-jebitok/)
+This was a most random article, it’s been a long since I wrote the previous article and thought I could document this journey. Thank you for reading this article I hope I will be able to write more and engage the technical writing community more.
