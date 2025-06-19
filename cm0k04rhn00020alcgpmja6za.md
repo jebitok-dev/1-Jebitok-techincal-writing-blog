@@ -22,9 +22,9 @@ ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1725221146442/d6748
     
 7. What type of record handles IPv6 addresses? `AAAA`
     
-8. What field specifies how long a DNS record should be cached for? `TTL`  
-      
-    **TTL (Time To Live):** This is a value in a DNS record that tells DNS resolvers how long they should cache (store) the record before requesting a fresh copy from the authoritative DNS server. The TTL value is specified in seconds. For example, a TTL of 3600 seconds means that the record can be cached for 1 hour before the resolver needs to query the DNS server again for updated information.  
+8. What field specifies how long a DNS record should be cached for? `TTL`
+    
+    **TTL (Time To Live):** This is a value in a DNS record that tells DNS resolvers how long they should cache (store) the record before requesting a fresh copy from the authoritative DNS server. The TTL value is specified in seconds. For example, a TTL of 3600 seconds means that the record can be cached for 1 hour before the resolver needs to query the DNS server again for updated information.
     
 9. What type of DNS Server is usually provided by your ISP? `Recursive`
     
@@ -39,4 +39,4 @@ ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1725221146442/d6748
 14. What is the IP address for the A record of www.website.thm? `10.10.10.10`
     
 
-Thanks for reading through my article. At the moment I hope that I will remain consistent in this learning journey and keep practicing as the days and months come by. You can leave a comment and we can also connect further either on \[X\]([https://x.com/SharonJebitok](https://x.com/SharonJebitok)) or \[LinkedIn\]([https://www.linkedin.com/in/sharon-jebitok/](https://www.linkedin.com/in/sharon-jebitok/))
+Thanks for reading through my article. At the moment I hope that I will remain consistent in this learning journey and keep practicing as the days and months come by. You can leave a comment.
