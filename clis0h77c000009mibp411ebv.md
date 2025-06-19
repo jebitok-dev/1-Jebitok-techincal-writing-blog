@@ -100,7 +100,7 @@ I recently had a random chat with [Ian Njuguna](https://hashnode.com/@ianonjugun
     
     If you are currently in Job Search and Interview Process you can check out my other article on [**Preparation for Job Applications & Tech Interviews**](https://jebitok.hashnode.dev/preparation-for-job-applications-and-tech-interviews-ckyhmslnq0apt35s14d7i6ebw)**,** it offers details on preparing your profiles like Github, Resume, LinkedIn profile, and Portfolio also the different job search platforms and different interview steps and how you can prepare for them.
     
-    Thank you for reading through the article you. You can leave a comment or recommendation. We can also connect on [Twitter](https://twitter.com/SharonJebitok) or [LinkedIn](https://www.linkedin.com/in/sharon-jebitok/) and you can also follow [Ian](https://twitter.com/IanoNjuguna) or ask him a question related to tech and the resources.
+    Thank you for reading through the article. You can leave a comment or recommendation.
     
     [  
     ](https://hashnode.com/@Jebitok)
