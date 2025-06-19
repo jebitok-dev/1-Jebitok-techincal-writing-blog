@@ -27,7 +27,7 @@ In this article, I will write a write-up for Windows Fundamentals 3 that covers 
 8. After organising the available computers, how many ended up in the Workstations OU? `7`
     
 
-when we remove the SRV (which is 3) we remain with 7  
+when we remove the SRV (which is 3) we remain with 7
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730034695526/c647891e-6990-4730-8f80-fa1827949d93.png align="center")
 
@@ -48,4 +48,4 @@ when we remove the SRV (which is 3) we remain with 7
 16. What should be configured between two domains for a user in Domain A to access a resource in Domain B? `A Trust Relationship`
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
