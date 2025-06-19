@@ -62,4 +62,4 @@ Acknowledgment: [CyberTalents](https://cybertalents.com/)
     * [CloudSec](https://www.youtube.com/playlist?list=PLCxuJi3Ceg8RPAfo3aNLO0lF9OEY5R0LP)
         
 
-Going through this challenge was interesting since it inserts basic knowledge about some things/facts/tools related to security across the world. Thank you for reading through, we can connect more on [X](https://twitter.com/SharonJebitok), and [LinkedIn](https://www.linkedin.com/in/sharon-jebitok/), or can [Book a Session with Sharon via Mentorlst](https://mentorlst.com/mentor/12db03d0-8a75-4a32-9b05-b290f5381598).
+Going through this challenge was interesting since it introduced basic knowledge about some things/facts/tools related to security across the world.
