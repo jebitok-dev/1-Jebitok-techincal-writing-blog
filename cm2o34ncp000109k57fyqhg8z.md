@@ -84,4 +84,4 @@ Remember Telnet replaces ssh so we won’t need the ssh this time. You run `teln
 15. What flag did you get when you viewed the page? `THM{TELNET_MASTER}`
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
