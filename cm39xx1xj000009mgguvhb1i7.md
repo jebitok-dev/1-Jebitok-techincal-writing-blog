@@ -47,8 +47,8 @@ open the URL to the report then scroll down to HTTP Requests checking the one th
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1731142816779/9e07341e-e69e-435c-957e-419d70d3089a.png align="center")
 
-10. The actor drops a malicious executable (EXE). What is the name of this executable? `G_jugk.exe`  
-      
+10. The actor drops a malicious executable (EXE). What is the name of this executable? `G_jugk.exe`
+    
     after the HTTP Requests, there’s a link to a report on [Any.Run](http://any.run/) which is an interactive malware-hunting service. Under Malicious you’ll check for the ‘**Drops executable file immediately after starts**’
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1731142763197/6d57537c-3a9c-4763-b50f-c1d5e0a0f071.png align="center")
@@ -83,8 +83,6 @@ According to the hint we’re to count both the malicious and malware labels
 17. Chimera is a China-based hacking group that has been active since 2018. What is the name of the commercial, remote access tool they use for C2 beacons and data exfiltration? `Cobalt Strike`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1731141304331/b02ab209-0610-436f-81de-385a506004f0.png align="center")
-    
-      
     
     Deploy the static site attached to this task and place the prompts into the correct tiers in the pyramid of pain!
     
@@ -121,7 +119,5 @@ According to the hint we’re to count both the malicious and malware labels
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1731141142019/4cc441dc-306e-4dcc-ad24-311e1172a0cf.png align="center")
     
-      
-    
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
