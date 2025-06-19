@@ -9,23 +9,23 @@ tags: linux, devops, bash-script
 
 ---
 
-I first came across the [HNG Internship](https://hng.tech/) in 2020, a few months after I had gotten started in tech and I ended up joining their cohort that was running that year for the frontend track. It was a great experience and I learned a lot about projects, collaborations, and the pressure of limited timelines. HNG Internship supports various technical and non-technical tracks, i.e., Backend (C#, Golang, PHP, Python, Node.js), DevOps, Frontend, Mobile, Product Design, Digital Marketing, product testing, data analysis, and product management. If you’re interested in getting experience alongside several people in a gamified manner you [can sign up to HNG](https://hng.tech/) and they also have a [HNG Premium](https://hng.tech/premium) version of the program which includes BootCamp training, one-on-one calls with mentors, assistance in job search, and more packages.
+I first came across the [HNG Internship](https://hng.tech/) in 2020, a few months after I had gotten started in tech, and I ended up joining their cohort that was running that year for the frontend track. It was a great experience, and I learned a lot about projects, collaborations, and the pressure of limited timelines. HNG Internship supports various technical and non-technical tracks, i.e., Backend (C#, Golang, PHP, Python, Node.js), DevOps, Frontend, Mobile, Product Design, Digital Marketing, product testing, data analysis, and product management. If you’re interested in getting experience alongside several people in a gamified manner, you [can sign up for HNG](https://hng.tech/), and they also have an [HNG Premium](https://hng.tech/premium) version of the program, which includes BootCamp training, one-on-one calls with mentors, assistance in job search, and more.
 
 In this article I’m going to talk about the DevOps I’m taking up at HNG which requires writing a bash script that allows a user to input a text file with new employees who are developers and they’re to be assigned into groups, user passwords are to be saved into a file that can only be accessed by the owner and the logs of the script are also saved into a file
 
 ## Requirements
 
-* the bash script should be able to take up a text file with employees’ names' and be able to add and assign them to Linux groups and users. users will have the same group name as their username and the group name won't be written in the text file e.g. bash create\_user.sh, file\_with\_employee\_names.txt (added to groups & assigned)
+* The bash script should be able to take up a text file with employees’ names and be able to add and assign them to Linux groups and users. Users will have the same group name as their username, and the group name won't be written in the text file, e.g., bash create\_user.sh, file\_with\_employee\_names.txt (added to groups & assigned)
     
-* the user can have multiple groups and each group is delimited or separated by a comma but the usernames and groups are separated by semicolons
+* The user can have multiple groups, and each group is delimited or separated by a comma but the usernames and groups are separated by semicolons
     
 * the script should be able to set up home directories with permission and ownership
     
-* the script should generate random passwords for all users and the passwords will be securely stored on /var/secure/user\_passwords.txt. this script should also check if the user already exists on this file - return an error message or so.
+* the script should generate random passwords for all users and the passwords will be securely stored on /var/secure/user\_passwords.txt. This script should also check if the user already exists in this file - return an error message or so.
     
-* the script should log all actions to /var/log/user\_management.log (it creates and contains all actions performed by the script)
+* The script should log all actions to /var/log/user\_management.log (it creates and contains all actions performed by the script)
     
-* the script should store the list of all users and their passwords separated by commas on /var/secure/user.password.cvs. The file owner should be the only one to read it
+* The script should store the list of all users and their passwords, separated by commas, on `/var/secure/user.password.cvs`. The file owner should be the only one to read it
     
 
 We start by creating a folder locally:
@@ -38,13 +38,13 @@ $ touch create_user.sh
 $ touch README.md
 ```
 
-We initialize our bash script with the bash bang which consists of the directory bash shell program to be used for script execution. The hash exclamation mark #! character sequence is referred to as the Shebang. It’s used to set the path of the bash program.
+We initialize our bash script with the bash bang, which consists of the directory bash shell program to be used for script execution. The hash exclamation mark #! character sequence is referred to as the Shebang. It’s used to set the path of the bash program.
 
 ```bash
 #!/bin/bash
 ```
 
-Next, we will write a function and call that will be used to install some packages we might need in case it's not locally installed once the script is executing
+Next, we will write a function and call that will be used to install some packages we might need in case they're not locally installed once the script is executed
 
 ```bash
 # function to install some packages if they are not installed
@@ -61,7 +61,7 @@ install_packages() {
 install_packages
 ```
 
-When the script is executed we will pass a text file that has a list of employees so that the bash script will add and assign them into groups. This part will ensure that we execute the script with a file with employees names
+When the script is executed, we will pass a text file that has a list of employees so that the bash script will add and assign them to groups. This part will ensure that we execute the script with a file with employees’ names
 
 ```bash
 # Check if the input file with employee names is provided 
@@ -79,27 +79,26 @@ if [ ! -f $input_file ]; then
 fi
 ```
 
-While the script is executed we will need a secure folder that will have a `user_passwords.txt` file that will store the passwords generated for users as well as a `user_management.log` that will keep all logs and a `user_passwords.csv`file that will have a list of users and their passwords which will be only accessed by the file owner
+While the script is executed, we will need a secure folder that will have a `user_passwords.txt` file that will store the passwords generated for users, as well as a `user_management.log` that will keep all logs and a `user_passwords.csv`file that will have a list of users and their passwords, which will be accessed only by the file owner
 
 ```bash
 # Creating secure files and directories if they do not exist
 sudo mkdir -p /var/secure
 sudo touch /var/secure/user_passwords.txt /var/secure/user_passwords.csv
 sudo touch /var/log/user_management.log
-
 ```
 
 We will now create a while loop that ensures that the script checks all conditions and gets executed:
 
-* it will read through the files to check whether a username already exists before it gets created
+* It will read through the files to check whether a username already exists before it gets created
     
-* it creates users and groups together with additional groups
+* It creates users and groups together with additional groups
     
-* ensuring the home directory permissions are set correctly
+* Ensuring the home directory permissions are set correctly
     
-* Generating the random password for the user, checking if the user exists in the password file before storing their password
+* Generating a random password for the user, checking if the user exists in the password file before storing their password
     
-* Check the username if it exists in the file with the list of passwords and usernames before adding them
+* Check the username if it exists in the file with the list of passwords and usernames before adding it
     
 
 ```bash
@@ -274,11 +273,10 @@ bob;dev
 charlie;admin
 dave;dev,qa,admin
 eve;qa
-
 ```
 
 ```bash
 $ ./create_user.sh file_with_employee_names.txt
 ```
 
-Thanks for reading through the article. It has been an interesting experience getting started with DevOps learning how to write BashScripts and understanding how they help ease the deployment process. You can leave a comment regarding the article, and what I can improve on, or we can connect further through [X](https://x.com/SharonJebitok) or [LinkedIn](https://www.linkedin.com/in/sharon-jebitok/)
+Thanks for reading through the article. It has been an interesting experience getting started with DevOps, learning how to write Bash scripts, and understanding how they help ease the deployment process. You can leave a comment regarding the article and what I can improve on.
