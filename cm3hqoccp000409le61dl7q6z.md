@@ -128,15 +128,13 @@ In this article, I will write an MITRE write-up: The Basics that covers Introduc
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1731576326527/042f4a06-2ed7-4982-b208-e753ecc39b70.png align="center")
     
-30. What platforms does the technique from question #2 affect? `Azure AD, Google Workspace, IaaS, Office 365, SaaS`  
-      
-      
+30. What platforms does the technique from question #2 affect? `Azure AD, Google Workspace, IaaS, Office 365, SaaS`
+    
     In this room, we explored tools/resources that MITRE has provided to the security community. The room's goal was to expose you to these resources and give you a foundational knowledge of their uses. Many vendors of security products and security teams across the globe consider these contributions from MITRE invaluable in the day-to-day efforts to thwart evil. The more information we have as defenders, the better we are equipped to fight back. Some of you might be looking to transition to become a SOC analyst, detection engineer, cyber threat analyst, etc. These tools/resources are a must to know.
     
-      
-    This is not only for defenders. As red teamers, these tools/resources are useful as well. Your objective is to mimic the adversary and attempt to bypass all the controls in place within the environment. With these resources, as the red teamer, you can effectively mimic a true adversary and communicate your findings in a common language that both sides can understand. In a nutshell, this is known as **purple teaming**.    
-      
-    This room made me like threat hunting and threat intelligence in general, I might consider it as a path.  
+    This is not only for defenders. As red teamers, these tools/resources are useful as well. Your objective is to mimic the adversary and attempt to bypass all the controls in place within the environment. With these resources, as the red teamer, you can effectively mimic a true adversary and communicate your findings in a common language that both sides can understand. In a nutshell, this is known as **purple teaming**.
+    
+    This room made me like threat hunting and threat intelligence in general, I might consider it as a path.
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
