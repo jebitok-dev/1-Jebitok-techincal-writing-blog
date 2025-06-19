@@ -39,4 +39,4 @@ In this article, I will write a write-up for Networking Core Protocols that cove
 9. One of the packets contains login credentials. What password did the user submit? `THM{B8WM6P}`
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
