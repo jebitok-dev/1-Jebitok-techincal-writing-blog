@@ -10,13 +10,13 @@ tags: routing, networking, how-internet-works, bcp
 
 ---
 
-I have been taking the Cloud Engineering Course at ALTSchool Africa and it has been an interesting roller coaster we have learned Linux, and Bash Scripting, among other topics that are fundamental in the cloud.
+I have been taking the Cloud Engineering Course at ALTSchool Africa, and it has been an interesting roller coaster. We have learned Linux and Bash Scripting, among other topics that are fundamental in the cloud.
 
 The latest one has been how the internet works and it is really interesting that we use our phones, and different internet service providers, access different CDNs, search different things on the internet, and might not fully understand the bottom line of how the internet works to the point where we browser and get the right response back.
 
-We recently saw reports of internet or server downtime last month and was faulted to undersea cables that were damaged (this might have sparked a lot of curiosity to many of us coz what the correlations of Safaricom's data bundles or WIFI to the undersea cables or maybe Microsoft servers too).
+We recently saw reports of internet or server downtime last month and were faulted to undersea cables that were damaged (this might have sparked a lot of curiosity in many of us coz the correlations of Safaricom's data bundles or WIFI to the undersea cables or maybe Microsoft servers too).
 
-I was covering this topic and thought I could also consult ChatGPT to help with a more detailed breakdown of each key aspect of networking to help with understanding how the internet works from an aspect of networking. I will just put them together here:
+I was covering this topic and thought I could also consult ChatGPT to help with a more detailed breakdown of each key aspect of networking to help with understanding how the internet works from an aspect of networking perspective. I will just put them together here:
 
 ## What is Networking
 
@@ -56,7 +56,7 @@ Undersea cables, also known as submarine or subsea cables, are critical componen
 6. **Global Connectivity**: Undersea cables form a dense network of interconnected routes spanning the world's oceans, connecting continents and regions across the globe. This interconnected network enables global communication, international trade, financial transactions, and the exchange of information and ideas on a massive scale. Major undersea cable routes include transatlantic cables linking North America and Europe, transpacific cables connecting Asia and North America, and cables linking Africa, the Middle East, and Europe.
     
 
-### Challenges of UnderSea Cables
+### Challenges of Undersea Cables
 
 1. **Physical Damage**: Undersea cables are vulnerable to physical damage from natural disasters, human activities, and marine hazards. These can include ship anchors, fishing trawlers, seismic activity, underwater landslides, and ocean currents. Damage to the cable's protective armor or fiber optic strands can result in signal loss, reduced bandwidth, or complete cable failure, leading to network outages.
     
@@ -71,9 +71,9 @@ Undersea cables, also known as submarine or subsea cables, are critical componen
 6. **Malicious Activities**: Undersea cables are potential targets for sabotage, vandalism, or sabotage by malicious actors seeking to disrupt communications, espionage, or economic sabotage. Although rare, deliberate acts of cable sabotage can have significant consequences for regional or global telecommunications networks, necessitating enhanced security measures and surveillance to protect critical cable infrastructure.
     
 
-### Ways of Addressing the Challenges of UnderSea Cables
+### Ways of Addressing the Challenges of Undersea Cables
 
-To address these challenges proactive measures are required:
+To address these challenges, proactive measures are required:
 
 1. Implementing cable protection measures
     
@@ -84,7 +84,7 @@ To address these challenges proactive measures are required:
 4. Collaboration among cable operators, maritime authorities, and international organizations is essential to mitigate risks and ensure the resilience and reliability of undersea cable networks.
     
 
-### Factors to Consider When Comparing Satellite Connection (e.g Starlink) and Undersea Cable Connection
+### Factors to Consider When Comparing Satellite Connection (e.g, Starlink) and Undersea Cable Connection
 
 1. **Speed**:
     
@@ -150,9 +150,9 @@ The Internet Assigned Numbers Authority (IANA) is a key organization responsible
     
 3. **Protocol Parameters**: IANA maintains registries of protocol parameters, which include numbers, codes, and identifiers used by various Internet protocols such as TCP/IP, UDP, HTTP, FTP, and others. These parameters ensure interoperability and standardization across different network devices and software applications.
     
-4. **Port Numbers**: IANA manages the allocation of port numbers used in TCP/IP networking. Port numbers facilitate the communication between different applications running on the Internet by specifying different endpoints for data transmission.
+4. **Port Numbers**: IANA manages the allocation of port numbers used in TCP/IP networking. Port numbers facilitate communication between different applications running on the Internet by specifying different endpoints for data transmission.
     
-5. **Standards Development Support**: IANA provides support to various Internet standardization organizations such as the Internet Engineering Task Force (IETF) and the Internet Architecture Board (IAB) by managing registries and ensuring consistency in the assignment of identifiers and parameters.
+5. **Standards Development Support**: IANA provides support to various Internet standardization organizations, such as the Internet Engineering Task Force (IETF) and the Internet Architecture Board (IAB) by managing registries and ensuring consistency in the assignment of identifiers and parameters.
     
 6. **IANA Stewardship Transition**: In recent years, there has been a significant transition in the stewardship of IANA functions from the United States government to the global Internet community. This transition aimed to enhance the accountability, transparency, and inclusiveness of IANA's operations.
     
@@ -189,9 +189,9 @@ Under the coordination of the Internet Assigned Numbers Authority (IANA), IP add
 6. **Data Collection and Analysis**: RIRs collect and analyze data on IP address utilization, allocation trends, Internet infrastructure developments, and related metrics to inform policy decisions, assess resource availability, and identify emerging challenges or opportunities in their regions.
     
 
-## Stakeholders that work with Afrinic in Kenya
+## Stakeholders who work with Afrinic in Kenya
 
-AfriNIC serves the entire African continent as the Regional Internet Registry (RIR) responsible for the allocation and management of IP address resources within its service region and its headquarters is based in Mauritius.
+AfriNIC serves the entire African continent as the Regional Internet Registry (RIR) responsible for the allocation and management of IP address resources within its service region, and its headquarters are based in Mauritius.
 
 However, AfriNIC does work with various stakeholders across Africa, including ISPs, network operators, government agencies, academic institutions, and civil society organizations, to support the effective utilization of Internet resources and promote Internet development in the region.
 
@@ -216,7 +216,7 @@ IXPs play a crucial role in improving the efficiency, performance, and cost-effe
 
 1. **Traffic Exchange**: At an IXP, participating networks connect their routers and switches to a shared Ethernet switch fabric. This allows them to exchange Internet traffic directly with each other, rather than routing traffic through upstream transit providers or relying on distant peering locations.
     
-2. **Reduced Latency**: By exchanging traffic locally at an IXP, ISPs, and other network operators can reduce the latency (delay) associated with routing traffic over long distances. This results in faster response times for accessing online services and improved overall Internet performance for end-users.
+2. **Reduced Latency**: By exchanging traffic locally at an IXP, ISPs and other network operators can reduce the latency (delay) associated with routing traffic over long distances. This results in faster response times for accessing online services and improved overall Internet performance for end-users.
     
 3. **Lower Costs**: Directly exchanging traffic at an IXP can help reduce the need for expensive long-haul transit and peering agreements with upstream providers. This can lead to cost savings for participating networks, particularly for ISPs that have high volumes of inter-network traffic.
     
@@ -229,12 +229,12 @@ IXPs play a crucial role in improving the efficiency, performance, and cost-effe
 
 ## Automated Systems
 
-* It is a system like Google that gives identifier inform of IP addresses, ease of tracing
+* It is a system like Google that gives identifying information of IP addresses, ease of tracing
     
-* Get public IP addresses from [AfriNic](https://afrinic.net/) - based in M[auritiu](https://afrinic.net/)s
+* Get public IP addresses from [AfriNic](https://afrinic.net/), based in M[auritiu](https://afrinic.net/)s
     
 
-### Role and Key Aspects of Automated Systems in Making IXP work effectively
+### Role and Key Aspects of Automated Systems in Making IXP Work Effectively
 
 Automated systems in the context of IXPs refer to the use of software-based tools and processes to automate various tasks related to the operation, management, and optimization of the IXP infrastructure and services.
 
@@ -253,7 +253,7 @@ These automated systems streamline operations, improve efficiency, and enhance t
 6. **Remote Peering and Interconnection**: Automated systems enable remote peering and interconnection between IXPs located in different geographic regions. They provision and configure remote peering connections, allowing network operators to extend their reach and access diverse connectivity options without physical presence at multiple IXPs.
     
 
-### Public and Private IP Address Assigned by IANA & RIRs
+### Public and Private IP Addresses Assigned by IANA & RIRs
 
 Public and private IP addresses are essential concepts in networking, particularly concerning the allocation and management of IP addresses by organizations like the Internet Assigned Numbers Authority (IANA) and Regional Internet Registries (RIRs).
 
@@ -361,19 +361,19 @@ While Border Gateway Protocol (BGP) is a fundamental protocol for routing on the
 
 ### Addressing the Challenges of BGP
 
-To address BGP's challenges we need measures to help mitigate the risks associated with BGP vulnerabilities and ensure the reliable operation of the global Internet:
+To address BGP's challenges, we need measures to help mitigate the risks associated with BGP vulnerabilities and ensure the reliable operation of the global Internet:
 
 * collaboration among network operators, standards organizations, and policymakers to develop and deploy solutions that enhance the security, resilience, and stability of the Internet's routing infrastructure.
     
 * Measures such as:
     
-    * improved BGP monitoring
+    * Improved BGP monitoring
         
-    * validation of route announcements
+    * Validation of route announcements
         
     * route filtering
         
-    * adoption of secure routing protocols
+    * Adoption of secure routing protocols
         
 
-Thanks for reading through my article I give acknowledgement to ALTSchool Africa for the key areas covered in networking and ChatGPT for clear elaboration. We can connect more on [X](https://twitter.com/SharonJebitok), [LinkedIn](https://www.linkedin.com/in/sharon-jebitok/), or have a [one-on-one call on Mentorlst](https://mentorlst.com/mentor/12db03d0-8a75-4a32-9b05-b290f5381598).
+Thanks for reading through my article. I give acknowledgement to ALTSchool Africa for the key areas covered in networking and ChatGPT for clear elaboration.
