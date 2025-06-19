@@ -53,4 +53,4 @@ Answer the questions below
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1733255353586/e87cfacf-6333-4882-b2a7-b83ddce3fc50.png align="center")
     
-    Thank you for reading, looking forward to the other days of AOC till Christmas day. You can leave a comment or we can connect more on [LinkedIn](https://linkedin.com/in/Sharon-Jebitok).
+    Thank you for reading, looking forward to the other days of AOC till Christmas Day. You can leave a comment.
