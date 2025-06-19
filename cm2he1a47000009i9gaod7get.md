@@ -37,4 +37,4 @@ In this article, I will write the write-up for the [Packet and Frames](https://t
     What is the flag received from the challenge? `THM{YOU_CONNECTED_TO_A_PORT}`
     
 
-Thank you for reading my article. Please leave any questions or comments on how I can improve my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on how I can improve my learning journey and the THM challenges.
