@@ -15,7 +15,7 @@ In this article, I will write a write-up for John the Ripper: The Basics that th
 2. Which website’s breach was the `rockyou.txt` wordlist created from? [`rockyou.com`](http://rockyou.com/)
     
 
-the image below shows how to achieve the next questions form 3 to 10.  
+the image below shows how to achieve the next questions form 3 to 10.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730131985891/d15189fb-4d5c-432a-89d6-d6ba02bbdb64.png align="center")
 
@@ -46,15 +46,15 @@ to identify the hash I used the rainbow table, [Crackstation](https://crackstati
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730132077158/fd87e26a-77ca-45ae-9a2b-809c35e7bd20.png align="center")
     
-13. What is the root password? `1234`  
+13. What is the root password? `1234`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730132101171/c912d67b-aab7-4c68-8684-1c2367a9ce44.png align="center")
     
 
 **Example Usage:**
 
-14. What is Joker’s password? `Jok3r`  
-      
+14. What is Joker’s password? `Jok3r`
+    
     after finding the hash remember to edit the file with nano then add the name before the hash you’ve found `Joker:{hash`}
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730132226025/c6c78bff-8fcc-4963-955a-99a2ec0376f1.png align="center")
@@ -71,7 +71,7 @@ to identify the hash I used the rainbow table, [Crackstation](https://crackstati
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730132344332/269b5694-1682-41a1-bb9d-5dfd8a21412d.png align="center")
     
-19. What is the contents of the flag inside the zip file? `THM{w3ll_d0n3_h4sh_r0y4l}`  
+19. What is the contents of the flag inside the zip file? `THM{w3ll_d0n3_h4sh_r0y4l}`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730132378032/50c0028f-d2ef-4b02-807e-bbeadd67af54.png align="center")
     
@@ -82,9 +82,8 @@ to identify the hash I used the rainbow table, [Crackstation](https://crackstati
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730132516007/300d1aee-a015-4f4f-87f3-fd1f231c41b9.png align="center")
     
 
-###   
-`/opt/john/ssh2john.py id_rsa > id_rsa_hash.txt`  
-  
+`/opt/john/ssh2john.py id_rsa > id_rsa_hash.txt`
+
 **Cracking**
 
 For the final time, we’re feeding the file we output from ssh2john, which in our example use case is called `id_rsa_hash.txt` and, as we did with `rar2john`, we can use this seamlessly with John: \*\*\`john --wordlist=/usr/share/wordlists/rockyou.txt id\_rsa\_hash.txt\`\*\*
@@ -93,9 +92,9 @@ For the final time, we’re feeding the file we output from ssh2john, which in o
 
 Now, I’d like you to crack the hash of the \*\*\`id\_rsa\`\*\* file relevant to this task! The file is located in \*\*\`~/John-the-Ripper-The-Basics/Task11/\`\*\*.
 
-22. What is the SSH private key password? `mango`  
+22. What is the SSH private key password? `mango`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730132532417/c36f6ebb-91c6-4cfe-a09a-89d59d302079.png align="center")
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
