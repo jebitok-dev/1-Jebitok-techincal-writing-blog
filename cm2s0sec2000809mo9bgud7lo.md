@@ -49,8 +49,8 @@ there’s a hint to this command `head -n 20 rockyou.txt` since using without th
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730059421505/221ff4e6-de21-49f0-9eca-94b51e0511c6.png align="center")
     
-16. What’s the hashcat mode number for `HMAC-SHA512 (key = $pass)`? `1750`  
-      
+16. What’s the hashcat mode number for `HMAC-SHA512 (key = $pass)`? `1750`
+    
     you can check the Hashcat [website](https://hashcat.net/wiki/doku.php?id=example_hashes) and [GitHub](https://github.com/unstable-deadlock/brashendeavours.gitbook.io/blob/master/pentesting-cheatsheets/hashcat-hash-modes.md) that shows the hash-modes and examples
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730059259866/04ca5db9-15d8-44de-8ddb-0da877075e7f.png align="center")
@@ -60,4 +60,4 @@ there’s a hint to this command `head -n 20 rockyou.txt` since using without th
 17. Use `base64` to decode `RU5jb2RlREVjb2RlCg==`, saved as `decode-this.txt` in `~/Hashing-Basics/Task-8`. What is the original word?
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
