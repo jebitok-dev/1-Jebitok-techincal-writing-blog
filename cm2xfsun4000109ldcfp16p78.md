@@ -45,4 +45,4 @@ In this article, I will write a write-up for Web Hacking: Javascript Essentials 
 
 Obfuscation is still unclear to me but there’s this [YouTube Video](https://youtu.be/8SmJNWiMouo?si=WQyz1dQCNNU1gk2E) that has a walkthrough from around minute 26 and also use this [Javascript Obfuscator Tool](https://obfuscator.io/) as well as tools like ChatGPT for more deep dive into the topic 15. Is it a good practice to blindly include JS in your code from any source (yea/nay)? `nay`
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
