@@ -14,24 +14,32 @@ In this article, we’re going to learn how to create an ERC721 NFT contract usi
 
 OpenZeppelin wizard generates an ERC20, ERC721, ERC1155, Governance contract that is customized or compiled and deployed directly by developers. It gives developers a chance to name the contract, and select the settings that they want on their contract. For example:
 
-- if the contract will have features like:
-    - mint, burn, pause, permit, vote, flash mint, or snapshot for the ERC20 contract
-    - mint (with auto-increment of IDs), burn, pause, vote, enumerable, URI storage for ERC721 contract
-    - mint, burn, supply tracking & pausable for ERC1155 contract
-    - option to vote delay for the given voting period, proposal threshold, quorum, token decimals, whether it will have updatable settings or will be bravo compatible for Governance Contract.
-- give access control to either ownable or specific roles
-- determine the upgradability of the contract i.e Transparent or UUPS
-- the license identifier which by default is MIT
+* if the contract will have features like:
+    
+    * mint, burn, pause, permit, vote, flash mint, or snapshot for the ERC20 contract
+        
+    * mint (with auto-increment of IDs), burn, pause, vote, enumerable, URI storage for ERC721 contract
+        
+    * mint, burn, supply tracking & pausable for ERC1155 contract
+        
+    * option to vote delay for the given voting period, proposal threshold, quorum, token decimals, whether it will have updatable settings or will be bravo compatible for Governance Contract.
+        
+* give access control to either ownable or specific roles
+    
+* determine the upgradability of the contract i.e Transparent or UUPS
+    
+* the license identifier which by default is MIT
+    
 
 ### Creating Contract on Wizard
 
-- Visit the [OpenZeppelin Wizard](https://docs.openzeppelin.com/contracts/4.x/wizard) site
-
+* Visit the [OpenZeppelin Wizard](https://docs.openzeppelin.com/contracts/4.x/wizard) site
+    
 
 ![Screenshot (29).png](https://cdn.hashnode.com/res/hashnode/image/upload/v1654120694893/dnWrNMg4T.png align="left")
 
-- We’ll select ERC721 on top then move to settings where we’ll give our contract a name `Madaraka` and a symbol `MDR`, determine the pre-mint number then move features we’ll select `Mintable` with `auto-increment Ids` and `URI Storage`. It will be Ownable by default and use the MIT license identifier. At this point, we’ll have successfully created our main contract:
-
+* We’ll select ERC721 on top then move to settings where we’ll give our contract a name `Madaraka` and a symbol `MDR`, determine the pre-mint number then move features we’ll select `Mintable` with `auto-increment Ids` and `URI Storage`. It will be Ownable by default and use the MIT license identifier. At this point, we’ll have successfully created our main contract:
+    
 
 ![Screenshot (30).png](https://cdn.hashnode.com/res/hashnode/image/upload/v1654120678336/lBR0lENPU.png align="left")
 
@@ -83,7 +91,7 @@ since we’re using OpenZeppelin Contracts we’ll need to install OpenZeppelin 
 $ npm install @openzeppelin/contracts
 ```
 
-Now hardhat is set up, we’ll go to the contracts folder and rename the `Greeter.sol`, file to `Madaraka.sol`, and clear the code on the file. We’ll go back to OpenZeppelin wizard and copy the contract we had created and come and paste it to our contract file on our project folder. 
+Now hardhat is set up, we’ll go to the contracts folder and rename the `Greeter.sol`, file to `Madaraka.sol`, and clear the code on the file. We’ll go back to OpenZeppelin wizard and copy the contract we had created and come and paste it to our contract file on our project folder.
 
 ```jsx
 // Madaraka.sol
@@ -127,19 +135,19 @@ contract MyToken is ERC721, ERC721URIStorage, Ownable {
 }
 ```
 
-Compile the contract 
+Compile the contract
 
 ```jsx
 $ npx hardhat compile
 Compiled 13 Solidity files successfully
 ```
 
-Setting Up the `.env` and  `hardhat.config.js` file
+Setting Up the `.env` and `hardhat.config.js` file
 
-create a .env file where we can save our development variables 
+create a .env file where we can save our development variables
 
-- To create our RPC Provider URLs we’ll visit [Ankr Protocol for Public RPCs](https://www.ankr.com/protocol/dashboard/eth/) for this contract I have opted for Ethereum then select Testnet on provider URLs. For Ethereum Test-net I have opted for Goerli but you can use Rinkeby or Ropsten. We’ll copy the RPC URL shown below Goerli and add it to our `.env` file
-
+* To create our RPC Provider URLs we’ll visit [Ankr Protocol for Public RPCs](https://www.ankr.com/protocol/dashboard/eth/) for this contract I have opted for Ethereum then select Testnet on provider URLs. For Ethereum Test-net I have opted for Goerli but you can use Rinkeby or Ropsten. We’ll copy the RPC URL shown below Goerli and add it to our `.env` file
+    
 
 ![Screenshot (31).png](https://cdn.hashnode.com/res/hashnode/image/upload/v1654120649481/JahJ4f9sT.png align="left")
 
@@ -147,10 +155,14 @@ create a .env file where we can save our development variables
 RPC_URL='https://rpc.ankr.com/eth_goerli'
 ```
 
-- Open your Metamask and switch account to Goerli. If you:
-    - don’t have Metamask extension installed in your browser you [Install Metamask here](https://metamask.io/download/).
-    - need Goerli faucets you can get some [Goerli here](https://goerlifaucet.com/) by connecting your [Alchemy Accoun](https://dashboard.alchemyapi.io/)t or through the [Chainlink faucets](https://faucets.chain.link/) select ETH Goerli then paste the address
-    - don’t have Goerli network added to your Metamask you can add using the details below
+* Open your Metamask and switch account to Goerli. If you:
+    
+    * don’t have Metamask extension installed in your browser you [Install Metamask here](https://metamask.io/download/).
+        
+    * need Goerli faucets you can get some [Goerli here](https://goerlifaucet.com/) by connecting your [Alchemy Accoun](https://dashboard.alchemyapi.io/)t or through the [Chainlink faucets](https://faucets.chain.link/) select ETH Goerli then paste the address
+        
+    * don’t have Goerli network added to your Metamask you can add using the details below
+        
     
     ```jsx
     Network Name: Goerli
@@ -159,20 +171,21 @@ RPC_URL='https://rpc.ankr.com/eth_goerli'
     Currency Symbol(Optional): Goerli
     ```
     
-- Check your Goerli Test Network, select the three dots beside the account then select Account details then select private key you’ll enter your password then click confirm inorder for the account private key to be displayed. Copy the private key and add to your .env file and ensure to keep it private. The .env file should be added on .gitignore so the environment variables are not pushed to github for security purposes.
+* Check your Goerli Test Network, select the three dots beside the account then select Account details then select private key you’ll enter your password then click confirm inorder for the account private key to be displayed. Copy the private key and add to your .env file and ensure to keep it private. The .env file should be added on .gitignore so the environment variables are not pushed to github for security purposes.
+    
 
 ```jsx
 RPC_URL='https://rpc.ankr.com/eth_goerli'
 PRIVATE_KEY=''
 ```
 
-Lets’s now go ahead and setup our `hardhat.config.js` file. We’ll need to install  dotenv.
+Lets’s now go ahead and setup our `hardhat.config.js` file. We’ll need to install dotenv.
 
 ```jsx
 $ npm i dotenv
 ```
 
- You can configure you hardhat.config.js file this way 
+You can configure you hardhat.config.js file this way
 
 ```jsx
 require("@nomiclabs/hardhat-waffle");
@@ -205,7 +218,6 @@ compile to contract to confirm if there are any errors
 
 ```jsx
 $ npx hardhat compile
-
 ```
 
 If there are no errors we will go ahead and deploy our contract to ETH Goerli. We’ll first set up the deploy.js file on a script by renaming the contract name or configure it this way:
@@ -254,6 +266,6 @@ MyToken deployed to: 0x617b397207b38Db7e7b6445f57373c23B5e8322c
 
 We have successfully deployed our contract. We can’t verify the contract and interact with it since we didn’t set up Etherscan in our configurations but in the next tutorials, we’ll add that. You can only check the deployed contract here on [Goerli EtherScan](https://goerli.etherscan.io/address/0x617b397207b38Db7e7b6445f57373c23B5e8322c).
 
-This is the summary of the tutorial on how to create the ERC721 contract on OpenZeppelin Wizard and deploy it to Ethereum Goerli using Ankr as our RPC URL provider. You can check the full code here on [Github](https://github.com/jebitok-dev/MTKNFT-ANKR). 
+This is the summary of the tutorial on how to create the ERC721 contract on OpenZeppelin Wizard and deploy it to Ethereum Goerli using Ankr as our RPC URL provider. You can check the full code here on [GitHub](https://github.com/jebitok-dev/MTKNFT-ANKR).
 
-Thank for reading through my article you can leave any comments or suggestions. We can also connect more on [Twitter](https://twitter.com/SharonJebitok) or [LinkedIn](https://www.linkedin.com/in/sharon-jebitok/).
+Thanks for reading through my article. You can leave any comments or suggestions.
