@@ -63,7 +63,7 @@ I'm currently learning the fundamentals and introduction to cybersecurity pathwa
     ```python
     def bitcoinToUSD(bitcoin_amount, bitcoin_value_usd):
         usd_value = bitcoin_amount * bitcoin_value_usd
-        return usd_value 
+        return usd_value
     ```
     
     ```python
@@ -89,4 +89,4 @@ f = open("flag.txt", "r")
 print(f.read())
 ```
 
-Thanks for reading through my article. At the moment I hope that I will remain consistent in this learning journey and keep practicing as the days and months come by. You can leave a comment and we can also connect further either on \[X\]([https://x.com/SharonJebitok](https://x.com/SharonJebitok)) or \[LinkedIn\]([https://www.linkedin.com/in/sharon-jebitok/](https://www.linkedin.com/in/sharon-jebitok/))
+Thanks for reading through my article. At the moment I hope that I will remain consistent in this learning journey and keep practicing as the days and months come by.
