@@ -8,8 +8,8 @@ tags: devsecops
 
 ---
 
-The last weeks have been moving so fast that I couldn’t get time to publish the next writeups for TryHackMe. It has been an interesting experience so far and worth the time and effort.  
-  
+The last weeks have been moving so fast that I couldn’t get time to publish the next writeups for TryHackMe. It has been an interesting experience so far and worth the time and effort.
+
 In this article, I’m writing the writeups for the Introduction to DevSecOps, if you would like to read through this section you can check out the [TryHackMe](https://tryhackme.com/) platform.
 
 1. What methodology relies on self-organizing teams that focus on constructive collaboration? `agile`
@@ -53,8 +53,7 @@ In this article, I’m writing the writeups for the Introduction to DevSecOps, i
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1727720288197/3145b452-717e-40cc-b43d-fc310c16936a.png align="center")
     
 
-The DevOps TryHackMe Comics were impressed I had to capture them  
-  
+The DevOps TryHackMe Comics were impressed I had to capture them
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1727720350902/5c779f6f-5c5b-45b7-aecc-d81aeb23b930.png align="center")
 
@@ -62,4 +61,4 @@ The DevOps TryHackMe Comics were impressed I had to capture them
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1727720508397/e1df9765-732e-43f2-a4f2-59a4e15cdbdc.png align="center")
 
-Thank you for reading through my article. You can leave any questions or comments on how I can improve my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)
+Thank you for reading through my article. You can leave any questions or comments on how I can improve my learning journey and the THM challenges.
