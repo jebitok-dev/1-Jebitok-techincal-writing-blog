@@ -43,4 +43,4 @@ In this article, I will write a write-up for Operating System Security that cove
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730918317658/fcde4617-b9f5-44c7-9a53-2da38f0a3737.png align="center")
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the Lab THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the Lab THM challenges.
