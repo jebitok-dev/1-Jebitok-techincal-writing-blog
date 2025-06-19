@@ -14,8 +14,7 @@ In this article, I will write a Web Application Security write-up covering Web A
     
 2. You discovered that the login page allows an unlimited number of login attempts without trying to slow down the user or lock the account. What is the category of this security risk? `Identification and Authentication Failure`
     
-3. You noticed that the username and password are sent in cleartext without encryption. What is the category of this security risk? `Cryptographic Failures`  
-      
+3. You noticed that the username and password are sent in cleartext without encryption. What is the category of this security risk? `Cryptographic Failures`
     
     This task will investigate a vulnerable website that uses Insecure Direct Object References (IDOR). IDOR falls under the category of Broken Access Control. Broken access control means that an attacker can access information or perform actions not intended for them. Consider the case where a web server receives user-supplied input to retrieve objects (files, data, documents) and that they are numbered sequentially. Let’s say that the user has permission to access a photo named `IMG_1003.JPG`. We might guess that there are also `IMG_1002.JPG` and `IMG_1004.JPG`; however, the web application should not provide us with that image even if we figured out its name. In general, an IDORvulnerability can occur if too much trust has been placed on that input data. In other words, the web application does not validate whether the user has permission to access the requested object.
     
@@ -25,9 +24,9 @@ In this article, I will write a Web Application Security write-up covering Web A
     
     Click on “View Site,” and let’s see this in action. You will see a page showing an Inventory Management System. If you click on the “Planned Shipments” tab, you will discover that an attacker has managed to mix things up as part of sabotage plans. Notice how they send the wrong tires to each assembly line; for instance, they assign scooter tires and motorcycle tires to bike assembly! If left unfixed, all tires will go to the wrong assembly.
     
-    We will hack the system back and undo the attacker’s steps. On “Your Activity,” you can see the activity of one of the users. We have reason to believe that this website has an IDORvulnerability.  
+    We will hack the system back and undo the attacker’s steps. On “Your Activity,” you can see the activity of one of the users. We have reason to believe that this website has an IDORvulnerability.
     
-4. Check the other users to discover which user account was used to make the malicious changes and revert them. After reverting the changes, what is the flag that you have received? `THM{IDOR_EXPLORED}`  
+4. Check the other users to discover which user account was used to make the malicious changes and revert them. After reverting the changes, what is the flag that you have received? `THM{IDOR_EXPLORED}`
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the Lab THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the Lab THM challenges.
