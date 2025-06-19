@@ -53,4 +53,4 @@ In the static lab attached, a sample dashboard and events are displayed. When a 
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730643187835/0913a8bd-e2d4-49a3-956e-aa5305efc201.png align="center")
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
