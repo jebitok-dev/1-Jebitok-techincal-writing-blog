@@ -33,4 +33,4 @@ In this article, I will write a write-up for the Windows Command Line that cover
 11. What command can you use to abort a scheduled system shutdown? `shutdown /a`
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
