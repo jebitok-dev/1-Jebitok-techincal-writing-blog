@@ -65,21 +65,21 @@ We also need to understand how to change file permissions using `chmod` command 
 * The goal shows that we need to change owner permissions to only have execute and the group to have write and execute privileges. To achieve this, it means the owner has 1, the group has 3 and the others have 1, meaning we are going to run `chmod 131` and execute our file to get the flag
     
 * ```plaintext
-      :/tmp$ chmod 131 /tmp/perm_master
-      :/tmp$ ./perm_master
-      Your goal is to change the fiile permissions to --x-wx--x 
-      
-      [+] Flag= ZmxhZ3t5b3VyX25ld19uaWNrbmFtZV9pc19wZXJtQE1hc3Rlcn0=
+        :/tmp$ chmod 131 /tmp/perm_master
+        :/tmp$ ./perm_master
+        Your goal is to change the fiile permissions to --x-wx--x 
+        
+        [+] Flag= ZmxhZ3t5b3VyX25ld19uaWNrbmFtZV9pc19wZXJtQE1hc3Rlcn0=
     ```
     
 * we now have a hint `"ZmxhZ3t5b3VyX25ld19uaWNrbmFtZV9pc19wZXJtQE1hc3Rlcn0="` of what our flag is but we need a flag in the format `flag{}` to solve our challenge. So we have to use some concepts we learned previously in Text Manipulation i.e base64 encoding
     
 * ```plaintext
-      :/tmp$ echo "ZmxhZ3t5b3VyX25ld19uaWNrbmFtZV9pc19wZXJtQE1hc3Rlcn0=" | base64 -d
-      flag{your_new_nickname_is_perm@Master}
+        :/tmp$ echo "ZmxhZ3t5b3VyX25ld19uaWNrbmFtZV9pc19wZXJtQE1hc3Rlcn0=" | base64 -d
+        flag{your_new_nickname_is_perm@Master}
     ```
     
     Our flag is now revealed congratulations!
     
 
-Thank you for reading through, we can connect more on [X](https://twitter.com/SharonJebitok), and [LinkedIn](https://www.linkedin.com/in/sharon-jebitok/), or can [Book a Session with Sharon via Mentorlst](https://mentorlst.com/mentor/12db03d0-8a75-4a32-9b05-b290f5381598).
+Thank you for reading through this article.
