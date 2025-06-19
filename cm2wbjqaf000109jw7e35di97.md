@@ -48,8 +48,7 @@ based on the hint we have to use `post/windows/gather/enum_shares` then we `set 
 4. What is the NTLM hash of the jchambers user?
     
 
-based on the hint we need to migrate to `pid` of `lsass.exe`. So we `use exploit/windows/smb/psexec` then we `exploit` to get back to the Meterpreter. We will run `ps` to search for the process we want which is `lsass.exe` then we run `migrate 772` and run `hashdump` command and you’ll see the result.  
-  
+based on the hint we need to migrate to `pid` of `lsass.exe`. So we `use exploit/windows/smb/psexec` then we `exploit` to get back to the Meterpreter. We will run `ps` to search for the process we want which is `lsass.exe` then we run `migrate 772` and run `hashdump` command and you’ll see the result.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730319235667/7c4f4191-75dd-4715-bf7e-d7bf8f44188c.png align="center")
 
@@ -82,4 +81,4 @@ use `search -f secrets.txt` command \`\`
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730318793422/a4ae5e19-b48b-448a-9389-b369608d895c.png align="center")
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
