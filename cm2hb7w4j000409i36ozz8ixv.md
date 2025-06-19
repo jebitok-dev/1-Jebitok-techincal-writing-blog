@@ -83,4 +83,4 @@ At every individual layer that data travels through, specific processes take pla
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1729452622780/8ff4758a-070d-406c-9c72-1fcc074d8757.png align="center")
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
