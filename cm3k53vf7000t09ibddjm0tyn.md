@@ -70,9 +70,6 @@ Please click **Start Machine** to deploy the application, and navigate to [ht
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1731759627372/ab9910be-b694-40f0-aeec-a1fd4a6cc02a.png align="center")
     
-      
-      
-    
 6. What is the final flag you receive from Sphinx? `THM{c8951b2ad24bbcbac60c16cf2c83d92c}`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1731758688260/36ab1a54-4e8e-4076-9e80-9858c3090e04.png align="center")
@@ -82,4 +79,4 @@ Please click **Start Machine** to deploy the application, and navigate to [ht
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1731758748898/4531c5b0-c716-4e78-9b7c-e803415c925c.png align="center")
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
