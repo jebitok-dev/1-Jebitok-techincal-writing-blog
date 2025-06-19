@@ -137,4 +137,4 @@ Attaching Summary points from [SuperNormal](https://supernormal.com/) App, an AI
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688240107417/31f484a0-18b4-4d29-91f5-d75159a70397.png align="center")
 
-Thank you for reading through the article. You can like, comment or leave a suggestion or question. We can connect more on [Twitter](https://twitter.com/SharonJebitok) or [LinkedIn](https://linkedin.com/in/SharonJebitok).
+Thank you for reading through the article. You can like, comment or leave a suggestion or question.
