@@ -33,7 +33,7 @@ It will progressively decentralize its sequencer to offer secure and trustless b
 
 ### Building on Mantle Network
 
-* Mantle has a Mantle Developer Ecosystem, which you can join by filling out this [form](https://airtable.com/shruUIyhG4xDKBftH). As a developer, you can join the community on [Telegram](https://t.me/mantledevs) or [Discord](https://discord.com/invite/0xMantle) and also follow [MantleDevs](https://twitter.com/0xMantleDevs) on Twitter or the official Mantle Twitter account [here](https://twitter.com/0xMantle). New developers can access resources to get started,d and project owners who want to build projects on Mantle can get developers who are already familiar with building on Mantle to join their teams.
+* Mantle has a Mantle Developer Ecosystem, which you can join by filling out this [form](https://airtable.com/shruUIyhG4xDKBftH). As a developer, you can join the community on Telegram or Discord and also follow [MantleDevs](https://twitter.com/0xMantleDevs). New developers can access resources to get started, and project owners who want to build projects on Mantle can get developers who are already familiar with building on Mantle to join their teams.
     
 * Get Started on the Official [Documentation](https://docs.mantle.xyz/network/introducing-mantle/a-gentle-introduction) of Mantle Network
     
