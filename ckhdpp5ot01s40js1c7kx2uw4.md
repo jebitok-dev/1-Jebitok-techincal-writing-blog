@@ -10,19 +10,19 @@ tags: impostor-syndrome, beginners
 
 According to [Wikipedia](https://en.wikipedia.org/wiki/Impostor_syndrome), Imposter Syndrome is a psychological pattern in which an individual doubts their skills, talents, or accomplishments and has a persistent internalized fear of being exposed as a "fraud".
 
-More often we developers or people in the tech space there are times we struggle with imposter syndrome, the feeling that you don't anything yet you might be knowing and have been taught or gone over it more than one time.
+More often, we developers or people in the tech space, there are times we struggle with imposter syndrome, the feeling that we don't know anything, yet we might know and have been taught or gone over it more than once.
 
-Imposter syndrome is widely recognized and common not limited to a specific gender or seniority. You'll find that even at times senior developers experience it only that they might have found a way to cope with or just building confidence not to reveal it out.
+Imposter syndrome is widely recognized and common, not limited to a specific gender or seniority. You'll find that even at times senior developers experience it, only that they might have found a way to cope with it, or are just building confidence not to reveal it.
 
 Here are some ways to overcome it:
 
-* Don't think about it "the thought of not knowing much " just do it.
+* Don't think about it, "the thought of not knowing much, " just do it.
     
-* Find a project or topic you're passionate about and work on it since it makes learning fun.
+* Find a project or topic you're passionate about and work on it, since it makes learning fun.
     
-* Join a community or have some peers with whom you can frequently do *checkups* where you can share your experiences, what you've learned so far etc. This might help you know that you're not alone and at times almost everyone experiences imposter syndrome.
+* Join a community or have some peers with whom you can frequently do *checkups,* where you can share your experiences, what you've learned so far, etc. This might help you know that you're not alone and, at times, almost everyone experiences imposter syndrome.
     
-* Maintain consistent action: If you write code daily continue doing so at one point whatever doesn't make sense will, especially for those doing JavaScript.
+* Maintain consistent action: If you write code daily, continue doing so at one point whatever doesn't make sense will, especially for those doing JavaScript.
     
 * Come up with your goals to help you *visualize your success and focus on your plan*
     
@@ -44,4 +44,4 @@ Here are some ways to overcome it:
 
 > "Period of time between imposter syndrome episodes are confidence intervals"
 
-Thank you for reading through my article. You can leave a comment or suggestion. We can also connect more on [Twitter](https://twitter.com/SharonJebitok) or [LinkedIn](https://www.linkedin.com/in/sharon-jebitok/)
+Thank you for reading through my article. You can leave a comment or suggestion.
