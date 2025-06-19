@@ -60,4 +60,4 @@ In this article, I will write a write-up for Shell Overview that covers Shell Ov
 17. Using a web shell, exploit the unrestricted file upload vulnerability and get a shell. What is the content of the flag saved in the / directory? `THM{202bb14ed12120b31300cfbbbdd35998786b44e5}`
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
