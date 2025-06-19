@@ -33,4 +33,4 @@ Using this command `tcpdump -r traffic.pcap -e`
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1729919411259/98f5459a-8485-473b-8a97-02d3e51d7c39.png align="center")
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
