@@ -23,4 +23,4 @@ In this article, I will write a Security Operations write-up covering an Introdu
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730922388761/58eecb97-d409-4a8b-b7c0-210d560bc231.png align="center")
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the Lab THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the Lab THM challenges.
