@@ -93,8 +93,7 @@ I have been learning Networking Theory like the OSI Model and TCP/IP model as we
     
 39. Which city is the registrant based in? `Redmond`
     
-40. **\[OSINT\]** What is the name of the golf course that is near the registrant address for [microsoft.com](http://microsoft.com/)? `Bellevue Golf Course`  
-      
+40. **\[OSINT\]** What is the name of the golf course that is near the registrant address for [microsoft.com](http://microsoft.com/)? `Bellevue Golf Course`
     
     with Microsoft address from the whois [Microsoft.com](http://microsoft.com/) search golf courses followed by the address (`One Microsoft Way, Redmond, 98052`) You’ll check golf course as a keyword and the closest miles
     
@@ -115,4 +114,4 @@ I have been learning Networking Theory like the OSI Model and TCP/IP model as we
 47. If a DNS query has a TTL of 24 hours, what number would the dig query show? `86400`
     
 
-Thank you for reading through my article. You can leave any questions or comments on how I can improve my learning journey and the THM challenges. We can also connect more on [LinkedIn](https://www.linkedin.com/in/sharon-jebitok) or [X](https://x.com/SharonJebitok).
+Thank you for reading through my article. You can leave any questions or comments on how I can improve my learning journey and the THM challenges.
