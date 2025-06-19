@@ -29,4 +29,4 @@ This room was a bit complicated to me so I’ll share this [LinkedIn article](ht
 8. What is the password of the email [test@chatai.com](mailto:test@chatai.com)? `12345678`
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
