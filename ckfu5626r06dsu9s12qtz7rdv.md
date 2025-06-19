@@ -8,28 +8,31 @@ tags: apis, reactjs, netlify
 
 ---
 
-Over my last two react projects I've had to work with API from  [Google Developer Console](https://console.developers.google.com/apis/). API keys contain sensitive information even when you're going through the implementation sample on [npmjs](https://www.npmjs.com/package/) you're advised not to push the code with API keys to GitHub.
+Over my last two React projects, I've had to work with API from [Google Developer Console](https://console.developers.google.com/apis/). API keys contain sensitive information; even when you're going through the implementation sample on [npmjs](https://www.npmjs.com/package/), you're advised not to push the code with API keys to GitHub.
 
-Since I'm using npm mostly I always have to push my code to GitHub especially when ```$ npm start``` doesn't run I don't know the correlation but whenever I have this challenge once I've committed my code to GitHub npm start runs successfully. 
+Since I'm using npm mostly, I always have to push my code to GitHub, especially when `$ npm start` it doesn't run. I don't know the correlation, but whenever I have this challenge, once I've committed my code to GitHub, npm start runs successfully.
 
-So I wasn't sure where to hide my config folder with the JSON file when I wanted to consider hiding on ```.gitignore``` I wasn't sure if Netlify would deploy well without the API keys on the GitHub repo. 
+So I wasn't sure where to hide my config folder with the JSON file, when I wanted to consider hiding it on `.gitignore` I wasn't sure if Netlify would deploy well without the API keys on the GitHub repo.
 
-Luckily I came across the conversation on [Twitter](https://twitter.com/kvncnls/status/1309927434695913472?s=19) and thought I could compile some solutions that work well for other developers: 
+Luckily, I came across the conversation online and thought I could compile some solutions that work well for other developers:
 
-- storing the API keys on the  .env, for example, ```API_KEY = 123bc``` then use the variable to refer to the API and add it to .gitignore
-
-- deploy to Netlify you can use [netlify CLI](https://docs.netlify.com/cli/get-started/) or alternatively you can configure the environment variables on Netlify when deploying your projects.
+* storing the API keys in the .env, for example, `API_KEY = 123bc` Then use the variable to refer to the API and add it to .gitignore
+    
+* Deploy to Netlify, you can use the [Netlify CLI](https://docs.netlify.com/cli/get-started/), or alternatively you can configure the environment variables on Netlify when deploying your projects.
+    
 
 > proxying API keys on lambda/ [Netlify](https://medium.com/frontend-digest/proxying-apis-with-netlify-functions-b95a60061dfc) functions
 
-- use of [vaultproject.io](https://www.vaultproject.io/) which manages secrets and sensitive data using a UI, CLI, or HTTP API.
+* Use of [vaultproject.io](https://www.vaultproject.io/), which manages secrets and sensitive data using a UI, CLI, or HTTP API.
+    
 
 > It stores all app passwords, API keys and you can retrieve them but its expensive for small projects
 
-- storing environment variables as 'secrets' on GitHub repo.
+* storing environment variables as 'secrets' on the GitHub repo.
+    
 
-Interestingly there are GitHub features that will warn you or help you clean the repo when you accidentally commit sensitive keys like [GitGuardian detected an API key from Google ](https://github.com/GitGuardian) that alerted me.
+Interestingly, there are GitHub features that will warn you or help you clean the repo when you accidentally commit sensitive keys, like [GitGuardian detected an API key from Google](https://github.com/GitGuardian) that alerted me.
 
-[sops](https://github.com/mozilla/sops) is a great tool to share API with other contributors if you're working as a team.
+[Sops](https://github.com/mozilla/sops) is a great tool to share the API with other contributors if you're working as a team.
 
-Hoping this will also be helpful to you. You can share other API key handling tips especially for react projects.
+Hoping this will also be helpful to you. You can share other API key handling tips, especially for React projects.
