@@ -21,4 +21,4 @@ In this article, I will write a write-up for Defensive Security Intro that cover
 5. What is the flag that you obtained by following along? `THM{THREAT-BLOCKED}`
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
