@@ -38,11 +38,11 @@ These are examples of how an attacker carries out exploitation:
     
 8. What is the C2 communication where the victim makes regular DNS requests to a DNS server and domain which belong to an attacker. `DNS Tunneling`
     
-9. Can you provide a technology included in Microsoft Windows that can create backup copies or snapshots of files or volumes on the computer, even when they are in use? `Shadow Copy`  
-      
+9. Can you provide a technology included in Microsoft Windows that can create backup copies or snapshots of files or volumes on the computer, even when they are in use? `Shadow Copy`
+    
     We really hope you enjoyed this room. In order to strengthen your knowledge, let's do a practice analysis.
     
-    ![https://tryhackme-images.s3.amazonaws.com/user-uploads/5c549500924ec576f953d9fc/room-content/0d0675a1087fd791f04ca4a359350576.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/5c549500924ec576f953d9fc/room-content/0d0675a1087fd791f04ca4a359350576.png)
+    ![https://tryhackme-images.s3.amazonaws.com/user-uploads/5c549500924ec576f953d9fc/room-content/0d0675a1087fd791f04ca4a359350576.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/5c549500924ec576f953d9fc/room-content/0d0675a1087fd791f04ca4a359350576.png align="left")
     
     **Here is the real-world scenario for you to tackle:**
     
@@ -93,4 +93,4 @@ These are examples of how an attacker carries out exploitation:
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1731247285387/3515a660-61e8-4b9e-99a9-9f029a08088f.png align="center")
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
