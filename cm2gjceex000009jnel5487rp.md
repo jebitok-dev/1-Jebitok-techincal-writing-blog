@@ -52,4 +52,4 @@ Desired certification:
 4. After blocking the malicious IP address on the firewall, what message did the malicious actor leave for you? `THM{UNTIL-WE-MEET-AGAIN}`
     
 
-Thank you for reading my article. Please leave any questions or comments on how I can improve my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on how I can improve my learning journey and the THM challenges.
