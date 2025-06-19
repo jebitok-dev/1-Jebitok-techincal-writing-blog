@@ -27,4 +27,4 @@ In this article, I will write a Gobuster: The Basics that covers Environment and
 8. Use the commands learned in this task to answer the following question: How many vhosts on the offensivetools.thm domain reply with a status code 200? `4`
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
