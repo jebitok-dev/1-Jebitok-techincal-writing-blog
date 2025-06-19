@@ -32,14 +32,12 @@ In this article, I will write a write-up for the Linux Shell that covers Interac
     
 11. What would be the correct PIN to authenticate in the locker script? `7385`
     
-      
-    
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1729803484844/eaf15265-e5b3-44a3-9806-684724ead4e3.png align="center")
     
-    **Practical Exercise**  
-      
-    We have placed a script on the default user directory `/home/user` of the attached Ubuntu machine. This script searches for a specific keyword in all the files (with .log extension) in a specific directory.  
-      
+    **Practical Exercise**
+    
+    We have placed a script on the default user directory `/home/user` of the attached Ubuntu machine. This script searches for a specific keyword in all the files (with .log extension) in a specific directory.
+    
     **Note:** Some changes are required inside the script file before you execute it. When you open the machine according to the instructions in task #2, you will be able to gain the session as a normal user. However, we recommend you to become the root user in order to search for the flag in all the files of the given directory. To become one, you only need to type the following command and enter the password of the user:
     
     Become Root User
@@ -47,7 +45,6 @@ In this article, I will write a write-up for the Linux Shell that covers Interac
     ```plaintext
     user@ubuntu:~$ sudo su[sudo] password for user:
     root@tryhackme:/home/user#
-    
     ```
     
     You can make the changes in the script file by keeping in view the following details:
@@ -76,4 +73,4 @@ In this article, I will write a write-up for the Linux Shell that covers Interac
 13. Where is the cat sleeping? `under the table`
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [\*\*X](https://x.com/SharonJebitok)\*\*
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
