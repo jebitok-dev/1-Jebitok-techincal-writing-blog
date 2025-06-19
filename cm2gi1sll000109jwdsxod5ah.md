@@ -53,4 +53,4 @@ According to TryHackMe introduction to this room, humans are always looking for 
 20. What is the flag received after successfully building your pipeline?`THM{`[`Pipeline.Automation.Is.Fun`](http://Pipeline.Automation.Is.Fun)`}`
     
 
-Thank you for reading through my article. You can leave any questions or comments on how I can improve my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading through my article. You can leave any questions or comments on how I can improve my learning journey and the THM challenges.
