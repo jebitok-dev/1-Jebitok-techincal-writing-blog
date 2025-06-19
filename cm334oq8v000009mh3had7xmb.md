@@ -69,4 +69,4 @@ In this article, I will write a write-up for CAPA: The Basics that covers Tool O
 27. Which feature of this CAPA Web Explorer allows you to filter options or results? `Global Search Box`
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the Lab THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the Lab THM challenges.
