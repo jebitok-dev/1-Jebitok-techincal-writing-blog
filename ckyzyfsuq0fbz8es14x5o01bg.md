@@ -97,6 +97,6 @@ If you're on the blockchain developer route:
 
 "Would buy bitcoin when it was $5, but nothing, remembering when I went through Bootcamps, learning how to code was overwhelming. I wouldn't go back to ease things, but challenges are important for growth. Some bad experiences taught him what he didn't like, and I'm about my life results so far. Stay humble, thirsty, and never say no, even if you're not familiar with some things. Say I don't know this, but I'll research more on how to do this. With that, you'll have said no, but they'll trust you. Mastering proper phrasing is key." Robert Kruszynski
 
-I hope you'll like and get inspired by the story of Robert. You can connect with him on [Twitter](https://twitter.com/Ro_bbieK) or [LinkedIn](https://www.linkedin.com/in/robbie-k/). He's open to talking about blockchain technology and guiding anyone learning Solidity or how to write smart contracts.
+I hope you'll like and get inspired by the story of Robert. He's open to talking about blockchain technology and guiding anyone learning Solidity or how to write smart contracts.
 
 Thank you for reading through my article. You can leave some comments or suggestions.
