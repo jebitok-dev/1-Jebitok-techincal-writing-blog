@@ -18,8 +18,8 @@ In this article, I will write a write-up for Nmap: The Basics that covers Host D
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1729979306301/088df6de-c1d5-47f6-a3b4-204281628af6.png align="center")
     
-3. Find the listening web server on `10.10.235.198` and access it with your browser. What is the flag that appears on its main page? `THM{SECRET_PAGE_38B9P6}`  
-      
+3. Find the listening web server on `10.10.235.198` and access it with your browser. What is the flag that appears on its main page? `THM{SECRET_PAGE_38B9P6}`
+    
     to start there’s a hint on the question that you should access via `http://ip_address:port_number`. Remember the computer has 65535 ports so I tried to use common ports like 80, 8080, etc, and the browser didn’t open. I ran a command `nmap -sV -A 10.10.235.198` that gave us a comprehensive overview of our target machine IP which included open ports, 8008 showed `8008/tcp open http lighttpd/1.4.74`. On opening the browser `http://ip_address:8008` I got the flag
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1729979351111/53258cbb-58a4-4d9e-9086-9ccfe406f716.png align="center")
@@ -29,7 +29,7 @@ In this article, I will write a write-up for Nmap: The Basics that covers Host D
 4. What is the name and detected version of the web server running on `10.10.235.198`? `lighttpd 1.4.74`
     
 
-running `nmap -A ip_address` brings it up notice that our attack machine uses `lighttpd` and not the web servers like `nginx` so that a hint too  
+running `nmap -A ip_address` brings it up notice that our attack machine uses `lighttpd` and not the web servers like `nginx` so that a hint too
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1729979509317/32af4872-c07a-46c4-86fa-7820c4473088.png align="center")
 
@@ -40,4 +40,4 @@ running `nmap -A ip_address` brings it up notice that our attack machine uses `l
 7. What kind of scan will Nmap use if you run `nmap MACHINE_IP` with local user privileges? `Connect Scan`
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
