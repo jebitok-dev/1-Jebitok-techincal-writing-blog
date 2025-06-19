@@ -24,7 +24,7 @@ Please visit [this link](https://static-labs.tryhackme.cloud/sites/eviction/) 
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1731785640838/7428c306-4e4a-4b18-bfad-23dd8ef53ccb.png align="center")
     
-3. E-corp has found that the APT might have gained initial access using social engineering to make the user execute code for the threat actor. Sunny wants to identify if the APT was also successful in execution. What two techniques of user execution should Sunny look out for? (Answer format: &lt;technique 1&gt; and &lt;technique 2&gt;) `Malicious file and malicious link`  
+3. E-corp has found that the APT might have gained initial access using social engineering to make the user execute code for the threat actor. Sunny wants to identify if the APT was also successful in execution. What two techniques of user execution should Sunny look out for? (Answer format: &lt;technique 1&gt; and &lt;technique 2&gt;) `Malicious file and malicious link`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1731785613768/45d6f410-ee4f-4f1f-9e4a-c6b8f32abd99.png align="center")
     
@@ -36,7 +36,7 @@ Please visit [this link](https://static-labs.tryhackme.cloud/sites/eviction/) 
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1731784676133/202f9c44-2b0d-40cd-9ab6-37e8cf00c26d.png align="center")
     
-6. Sunny identified that the APT executes system binaries to evade defences. Which system binary's execution should Sunny scrutinize for proxy execution? `Rundll32`  
+6. Sunny identified that the APT executes system binaries to evade defences. Which system binary's execution should Sunny scrutinize for proxy execution? `Rundll32`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1731784479222/f6e84ba5-9781-4f54-b6de-26adab775df9.png align="center")
     
@@ -61,4 +61,4 @@ Please visit [this link](https://static-labs.tryhackme.cloud/sites/eviction/) 
 11. Congratulations! You have helped Sunny successfully thwart the APT's nefarious designs by stopping it from achieving its goal of stealing the IP of E-corp.
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
