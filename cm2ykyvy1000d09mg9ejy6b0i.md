@@ -93,4 +93,4 @@ In this article, I will write a write-up for SQL Fundamentals that covers Databa
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730455547328/b8f5dfae-aefd-4af2-b1d5-e21d7f558efe.png align="center")
     
 
-Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges. We can also connect more on [**LinkedIn**](https://www.linkedin.com/in/sharon-jebitok) or [**X**](https://x.com/SharonJebitok)**.**
+Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
