@@ -8,7 +8,7 @@ tags: cryptography, tryhackme, ctf-writeup, cryptography-hash-mbedtls-python-sha
 
 ---
 
-In this challenge, we explore the practical aspects of hash cracking by completing Levels 1 and 2 of the **Crack the Hash** room. These tasks involve identifying various hash types and using common tools like **Hashcat** and **John the Ripper** to uncover the original plaintext passwords. The hash algorithms range from MD5 and SHA1 to bcrypt and HMAC-SHA1, offering a great opportunity to practice recognizing hash formats and selecting appropriate cracking techniques. Throughout the room, the well-known `rockyou.txt` Wordlist is used as the main resource for dictionary attacks, together with the Rainbow table, [CrackStation](https://crackstation.net/).
+In this challenge, we explore the practical aspects of hash cracking by completing Levels 1 and 2 of the [**Crack the Hash**](https://tryhackme.com/room/crackthehashVX) room. These tasks involve identifying various hash types and using common tools like [**Hashcat**](https://hashcat.net/wiki/doku.php?id=example_hashes) and [**John the Ripper**](https://www.openwall.com/john/) to uncover the original plaintext passwords. The hash algorithms range from MD5 and SHA1 to bcrypt and HMAC-SHA1, offering a great opportunity to practice recognizing hash formats and selecting appropriate cracking techniques. Throughout the room, the well-known `rockyou.txt` Wordlist is used as the main resource for dictionary attacks, together with the Rainbow table, [CrackStation](https://crackstation.net/).
 
 ## Level 1
 
@@ -20,9 +20,7 @@ Can you complete the level 1 tasks by cracking the hashes?
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1750532989403/ecc009a8-6df1-4507-9fe9-7acefa709e9a.png align="center")
     
-      
-    
-2. CBFDAC6008F9CAB4083784CBD1874F76618D2A97 `password123`  
+2. CBFDAC6008F9CAB4083784CBD1874F76618D2A97 `password123`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1750533019404/606390a5-c537-400c-8d8b-46d5d1151cdc.png align="center")
     
@@ -30,11 +28,11 @@ Can you complete the level 1 tasks by cracking the hashes?
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1750533050184/c7d6b8e3-fbda-422f-9cc0-e76995b51b8b.png align="center")
     
-4. $2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom `bleh`  
-      
-    `hashcat -m 3200 -a 0 hash.txt /usr/share/wordlists/rockyou.txt`  
+4. $2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom `bleh`
     
-    `grep -E '^[a-z]{4}$' /usr/share/wordlists/rockyou.txt > four_letter_words.txt`  
+    `hashcat -m 3200 -a 0 hash.txt /usr/share/wordlists/rockyou.txt`
+    
+    `grep -E '^[a-z]{4}$' /usr/share/wordlists/rockyou.txt > four_letter_words.txt`
     
     `hashcat -m 3200 -a 0 hash.txt four_letter_words.txt`
     
@@ -63,21 +61,19 @@ You might have to start using hashcat here and not online tools. It might also 
     
 3. Hash: $6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02.
     
-      
-    Salt: aReallyHardSalt  
-      
-    `waka99`  
-      
+    Salt: aReallyHardSalt
+    
+    `waka99`
+    
     `grep -E '^[a-z]{6}$' /usr/share/wordlists/rockyou.txt > six_letter_words.txt hashcat -m 1800 -a 0 hash6.txt six_letter_words.txt`
     
-    `john --format=sha512crypt --wordlist=six_letter_words.txt hash6.txt`  
+    `john --format=sha512crypt --wordlist=six_letter_words.txt hash6.txt`
     
 4. Hash: e5d8870e5bdd26602cab8dbe07a942c8669e56d6
     
-      
-    Salt: tryhackme  
-      
-    `481616481616`  
+    Salt: tryhackme
+    
+    `481616481616`
     
     ```markdown
     // hash.txt
