@@ -18,8 +18,8 @@ This room is aimed for beginner level hackers but anyone can try to hack this bo
 
 ### Answer the questions below
 
-The first step is running an nmap scan:  
-  
+The first step is running an nmap scan:
+
 `nmap -sC -sV -A <IP_Address>`
 
 `nmap -sC -sV <IP_Address>`
@@ -34,11 +34,10 @@ The first step is running an nmap scan:
 
 `find / -type f -name note_to_jake.txt 2> /dev/null`
 
-1. User flag  
-      
+1. User flag
+    
     With FTP, we can check any helpful details about the users
     
-      
     `ftp <IP_Address>`  
     Name: Anonymous
     
@@ -58,9 +57,9 @@ The first step is running an nmap scan:
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1751918759530/01f15b36-71e2-48bb-bc0f-cf331d12aaba.png align="center")
     
-    Using Hydra and SSH helped find Jake’s password, which would be used in Remote SSH authentication.  
-      
-    `hydra -l Jake -P /usr/share/wordlists/rockyou.txt ssh://<IP_Address>`
+    Using Hydra and SSH helped find Jake’s password, which would be used in Remote SSH authentication.
+    
+    `hydra -l jake -P /usr/share/wordlists/rockyou.txt ssh://<IP_Address>`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1751918806780/d0ab9602-d2d2-4249-b064-101a4a4d48e4.png align="center")
     
@@ -69,8 +68,8 @@ The first step is running an nmap scan:
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1751918963708/62006862-1dfe-48e2-8d39-888cd38e2ea5.png align="center")
     
-2. Root flag  
-      
+2. Root flag
+    
     After finding the user, we now have to look for a way to escalate privileges to the root. First, we check the `Sudo -l`. With these, we’ll use online resources like [GTFOBins](https://gtfobins.github.io/gtfobins/less/#sudo) to check the commands we can use to escalate privileges. In this case, we’ll search for less and sudo on the platform.
     
     ```bash
