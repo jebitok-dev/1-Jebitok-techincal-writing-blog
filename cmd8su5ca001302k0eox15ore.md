@@ -30,7 +30,7 @@ Find the flag on your neighbor's logged in page!
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1752841034195/eca9d8a3-5f17-43c0-9148-5748ec42bc26.png align="center")
 
-gobuster dir -u http://IP\_Address -w /usr/share/wordlists/dirb/common.txt
+`gobuster dir -u http://IP_Address -w /usr/share/wordlists/dirb/common.txt`
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1752841088105/1591ed13-075f-4ec0-88f9-6bc217e97351.png align="center")
 
@@ -44,8 +44,8 @@ I was able to login into the site and signout again, tried to look around for hi
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1752841248239/022b793d-c4fd-4ddc-8aa2-1e953905e9bd.png align="center")
 
-tried to check more files/paths using gobusters  
-  
+tried to check more files/paths using gobusters
+
 `gobuster dir -u http://IP_Address -w /usr/share/wordlists/dirb/common.txt -x php,html,txt`
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1752841285466/42e73e91-b3a3-4869-9f0b-8bce0e02de41.png align="center")
