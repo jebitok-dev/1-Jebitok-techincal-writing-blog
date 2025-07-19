@@ -4,7 +4,7 @@ datePublished: Sat Jul 19 2025 20:21:28 GMT+0000 (Coordinated Universal Time)
 cuid: cmdap179w000o02kz74pncvu5
 slug: challenges-sakura-room-osint-tryhackme
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1752956332920/40b93459-76e4-4902-b11b-5a26d11bf575.png
-tags: wifi, metadata, osint, digitalforensic, etherscan
+tags: wifi, metadata, osint, tryhackme, digitalforensic, etherscan, ctf-writeup
 
 ---
 
