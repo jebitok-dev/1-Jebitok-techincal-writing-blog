@@ -3,6 +3,7 @@ title: "Web Application Pentesting: File Inclusion, Path Traversal (TryHackMe)"
 datePublished: Fri Jul 25 2025 21:00:00 GMT+0000 (Coordinated Universal Time)
 cuid: cmdnjac65001u02l4h6f32pzx
 slug: web-application-pentesting-file-inclusion-path-traversal-tryhackme
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1753733017313/b2312039-5472-4640-b572-33ae4ed2269a.png
 tags: tryhackme, websecurity, ctf-writeup, pathtraversal, file-inclusion, phpwrappers
 
 ---
