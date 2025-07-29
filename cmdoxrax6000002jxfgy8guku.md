@@ -1,6 +1,6 @@
 ---
 title: "Challenges: Chill Hack (TryHackMe)"
-datePublished: Tue Jul 29 2025 19:34:29 GMT+0000 (Coordinated Universal Time)
+datePublished: Fri Jul 18 2025 21:00:00 GMT+0000 (Coordinated Universal Time)
 cuid: cmdoxrax6000002jxfgy8guku
 slug: challenges-chill-hack-tryhackme
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1753817538923/99593c55-03c9-4113-81d8-84b3c2cd193d.png
