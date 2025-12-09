@@ -4,6 +4,7 @@ title: "Passwords - A Cracking Christmas
 datePublished: Tue Dec 09 2025 18:55:33 GMT+0000 (Coordinated Universal Time)
 cuid: cmiyxxisa000302jo8xn47ukh
 slug: passwords-a-cracking-christmas-tryhackme
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1765306606995/586fbb0e-4ac3-45a5-a9b7-6c9851b36396.png
 tags: encryption, hashing, tryhackme, john-the-ripper, adventofcyber2025
 
 ---
