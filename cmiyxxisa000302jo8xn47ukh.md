@@ -137,7 +137,7 @@ Average Speed: 30364.8 w/s. Current Word: 'papaopass2'
 found user-password: 'XXXXXXXXXX'
 ```
 
-Example: using `john` 
+Example: using `john`
 
 * Create a hash that John can understand: `zip2john flag.zip > ziphash.txt`
     
@@ -145,7 +145,7 @@ Example: using `john` 
 Terminal
 
 ```markdown
-ubuntu@tryhackme:~/Desktop$ zip2john flag.zip > ziphash.txt                                
+ubuntu@tryhackme:~/Desktop$ zip2john flag.zip > ziphash.txt
 ```
 
 * John will report the recovered password if it finds one.
@@ -283,12 +283,11 @@ As security analysts in Wareville, it is important to have a playbook to follow 
     
     `file flag.pdf`
     
-      
-    `file` [`flag.zip`](http://flag.zip)  
+    `file` [`flag.zip`](http://flag.zip)
     
-    `pdfcrack -f flag.pdf -w /usr/share/wordlists/rockyou.txt`  
-      
-    `john --wordlist=/usr/share/wordlists/rockyou.txt pdfhash.txt`  
+    `pdfcrack -f flag.pdf -w /usr/share/wordlists/rockyou.txt`
+    
+    `john --wordlist=/usr/share/wordlists/rockyou.txt pdfhash.txt`
     
     `xdg-open flag.pdf`
     
@@ -296,33 +295,28 @@ As security analysts in Wareville, it is important to have a playbook to follow 
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1765304987199/7c657cd5-38e1-4f66-8e69-bf43d6b1bcfc.png align="center")
     
-      
-      
-    
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1765304809079/cc6c0930-beeb-4781-816e-609a0b3a42b0.png align="center")
     
     The screen below will be launched which expects you to enter the password use `naughtylist` from above
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1765305123537/896f6e43-3026-4dd2-bb81-9c9849fb8f4d.png align="center")
     
-      
     Once you enter the password, the flag will be revealed:
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1765305140603/4e7bca40-c551-46b9-9403-25873dd12521.jpeg align="center")
     
 2. What is the flag inside the encrypted zip file?  
-      
-    `zip2john flag.zip > ziphash.txt`  
     
-    `john --wordlist=/usr/share/wordlists/rockyou.txt ziphash.txt`  
+    `zip2john flag.zip > ziphash.txt`
     
-    `unzip flag.zip`  
+    `john --wordlist=/usr/share/wordlists/rockyou.txt ziphash.txt`
     
-    `7z x flag.zip`  
+    `unzip flag.zip`
+    
+    `7z x flag.zip`
     
     `cat flag.txt`  
-      
-      
+    
     the `flag.txt` file has the flag
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1765305508409/6387db2d-f447-4d82-aa3a-95e2ad94ea19.jpeg align="center")
