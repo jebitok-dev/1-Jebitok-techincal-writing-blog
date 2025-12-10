@@ -279,11 +279,11 @@ As security analysts in Wareville, it is important to have a playbook to follow 
 
 ### Answer the questions below
 
-1. What is the flag inside the encrypted PDF?  
+1. What is the flag inside the encrypted PDF?
     
     `file flag.pdf`
     
-    `file` [`flag.zip`](http://flag.zip)
+    `file` `flag.zip`
     
     `pdfcrack -f flag.pdf -w /usr/share/wordlists/rockyou.txt`
     
@@ -305,7 +305,7 @@ As security analysts in Wareville, it is important to have a playbook to follow 
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1765305140603/4e7bca40-c551-46b9-9403-25873dd12521.jpeg align="center")
     
-2. What is the flag inside the encrypted zip file?  
+2. What is the flag inside the encrypted zip file?
     
     `zip2john flag.zip > ziphash.txt`
     
@@ -315,7 +315,7 @@ As security analysts in Wareville, it is important to have a playbook to follow 
     
     `7z x flag.zip`
     
-    `cat flag.txt`  
+    `cat flag.txt`
     
     the `flag.txt` file has the flag
     
