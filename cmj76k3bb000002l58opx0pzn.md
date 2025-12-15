@@ -1,5 +1,5 @@
 ---
-title: "Containers - DoorDasher's Demise (TryHackMe)"
+title: "Containers - DoorDasher's Demise (TryHackMe) 🎉🧑‍🎄"
 datePublished: Mon Dec 15 2025 13:19:12 GMT+0000 (Coordinated Universal Time)
 cuid: cmj76k3bb000002l58opx0pzn
 slug: containers-doordashers-demise-tryhackme
