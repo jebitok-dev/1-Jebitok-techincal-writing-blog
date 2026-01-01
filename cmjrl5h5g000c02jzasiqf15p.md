@@ -3,6 +3,7 @@ title: "AWS Security - S3cret Santa (TryHackMe) 🧑‍🎄🎉"
 datePublished: Mon Dec 29 2025 20:03:08 GMT+0000 (Coordinated Universal Time)
 cuid: cmjrl5h5g000c02jzasiqf15p
 slug: aws-security-s3cret-santa-tryhackme
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1767275862234/55fdb39b-bd64-4b41-96f5-1a9880866596.png
 tags: aws, tryhackme, awssecurity, aws-iam-policies, ctf-writeup, adventofcyber2025
 
 ---
