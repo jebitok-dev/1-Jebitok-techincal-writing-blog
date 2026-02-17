@@ -1,8 +1,8 @@
 ---
-title: "Python: Simple Demo"
+title: "Python: Simple Demo (TryHackMe)"
 datePublished: Tue Feb 17 2026 19:39:39 GMT+0000 (Coordinated Universal Time)
 cuid: cmlr0buu9000e02l83ba04qs9
-slug: python-simple-demo
+slug: python-simple-demo-tryhackme
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1771356988425/f12e8898-a592-44b8-9d9f-bf5688b64ede.png
 tags: python, cybersecurity, tryhackme, beginners-cybersecurity
 
