@@ -3,6 +3,7 @@ title: "Become a Defender (TryHackMe)"
 datePublished: Wed Feb 18 2026 18:51:53 GMT+0000 (Coordinated Universal Time)
 cuid: cmlse2afm000002jm40950mbl
 slug: become-a-defender-tryhackme
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1771441221005/e2c41280-9cc6-4876-a6b1-0bef4caec925.png
 tags: cybersecurity, tryhackme, defensive-security, beginners-cybersecurity
 
 ---
